@@ -1,0 +1,31 @@
+{
+  "generator-veams": {
+    "projectName": "portfolio mn 2017",
+    "projectType": "static-page-app",
+    "taskRunner": "grunt",
+    "templateEngine": "ssr-mangony-hbs",
+    "gruntModules": [
+      "grunt-grunticon",
+      "grunt-autoprefixer",
+      "grunt-browserify",
+      "grunt-contrib-uglify",
+      "grunt-contrib-handlebars"
+    ],
+    "features": [],
+    "jsLibs": [
+      "jquery"
+    ],
+    "cssLibs": [
+      "bourbon-neat",
+      "include-media"
+    ],
+    "testAndQA": false,
+    "testAndQALibs": [],
+    "veamsPackages": true,
+    "docs": [],
+    "icons": "grunticon",
+    "cssPostProcessors": [
+      "autoprefixer"
+    ]
+  }
+}
