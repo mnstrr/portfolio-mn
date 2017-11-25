@@ -10,23 +10,12 @@ Current version="0.0.1"
 ### Libsass
 We use Libsass as standard SCSS compiler.
 
-## Frontend Methodology
-We build portfolio mn 2017 with the Veams Methodology:
-* http://veams.org/methodology/
-
 ## Setup
 
 This project builds on following setup (please read requirements and getting started):
 
-- Veams Overview: https://github.com/Sebastian-Fitzner/Veams
 - Veams Website: http://veams.org/
-
 - We use [Grunt](http://gruntjs.com/)
-- We use [Git](#).
-- The folder __node_modules__ won't be comitted into GIT. Use ```.gitignore``` to ignore folders or files.
-- Git-commit-messages in english please.
-- All issues are recorded in [Jira](#).
-- Jira-Issues are commented in german/english.
 
 ## Browser-Support
 
@@ -47,9 +36,3 @@ This project builds on following setup (please read requirements and getting sta
 - $bp-tablet-p: (max 768px);
 - $bp-tablet-l: (max 1024px);
 - $bp-desktop: (min 1025px);
-
-## Team
-
-- TPM/PM:
-- Frontend:
-- Backend:
