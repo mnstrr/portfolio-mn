@@ -1,0 +1,60 @@
+
+{
+	"variations": {
+		"intro": {
+			"docs": {
+				"variationName": "Intro page"
+			},
+			"settings": {
+				"scrollItemContextClass": "intro",
+				"scrollItemClasses": false,
+				"scrollItemJsOptions": {}
+			},
+			"content": {}
+		},
+		"magine1": {
+			"docs": {
+				"variationName": "Magine Product"
+			},
+			"settings": {
+				"scrollItemContextClass": "magine-a",
+				"scrollItemClasses": false,
+				"scrollItemJsOptions": {}
+			},
+			"content": {}
+		},
+		"magine2": {
+			"docs": {
+				"variationName": "Magine Marketing"
+			},
+			"settings": {
+				"scrollItemContextClass": "magine-b",
+				"scrollItemClasses": false,
+				"scrollItemJsOptions": {}
+			},
+			"content": {}
+		},
+		"siemens": {
+			"docs": {
+				"variationName": "Siemens"
+			},
+			"settings": {
+				"scrollItemContextClass": "siemens",
+				"scrollItemClasses": false,
+				"scrollItemJsOptions": {}
+			},
+			"content": {}
+		},
+		"aperto": {
+			"docs": {
+				"variationName": "Aperto"
+			},
+			"settings": {
+				"scrollItemContextClass": "aperto",
+				"scrollItemClasses": false,
+				"scrollItemJsOptions": {}
+			},
+			"content": {}
+		}
+	}
+}

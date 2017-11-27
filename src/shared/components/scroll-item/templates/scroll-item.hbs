@@ -1,0 +1,15 @@
+<div class="c-scroll-item{{#if
+	settings.scrollItemContextClass}}--{{settings.scrollItemContextClass}}{{else}}--default{{/if}} section{{#if
+	settings.scrollItemClasses}} {{settings.scrollItemClasses}}{{/if}}"
+	 data-css="c-scroll-item"
+	 data-js-item="scroll-item"
+	 data-js-module="scroll-item"{{#if settings.scrollItemJsOptions}}
+	 data-js-options='{{stringify settings.scrollItemJsOptions}}'{{/if}}>
+
+	<div class="scroll-item__wrapper">
+		<div class="scroll-item__content">
+			{{docs.variationName}}
+		</div>
+	</div>
+
+</div>

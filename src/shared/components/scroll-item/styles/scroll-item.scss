@@ -1,0 +1,74 @@
+/* ===================================================
+component: scroll-item
+=================================================== */
+
+$padding: 30px;
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-scroll-item"] {
+	background: $white;
+
+	.scroll-item {
+		&__wrapper {
+			//width: calc(100% - #{$padding * 2});
+			//height: calc(100% - #{$padding * 2});
+			//padding: $padding;
+		}
+
+		&__content {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&.is-active {
+		border: 2px solid fuchsia;
+	}
+}
+
+/* ---------------------------------------------------
+Context: Intro
+--------------------------------------------------- */
+.c-scroll-item--intro {
+	.scroll-item__content {
+		background: radial-gradient(circle, $case-intro 0%, $black 100%);
+	}
+}
+
+/* ---------------------------------------------------
+Context: Magine Product
+--------------------------------------------------- */
+.c-scroll-item--magine-a {
+	.scroll-item__content {
+		background: $case-magine-a;
+	}
+}
+
+/* ---------------------------------------------------
+Context: Magine Marketing
+--------------------------------------------------- */
+.c-scroll-item--magine-b {
+	.scroll-item__content {
+		background: $case-magine-b;
+	}
+}
+
+/* ---------------------------------------------------
+Context: Siemens
+--------------------------------------------------- */
+.c-scroll-item--siemens {
+	.scroll-item__content {
+		background: $case-siemens;
+	}
+}
+
+/* ---------------------------------------------------
+Context: Aperto
+--------------------------------------------------- */
+.c-scroll-item--aperto {
+	.scroll-item__content {
+		background: $case-aperto;
+	}
+}
