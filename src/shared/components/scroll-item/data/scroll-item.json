@@ -7,7 +7,7 @@
 			},
 			"settings": {
 				"scrollItemContextClass": "intro",
-				"scrollItemClasses": false,
+				"scrollItemClasses": "is-active",
 				"scrollItemJsOptions": {}
 			},
 			"content": {}

@@ -1,0 +1,11 @@
+
+{
+    "paths": {
+        "scripts": "src/shared/components/navigation/scripts/navigation",
+        "styles": "src/shared/components/navigation/styles/navigation"
+    },
+    "type": "component",
+    "contextData": "navigation",
+    "layout": "lyt-docs",
+    "publish": true
+}

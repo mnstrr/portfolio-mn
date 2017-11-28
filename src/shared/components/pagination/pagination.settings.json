@@ -1,0 +1,11 @@
+
+{
+    "paths": {
+        "scripts": "src/shared/components/pagination/scripts/pagination",
+        "styles": "src/shared/components/pagination/styles/pagination"
+    },
+    "type": "component",
+    "contextData": "pagination",
+    "layout": "lyt-docs",
+    "publish": true
+}

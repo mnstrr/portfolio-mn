@@ -1,24 +1,18 @@
 /* ===================================================
-component: scroll-container
+component: logo
 =================================================== */
 
 /* ---------------------------------------------------
 Global Styles
 --------------------------------------------------- */
-[data-css="c-scroll-container"] {
-	width: 100%;
-	height: 100%;
-
-	.scroll-container {
-		&__bg {
-			width: 100%;
-			height: 100%;
-		}
-	}
+[data-css="c-logo"] {
+	position: absolute;
+	top: $frame-spacing;
+	left: $frame-spacing;
 }
 
 /* ---------------------------------------------------
 Context: Default
 --------------------------------------------------- */
-.c-scroll-container--default {
+.c-logo--default {
 }

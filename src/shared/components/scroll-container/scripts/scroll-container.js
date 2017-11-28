@@ -1,5 +1,5 @@
 /**
- * Description of ScrollContainer.
+ * Cares about wheel/touch/keybourd input events and updates child items
  *
  * @module ScrollContainer
  * @version v0.0.0
@@ -106,6 +106,7 @@ class ScrollContainer extends VeamsComponent {
 	/**
 	 * Decides whether the scroll should be handled or not
 	 * Uses a timeout to block the scroll as long as the transition is ongoing
+	 * Further the timeout helps to get around mac trackpads firing the event for over a second
 	 * TODO: use transition end-event
 	 * TODO: add touch support
 	 * @param e
@@ -118,6 +119,7 @@ class ScrollContainer extends VeamsComponent {
 
 			clearTimeout((this.scrollTimeout));
 
+			// start timeout for attatching the handler
 			this.scrollTimeout = setTimeout(() => {
 				this.canScroll = true;
 				this.attatchInputHandler();
@@ -159,6 +161,7 @@ class ScrollContainer extends VeamsComponent {
 	 * Activates the previous section based on the index
 	 */
 	activatePrevSection() {
+		// only if the first slide isn't active
 		if (this.activeIndex > 0) {
 			const newIndex = this.activeIndex - 1;
 
@@ -175,6 +178,13 @@ class ScrollContainer extends VeamsComponent {
 	updateClasses(prev, next) {
 		this.$scrollItems.eq(prev).removeClass(this.options.classes.active);
 		this.$scrollItems.eq(next).addClass(this.options.classes.active);
+	}
+
+	/**
+	 * Fires events to update external components
+	 */
+	updateExternalComponents() {
+		//TODO: Update Metadata
 	}
 }
 
