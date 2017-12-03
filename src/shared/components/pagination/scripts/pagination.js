@@ -28,8 +28,12 @@ class Pagination extends VeamsComponent {
 	 */
 	constructor(obj) {
 		let options = {
-			selectors: {},
-			classes: {}
+			selectors: {
+				paginationItems: '[data-js-item="pagination-item"]'
+			},
+			classes: {
+				active: 'is-active'
+			}
 		};
 
 		super(obj, options);
@@ -58,7 +62,7 @@ class Pagination extends VeamsComponent {
 	*/
 	get subscribe() {
 		return {
-			// '{{Veams.EVENTS.resize}}': 'render'
+			'{{Veams.EVENTS.scrollContainer.updateMeta}}': 'render'
 		};
 	}
 
@@ -68,13 +72,18 @@ class Pagination extends VeamsComponent {
 	 */
 	initialize() {
 		console.log('init Pagination');
+		this.$paginationItems = this.$el.find(this.options.selectors.paginationItems)
 	}
 
 	/**
 	 * Render class
 	 */
-	render() {
-		return this;
+	render(e) {
+		console.log(e);
+
+		if(e && typeof e.index === 'number') {
+			this.$el.toggleClass(this.options.classes.active, e.showPagination);
+		}
 	}
 }
 

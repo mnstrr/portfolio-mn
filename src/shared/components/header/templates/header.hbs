@@ -1,10 +1,13 @@
-
-
-<div class="c-header{{#if settings.headerContextClass}}--{{settings.headerContextClass}}{{else}}--default{{/if}}{{#if settings.headerClasses}} {{settings.headerClasses}}{{/if}}"
-     data-css="c-header">
+<div class="c-header{{#if settings.headerContextClass}}--{{settings.headerContextClass}}{{else}}--default{{/if}}{{#if
+	settings.headerClasses}} {{settings.headerClasses}}{{/if}}"
+	 data-css="c-header">
 
 	<div class="header__content">
-		{{> logo}}
-		{{> navigation}}
+		{{#with logo.variations.default}}
+			{{> logo}}
+		{{/with}}
+		{{#with navigation.variations.default}}
+			{{> navigation}}
+		{{/with}}
 	</div>
 </div>

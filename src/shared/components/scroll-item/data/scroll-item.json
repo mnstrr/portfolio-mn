@@ -19,7 +19,8 @@
 			"settings": {
 				"scrollItemContextClass": "magine-a",
 				"scrollItemClasses": false,
-				"scrollItemJsOptions": {}
+				"scrollItemJsOptions": {},
+				"paginationIndex": "01"
 			},
 			"content": {}
 		},
@@ -30,7 +31,8 @@
 			"settings": {
 				"scrollItemContextClass": "magine-b",
 				"scrollItemClasses": false,
-				"scrollItemJsOptions": {}
+				"scrollItemJsOptions": {},
+				"paginationIndex": "02"
 			},
 			"content": {}
 		},
@@ -41,7 +43,8 @@
 			"settings": {
 				"scrollItemContextClass": "siemens",
 				"scrollItemClasses": false,
-				"scrollItemJsOptions": {}
+				"scrollItemJsOptions": {},
+				"paginationIndex": "03"
 			},
 			"content": {}
 		},
@@ -52,7 +55,8 @@
 			"settings": {
 				"scrollItemContextClass": "aperto",
 				"scrollItemClasses": false,
-				"scrollItemJsOptions": {}
+				"scrollItemJsOptions": {},
+				"paginationIndex": "04"
 			},
 			"content": {}
 		}

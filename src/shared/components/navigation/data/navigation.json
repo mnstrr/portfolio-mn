@@ -1,4 +1,3 @@
-
 {
 	"variations": {
 		"default": {
@@ -10,7 +9,24 @@
 				"navigationClasses": false,
 				"navigationJsOptions": {}
 			},
-			"content": {}
+			"content": {
+				"items": [
+					{
+						"title": "Home",
+						"href": "home",
+						"class": "is-home",
+						"isActive": true
+					},
+					{
+						"title": "Work",
+						"href": "magine-a"
+					},
+					{
+						"title": "About",
+						"href": "about"
+					}
+				]
+			}
 		}
 	}
 }

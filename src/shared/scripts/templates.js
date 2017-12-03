@@ -3,6 +3,149 @@ module.exports = function(Handlebars) {
 window["App"] = window["App"] || {};
 window["App"]["Templates"] = window["App"]["Templates"] || {};
 
+window["App"]["Templates"]["HEADER"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "--"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.headerContextClass : stack1), depth0));
+},"3":function(container,depth0,helpers,partials,data) {
+    return "--default";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return " "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.headerClasses : stack1), depth0));
+},"7":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = container.invokePartial(partials.logo,depth0,{"name":"logo","data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+},"9":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = container.invokePartial(partials.navigation,depth0,{"name":"navigation","data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "<div class=\"c-header"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.headerContextClass : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.headerClasses : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\"\n	 data-css=\"c-header\">\n\n	<div class=\"header__content\">\n"
+    + ((stack1 = helpers["with"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.logo : depth0)) != null ? stack1.variations : stack1)) != null ? stack1["default"] : stack1),{"name":"with","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["with"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.navigation : depth0)) != null ? stack1.variations : stack1)) != null ? stack1["default"] : stack1),{"name":"with","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "	</div>\n</div>\n";
+},"usePartial":true,"useData":true});
+
+window["App"]["Templates"]["LOGO"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "--"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.logoContextClass : stack1), depth0));
+},"3":function(container,depth0,helpers,partials,data) {
+    return "--default";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return " "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.logoClasses : stack1), depth0));
+},"7":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "\n     data-js-options='"
+    + container.escapeExpression((helpers.stringify || (depth0 && depth0.stringify) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.logoJsOptions : stack1),{"name":"stringify","hash":{},"data":data}))
+    + "'";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "\n\n<div class=\"c-logo"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.logoContextClass : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.logoClasses : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\"\n     data-css=\"c-logo\"\n     data-js-module=\"logo\""
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.logoJsOptions : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ">\n\n     <img src=\""
+    + container.escapeExpression((helpers.getUrl || (depth0 && depth0.getUrl) || helpers.helperMissing).call(alias1,"media/images/svg/logo-color.svg",{"name":"getUrl","hash":{},"data":data}))
+    + "\" />\n\n</div>\n";
+},"useData":true});
+
+window["App"]["Templates"]["NAVIGATION"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "--"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.navigationContextClass : stack1), depth0));
+},"3":function(container,depth0,helpers,partials,data) {
+    return "--default";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return " "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.navigationClasses : stack1), depth0));
+},"7":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "\n     data-js-options='"
+    + container.escapeExpression((helpers.stringify || (depth0 && depth0.stringify) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.navigationJsOptions : stack1),{"name":"stringify","hash":{},"data":data}))
+    + "'";
+},"9":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "			<li class=\"navigation__list-item "
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.isActive : depth0),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + " "
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0["class"] : depth0),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\">\n				<a href=\"#"
+    + alias4(((helper = (helper = helpers.href || (depth0 != null ? depth0.href : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"href","hash":{},"data":data}) : helper)))
+    + "\" data-js-item=\"navigation-link\" class=\"navigation__list-link\">"
+    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
+    + "</a>\n			</li>\n";
+},"10":function(container,depth0,helpers,partials,data) {
+    return "is-active";
+},"12":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return container.escapeExpression(((helper = (helper = helpers["class"] || (depth0 != null ? depth0["class"] : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"class","hash":{},"data":data}) : helper)));
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "\n\n<div class=\"c-navigation"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.navigationContextClass : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.navigationClasses : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\"\n     data-css=\"c-navigation\"\n     data-js-module=\"navigation\""
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.navigationJsOptions : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ">\n\n     <ul class=\"navigation__list\">\n"
+    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.items : stack1),{"name":"each","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "	 </ul>\n\n</div>\n";
+},"useData":true});
+
+window["App"]["Templates"]["PAGINATION"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "--"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.paginationContextClass : stack1), depth0));
+},"3":function(container,depth0,helpers,partials,data) {
+    return "--default";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return " "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.paginationClasses : stack1), depth0));
+},"7":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "\n     data-js-options='"
+    + container.escapeExpression((helpers.stringify || (depth0 && depth0.stringify) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.paginationJsOptions : stack1),{"name":"stringify","hash":{},"data":data}))
+    + "'";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "\n\n<div class=\"c-pagination"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.paginationContextClass : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.paginationClasses : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\"\n     data-css=\"c-pagination\"\n     data-js-module=\"pagination\""
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.paginationJsOptions : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ">\n     pagination\n\n     "
+    + ((stack1 = ((helper = (helper = helpers["yield"] || (depth0 != null ? depth0["yield"] : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"yield","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + "\n\n</div>\n";
+},"useData":true});
+
 window["App"]["Templates"]["SCROLLCONTAINER"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
 
@@ -61,9 +204,9 @@ window["App"]["Templates"]["SCROLLITEM"] = Handlebars.template({"1":function(con
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.scrollItemClasses : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\"\n	 data-css=\"c-scroll-item\"\n	 data-js-item=\"scroll-item\"\n	 data-js-module=\"scroll-item\""
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.scrollItemJsOptions : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ">\n\n	<div class=\"scroll-item__wrapper\">\n		<div class=\"scroll-item__content\">\n			"
+    + ">\n\n	 <div class=\"scroll-item__bg\"></div>\n\n	"
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.docs : depth0)) != null ? stack1.variationName : stack1), depth0))
-    + "\n		</div>\n	</div>\n\n</div>\n";
+    + "\n</div>\n";
 },"useData":true});
 
 return window["App"]["Templates"];

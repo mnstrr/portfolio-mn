@@ -5,6 +5,13 @@ type: page
 
 {{#extend "lyt-default"}}
 	{{#content "main"}}
+		{{#wrapWith "pagination"}}
+			{{#each scroll-item.variations}}
+				{{#if settings.paginationIndex}}
+					{{> pagination__item settings.paginationIndex}}
+				{{/if}}
+			{{/each}}
+		{{/wrapWith}}
 		{{#wrapWith "scroll-container"}}
 			{{#each scroll-item.variations}}
 				{{> scroll-item}}

@@ -1,0 +1,63 @@
+/* ---------------------------------------------------
+Mixin Typography
+--------------------------------------------------- */
+
+// Calculate rem from px
+@function rem($pixels) {
+	@return #{$pixels/16}rem;
+}
+
+
+@mixin font-light() {
+	font-family: $font-roboto;
+	font-weight: 300;
+	text-transform: none;
+}
+
+@mixin font-normal() {
+	font-family: $font-roboto;
+	font-weight: normal;
+	text-transform: none;
+}
+
+%font-normal {
+	@include font-normal();
+}
+
+@mixin font-heavy() {
+	font-family: $font-roboto;
+	font-weight: bold;
+	text-transform: none;
+}
+
+%font-heavy {
+	@include font-heavy();
+}
+
+@mixin font-headline() {
+	@include font-heavy();
+
+	font-size: rem($fontsize-headline);
+	line-height: rem($lineheight-headline);
+}
+
+@mixin font-paragraph() {
+	@include font-normal();
+
+	font-size: rem($fontsize-paragraph);
+	line-height: rem($lineheight-paragraph);
+}
+
+@mixin font-navi {
+	@include font-heavy();
+
+	font-size: rem($fontsize-meta);
+	line-height: rem($line-height-meta);
+}
+
+@mixin font-pagination {
+	@include font-light();
+
+	font-size: rem($fontsize-meta);
+	line-height: rem($line-height-meta);
+}

@@ -6,6 +6,35 @@ component: pagination
 Global Styles
 --------------------------------------------------- */
 [data-css="c-pagination"] {
+	@include fade-out(0.2s, linear);
+
+	position: absolute;
+	top: 50%;
+	right: $frame-spacing + 40px;
+	transform: translateY(-50%);
+	z-index: $z-index-pagination;
+
+	&.is-active {
+		@include fade-in();
+	}
+
+	.pagination {
+		&__list-item {
+			@include font-pagination();
+
+			color: $white;
+			margin-bottom: 20px;
+			opacity: 0.8;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+			&.is-active {
+				font-weight: bold;
+			}
+		}
+	}
 }
 
 /* ---------------------------------------------------

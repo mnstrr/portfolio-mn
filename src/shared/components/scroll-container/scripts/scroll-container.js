@@ -1,5 +1,5 @@
 /**
- * Cares about wheel/touch/keybourd input events and updates child items
+ * Cares about wheel/touch/keyboard input events and updates child items
  *
  * @module ScrollContainer
  * @version v0.0.0
@@ -33,7 +33,6 @@ class ScrollContainer extends VeamsComponent {
 			classes: {
 				active: 'is-active'
 			},
-			scrollDelta: 20,
 			transitionDuration: 1500,
 		};
 
@@ -150,10 +149,7 @@ class ScrollContainer extends VeamsComponent {
 	activateNextSection() {
 		// only if last slide isn't active
 		if (this.activeIndex < this.$scrollItems.length - 1) {
-			const newIndex = this.activeIndex + 1;
-
-			this.updateClasses(this.activeIndex, newIndex);
-			this.activeIndex = newIndex;
+			this.goToSection(this.activeIndex + 1);
 		}
 	}
 
@@ -163,11 +159,29 @@ class ScrollContainer extends VeamsComponent {
 	activatePrevSection() {
 		// only if the first slide isn't active
 		if (this.activeIndex > 0) {
-			const newIndex = this.activeIndex - 1;
-
-			this.updateClasses(this.activeIndex, newIndex);
-			this.activeIndex = newIndex;
+			this.goToSection(this.activeIndex - 1);
 		}
+	}
+
+	/**
+	 * Activates a section by given index
+	 * Called from external components
+	 * @param index
+	 */
+	activateSectionByIndex(index) {
+		if(index && typeof index === 'number' && index <= this.$scrollItems.length) {
+			this.goToSection(index);
+		}
+	}
+
+	/**
+	 * Delegates section and updates index
+	 * @param newIndex
+	 */
+	goToSection(newIndex) {
+		this.updateClasses(this.activeIndex, newIndex);
+		this.updateExternalComponents(this.activeIndex, newIndex);
+		this.activeIndex = newIndex;
 	}
 
 	/**
@@ -183,8 +197,12 @@ class ScrollContainer extends VeamsComponent {
 	/**
 	 * Fires events to update external components
 	 */
-	updateExternalComponents() {
-		//TODO: Update Metadata
+	updateExternalComponents(prevIdx, newIdx) {
+		Veams.Vent.trigger(Veams.EVENTS.scrollContainer.updateMeta, {
+			index: newIdx,
+			prevIndex: prevIdx,
+			showPagination: (newIdx > 0 && newIdx < this.$scrollItems.length - 1)
+		});
 	}
 }
 

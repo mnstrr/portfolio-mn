@@ -4,6 +4,13 @@
      data-css="c-navigation"
      data-js-module="navigation"{{#if settings.navigationJsOptions}}
      data-js-options='{{stringify settings.navigationJsOptions}}'{{/if}}>
-     navigation
-     
+
+     <ul class="navigation__list">
+		 {{#each content.items}}
+			<li class="navigation__list-item {{#if isActive}}is-active{{/if}} {{#if class}}{{class}}{{/if}}">
+				<a href="#{{href}}" data-js-item="navigation-link" class="navigation__list-link">{{title}}</a>
+			</li>
+		 {{/each}}
+	 </ul>
+
 </div>

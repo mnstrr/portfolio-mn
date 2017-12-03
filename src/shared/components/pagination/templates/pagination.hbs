@@ -1,11 +1,12 @@
+<div class="c-pagination{{#if
+	settings.paginationContextClass}}--{{settings.paginationContextClass}}{{else}}--default{{/if}}{{#if
+	settings.paginationClasses}} {{settings.paginationClasses}}{{/if}}"
+	 data-css="c-pagination"
+	 data-js-module="pagination"{{#if settings.paginationJsOptions}}
+	 data-js-options='{{stringify settings.paginationJsOptions}}'{{/if}}>
 
-
-<div class="c-pagination{{#if settings.paginationContextClass}}--{{settings.paginationContextClass}}{{else}}--default{{/if}}{{#if settings.paginationClasses}} {{settings.paginationClasses}}{{/if}}"
-     data-css="c-pagination"
-     data-js-module="pagination"{{#if settings.paginationJsOptions}}
-     data-js-options='{{stringify settings.paginationJsOptions}}'{{/if}}>
-     pagination
-
-     {{{yield}}}
+	<ul class="pagination__list">
+		{{{yield}}}
+	</ul>
 
 </div>
