@@ -14,9 +14,7 @@ const EVENTS = {};
  * Events for ScrollContainer
  */
 EVENTS.scrollContainer = {
-	updateMeta: 'scrollContainer:updateMeta',
-	detatchHandler: 'scrollContainer:detatchHandler',
-	attatchHandler: 'scrollContainer:attatchHandler',
+	updateMeta: 'scrollContainer:updateMeta'
 };
 
 
@@ -40,7 +38,7 @@ EVENTS.logo = {
  * Events for Navigation
  */
 EVENTS.navigation = {
-	eventName: 'navigation:eventName'
+	clicked: 'navigation:clicked'
 };
 
 

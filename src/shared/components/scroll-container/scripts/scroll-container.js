@@ -62,7 +62,8 @@ class ScrollContainer extends VeamsComponent {
 	 */
 	get subscribe() {
 		return {
-			'{{Veams.EVENTS.logo.clicked}}': 'activateFirstSection'
+			'{{Veams.EVENTS.logo.clicked}}': 'activateFirstSection',
+			'{{Veams.EVENTS.navigation.clicked}}': 'activateSectionByID'
 		};
 	}
 
@@ -93,7 +94,6 @@ class ScrollContainer extends VeamsComponent {
 	 */
 	attatchInputHandler() {
 		$(window).on('DOMMouseScroll mousewheel keydown', (e) => this.detectInput(e));
-		Veams.Vent.trigger(Veams.EVENTS.scrollContainer.attatchHandler);
 	}
 
 	/**
@@ -101,14 +101,12 @@ class ScrollContainer extends VeamsComponent {
 	 */
 	detatchInputHandler() {
 		$(window).off('DOMMouseScroll mousewheel keydown', (e) => this.detectInput(e));
-		Veams.Vent.trigger(Veams.EVENTS.scrollContainer.detatchHandler);
 	}
 
 	/**
 	 * Decides whether the scroll should be handled or not
 	 * Uses a timeout to block the scroll as long as the transition is ongoing
 	 * Further the timeout helps to get around mac trackpads firing the event for over a second
-	 * TODO: use transition end-event
 	 * TODO: add touch support
 	 * @param e
 	 */
@@ -191,8 +189,21 @@ class ScrollContainer extends VeamsComponent {
 	 * @param index
 	 */
 	activateSectionByIndex(index) {
-		if(index && typeof index === 'number' && index <= this.$scrollItems.length && this.canScroll) {
+		if(typeof index === 'number' && index <= this.$scrollItems.length && this.canScroll) {
 			this.goToSection(index);
+		}
+	}
+
+	/**
+	 * Activates a section by a given id string
+	 * @param id
+	 */
+	activateSectionByID(id) {
+		if(id && typeof id === 'string' && this.canScroll) {
+			const $el = $(id, this.$el);
+			const index = this.$scrollItems.index($el);
+
+			this.activateSectionByIndex(index);
 		}
 	}
 

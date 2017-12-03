@@ -20,15 +20,21 @@ Global Styles
 
 	.pagination {
 		&__list-item {
-			@include font-pagination();
-
-			color: $white;
 			margin-bottom: 20px;
-			opacity: 0.8;
 
 			&:last-of-type {
 				margin-bottom: 0;
 			}
+		}
+
+		&__btn {
+			@include font-pagination();
+
+			background: none;
+			border: none;
+			border-radius: 0;
+			color: $white;
+			opacity: 0.8;
 
 			&.is-active {
 				font-weight: bold;

@@ -6,9 +6,8 @@
  *
  * @author your_name
  */
-
 // Imports
-import { Veams } from 'app.veams';
+import {Veams} from 'app.veams';
 import VeamsComponent from 'veams/src/js/common/component'; // Only use that in combination with browserify
 // import VeamsComponent from 'veams/lib/common/component'; // Can be used in general
 
@@ -29,7 +28,8 @@ class Navigation extends VeamsComponent {
 	constructor(obj) {
 		let options = {
 			selectors: {
-				navItem: '[data-js-item="navigation-item"]'
+				navItem: '[data-js-item="navigation-item"]',
+				navLink: '[data-js-item="navigation-link"]'
 			},
 			classes: {
 				active: 'is-active'
@@ -49,17 +49,17 @@ class Navigation extends VeamsComponent {
 	}
 
 	/**
-	* Event handling
-	*/
+	 * Event handling
+	 */
 	get events() {
 		return {
-			// 'click': 'render'
+			'click {{this.options.selectors.navLink}}': 'handleClick'
 		};
 	}
 
 	/**
-	* Subscribe handling
-	*/
+	 * Subscribe handling
+	 */
 	get subscribe() {
 		return {
 			'{{Veams.EVENTS.scrollContainer.updateMeta}}': 'render'
@@ -80,12 +80,23 @@ class Navigation extends VeamsComponent {
 	 * Render class
 	 */
 	render(e) {
-		if(e && typeof e.index === 'number') {
+		if (e && typeof e.index === 'number') {
 			// update nav-items
 			$(this.$navItems[0]).toggleClass(this.options.classes.active, e.index === 0);
-			$(this.$navItems[1]).toggleClass(this.options.classes.active, e.index > 0 && e.index < e.scrollItemsCount -1);
-			$(this.$navItems[2]).toggleClass(this.options.classes.active, e.index === e.scrollItemsCount -1);
+			$(this.$navItems[1]).toggleClass(this.options.classes.active, e.index > 0 && e.index < e.scrollItemsCount - 1);
+			$(this.$navItems[2]).toggleClass(this.options.classes.active, e.index === e.scrollItemsCount - 1);
 		}
+	}
+
+	/**
+	 * Handles the click on a nav item
+	 * @param e
+	 */
+	handleClick(e) {
+		const id = $(e.currentTarget).attr('href');
+
+		Veams.Vent.trigger(Veams.EVENTS.navigation.clicked, id);
+		e.preventDefault();
 	}
 }
 

@@ -54,7 +54,7 @@ class Pagination extends VeamsComponent {
 	*/
 	get events() {
 		return {
-			// 'click': 'render'
+			'click {{this.options.selectors.paginationItems}}': 'handleClick'
 		};
 	}
 
@@ -93,6 +93,14 @@ class Pagination extends VeamsComponent {
 			// toggle color class
 			this.$el.toggleClass(this.options.classes.dark, )
 		}
+	}
+
+	/**
+	 * Handles click on pagination item
+	 * @param e
+	 */
+	handleClick(e) {
+
 	}
 }
 

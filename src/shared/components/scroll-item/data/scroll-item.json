@@ -8,7 +8,8 @@
 			"settings": {
 				"scrollItemContextClass": "intro",
 				"scrollItemClasses": "is-active",
-				"scrollItemJsOptions": {}
+				"scrollItemJsOptions": {},
+				"scrollItemID": "home"
 			},
 			"content": {}
 		},
@@ -20,6 +21,7 @@
 				"scrollItemContextClass": "magine-a",
 				"scrollItemClasses": false,
 				"scrollItemJsOptions": {},
+				"scrollItemID": "magine",
 				"paginationIndex": "01"
 			},
 			"content": {}
@@ -32,6 +34,7 @@
 				"scrollItemContextClass": "magine-b",
 				"scrollItemClasses": false,
 				"scrollItemJsOptions": {},
+				"scrollItemID": "magine2",
 				"paginationIndex": "02"
 			},
 			"content": {}
@@ -44,6 +47,7 @@
 				"scrollItemContextClass": "siemens",
 				"scrollItemClasses": false,
 				"scrollItemJsOptions": {},
+				"scrollItemID": "siemens",
 				"paginationIndex": "03"
 			},
 			"content": {}
@@ -56,6 +60,7 @@
 				"scrollItemContextClass": "aperto",
 				"scrollItemClasses": false,
 				"scrollItemJsOptions": {},
+				"scrollItemID": "aperto",
 				"paginationIndex": "04"
 			},
 			"content": {}
@@ -67,7 +72,8 @@
 			"settings": {
 				"scrollItemContextClass": "about",
 				"scrollItemClasses": false,
-				"scrollItemJsOptions": {}
+				"scrollItemJsOptions": {},
+				"scrollItemID": "about"
 			},
 			"content": {}
 		}
