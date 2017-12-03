@@ -29,7 +29,9 @@ class Logo extends VeamsComponent {
 	constructor(obj) {
 		let options = {
 			selectors: {},
-			classes: {}
+			classes: {
+				white: 'is-white'
+			}
 		};
 
 		super(obj, options);
@@ -49,7 +51,7 @@ class Logo extends VeamsComponent {
 	*/
 	get events() {
 		return {
-			// 'click': 'render'
+			'click': 'logoClick'
 		};
 	}
 
@@ -58,7 +60,7 @@ class Logo extends VeamsComponent {
 	*/
 	get subscribe() {
 		return {
-			// '{{Veams.EVENTS.resize}}': 'render'
+			'{{Veams.EVENTS.scrollContainer.updateMeta}}': 'render'
 		};
 	}
 
@@ -73,8 +75,14 @@ class Logo extends VeamsComponent {
 	/**
 	 * Render class
 	 */
-	render() {
-		return this;
+	render(e) {
+		if(e && typeof e.index === 'number') {
+			this.$el.toggleClass(this.options.classes.white, e.index > 0);
+		}
+	}
+
+	logoClick() {
+		Veams.Vent.trigger(Veams.EVENTS.logo.clicked);
 	}
 }
 

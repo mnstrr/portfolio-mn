@@ -15,7 +15,12 @@ Main File For Imports
 
 
 // Icons
-
+@import "shared/styles/icons/_icons-data-fallback";
+@import "shared/styles/icons/_icons-data-png";
+@import "shared/styles/icons/_icons-data-svg";
+@import "shared/styles/icons/_icons-fallback";
+@import "shared/styles/icons/_icons-png";
+@import "shared/styles/icons/_icons-svg";
 
 // Core
 @import "core/styles/core";

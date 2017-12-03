@@ -32,7 +32,8 @@ class Pagination extends VeamsComponent {
 				paginationItems: '[data-js-item="pagination-item"]'
 			},
 			classes: {
-				active: 'is-active'
+				active: 'is-active',
+				dark: 'is-dark'
 			}
 		};
 
@@ -79,10 +80,18 @@ class Pagination extends VeamsComponent {
 	 * Render class
 	 */
 	render(e) {
-		console.log(e);
-
 		if(e && typeof e.index === 'number') {
-			this.$el.toggleClass(this.options.classes.active, e.showPagination);
+			console.log(e);
+
+			// toggle pagination visibility
+			this.$el.toggleClass(this.options.classes.active, e.index > 0 && e.index < e.scrollItemsCount -1);
+
+			// activate pagination item
+			this.$paginationItems.eq(e.index -1).addClass(this.options.classes.active);
+			this.$paginationItems.eq(e.prevIndex -1).removeClass(this.options.classes.active);
+
+			// toggle color class
+			this.$el.toggleClass(this.options.classes.dark, )
 		}
 	}
 }

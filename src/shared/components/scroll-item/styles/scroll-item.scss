@@ -36,7 +36,7 @@ Context: Intro
 --------------------------------------------------- */
 .c-scroll-item--intro {
 	.scroll-item__bg {
-		background: radial-gradient(circle, $case-intro 0%, $black 100%);
+		background: $case-intro;
 	}
 }
 
@@ -75,3 +75,13 @@ Context: Aperto
 		background: $case-aperto;
 	}
 }
+
+/* ---------------------------------------------------
+Context: About
+--------------------------------------------------- */
+.c-scroll-item--about {
+	.scroll-item__bg {
+		background: $case-about;
+	}
+}
+

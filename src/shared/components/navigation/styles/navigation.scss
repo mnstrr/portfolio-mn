@@ -25,10 +25,16 @@ Global Styles
 				margin-right: 0;
 			}
 
+			&::after {
+				@extend %pseudo;
+
+				opacity: 0;
+				transition: opacity $transition-duration-default $transition-timing-default;
+			}
+
 			&.is-active {
 				&::after {
-					@extend %pseudo;
-
+					opacity: 1;
 					bottom: 0;
 					left: 0;
 					width: 100%;

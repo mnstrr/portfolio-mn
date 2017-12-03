@@ -59,6 +59,17 @@
 				"paginationIndex": "04"
 			},
 			"content": {}
+		},
+		"about": {
+			"docs": {
+				"variationName": "About"
+			},
+			"settings": {
+				"scrollItemContextClass": "about",
+				"scrollItemClasses": false,
+				"scrollItemJsOptions": {}
+			},
+			"content": {}
 		}
 	}
 }

@@ -7,7 +7,7 @@
 
      <ul class="navigation__list">
 		 {{#each content.items}}
-			<li class="navigation__list-item {{#if isActive}}is-active{{/if}} {{#if class}}{{class}}{{/if}}">
+			<li class="navigation__list-item {{#if isActive}}is-active{{/if}} {{#if class}}{{class}}{{/if}}" data-js-item="navigation-item">
 				<a href="#{{href}}" data-js-item="navigation-link" class="navigation__list-link">{{title}}</a>
 			</li>
 		 {{/each}}

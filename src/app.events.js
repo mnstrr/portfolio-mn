@@ -15,6 +15,8 @@ const EVENTS = {};
  */
 EVENTS.scrollContainer = {
 	updateMeta: 'scrollContainer:updateMeta',
+	detatchHandler: 'scrollContainer:detatchHandler',
+	attatchHandler: 'scrollContainer:attatchHandler',
 };
 
 
@@ -30,7 +32,7 @@ EVENTS.scrollItem = {
  * Events for Logo
  */
 EVENTS.logo = {
-	eventName: 'logo:eventName'
+	clicked: 'logo:clicked'
 };
 
 

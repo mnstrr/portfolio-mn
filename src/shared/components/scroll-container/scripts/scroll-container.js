@@ -62,7 +62,7 @@ class ScrollContainer extends VeamsComponent {
 	 */
 	get subscribe() {
 		return {
-			// '{{Veams.EVENTS.resize}}': 'render'
+			'{{Veams.EVENTS.logo.clicked}}': 'activateFirstSection'
 		};
 	}
 
@@ -93,6 +93,7 @@ class ScrollContainer extends VeamsComponent {
 	 */
 	attatchInputHandler() {
 		$(window).on('DOMMouseScroll mousewheel keydown', (e) => this.detectInput(e));
+		Veams.Vent.trigger(Veams.EVENTS.scrollContainer.attatchHandler);
 	}
 
 	/**
@@ -100,6 +101,7 @@ class ScrollContainer extends VeamsComponent {
 	 */
 	detatchInputHandler() {
 		$(window).off('DOMMouseScroll mousewheel keydown', (e) => this.detectInput(e));
+		Veams.Vent.trigger(Veams.EVENTS.scrollContainer.detatchHandler);
 	}
 
 	/**
@@ -148,7 +150,7 @@ class ScrollContainer extends VeamsComponent {
 	 */
 	activateNextSection() {
 		// only if last slide isn't active
-		if (this.activeIndex < this.$scrollItems.length - 1) {
+		if (this.activeIndex < this.$scrollItems.length - 1 && this.canScroll) {
 			this.goToSection(this.activeIndex + 1);
 		}
 	}
@@ -158,8 +160,28 @@ class ScrollContainer extends VeamsComponent {
 	 */
 	activatePrevSection() {
 		// only if the first slide isn't active
-		if (this.activeIndex > 0) {
+		if (this.activeIndex > 0 && this.canScroll) {
 			this.goToSection(this.activeIndex - 1);
+		}
+	}
+
+	/**
+	 * Activates the first section
+	 */
+	activateFirstSection() {
+		// only if the first slide isn't active
+		if (this.activeIndex > 0 && this.canScroll) {
+			this.goToSection(0);
+		}
+	}
+
+	/**
+	 * Activates last section
+	 */
+	activateLastSection() {
+		// only if last slide isn't active
+		if (this.activeIndex < this.$scrollItems.length - 1 && this.canScroll) {
+			this.goToSection(this.$scrollItems.length -1);
 		}
 	}
 
@@ -169,7 +191,7 @@ class ScrollContainer extends VeamsComponent {
 	 * @param index
 	 */
 	activateSectionByIndex(index) {
-		if(index && typeof index === 'number' && index <= this.$scrollItems.length) {
+		if(index && typeof index === 'number' && index <= this.$scrollItems.length && this.canScroll) {
 			this.goToSection(index);
 		}
 	}
@@ -198,10 +220,11 @@ class ScrollContainer extends VeamsComponent {
 	 * Fires events to update external components
 	 */
 	updateExternalComponents(prevIdx, newIdx) {
+		console.log('update');
 		Veams.Vent.trigger(Veams.EVENTS.scrollContainer.updateMeta, {
 			index: newIdx,
 			prevIndex: prevIdx,
-			showPagination: (newIdx > 0 && newIdx < this.$scrollItems.length - 1)
+			scrollItemsCount: this.$scrollItems.length
 		});
 	}
 }

@@ -28,8 +28,12 @@ class Navigation extends VeamsComponent {
 	 */
 	constructor(obj) {
 		let options = {
-			selectors: {},
-			classes: {}
+			selectors: {
+				navItem: '[data-js-item="navigation-item"]'
+			},
+			classes: {
+				active: 'is-active'
+			}
 		};
 
 		super(obj, options);
@@ -58,7 +62,7 @@ class Navigation extends VeamsComponent {
 	*/
 	get subscribe() {
 		return {
-			// '{{Veams.EVENTS.resize}}': 'render'
+			'{{Veams.EVENTS.scrollContainer.updateMeta}}': 'render'
 		};
 	}
 
@@ -68,13 +72,20 @@ class Navigation extends VeamsComponent {
 	 */
 	initialize() {
 		console.log('init Navigation');
+
+		this.$navItems = this.$el.find(this.options.selectors.navItem);
 	}
 
 	/**
 	 * Render class
 	 */
-	render() {
-		return this;
+	render(e) {
+		if(e && typeof e.index === 'number') {
+			// update nav-items
+			$(this.$navItems[0]).toggleClass(this.options.classes.active, e.index === 0);
+			$(this.$navItems[1]).toggleClass(this.options.classes.active, e.index > 0 && e.index < e.scrollItemsCount -1);
+			$(this.$navItems[2]).toggleClass(this.options.classes.active, e.index === e.scrollItemsCount -1);
+		}
 	}
 }
 
