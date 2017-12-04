@@ -30,17 +30,19 @@ Global Styles
 
 				bottom: 0;
 				left: 0;
-				width: 100%;
+				width: 0;
 				height: 4px;
 				background: $grey;
 				opacity: 0;
-				transition: opacity $transition-duration-default $transition-timing-default;
-				transition-delay: .7s;
+				transition: opacity .4s $transition-timing-cubic, width .4s $transition-timing-cubic;
+				transition-delay: .1s;
 			}
 
 			&.is-active {
 				&::after {
+					transition-delay: .5s;
 					opacity: 1;
+					width: 100%;
 
 				}
 			}

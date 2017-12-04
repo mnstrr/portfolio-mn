@@ -79,7 +79,16 @@
 				"scrollItemID": "siemens",
 				"paginationIndex": "03"
 			},
-			"content": {}
+			"content": {
+				"headline": "Siemens",
+				"keywords": [
+					"E-Commerce",
+					"Landingpage"
+				],
+				"case": {
+
+				}
+			}
 		},
 		"aperto": {
 			"docs": {
@@ -92,7 +101,17 @@
 				"scrollItemID": "aperto",
 				"paginationIndex": "04"
 			},
-			"content": {}
+			"content": {
+				"headline": "Aperto",
+				"keywords": [
+					"Web",
+					"Mobile",
+					"Print template"
+				],
+				"case": {
+
+				}
+			}
 		},
 		"about": {
 			"docs": {

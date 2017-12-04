@@ -30,6 +30,8 @@ Global Styles
 
 		&__header {
 			@include container-space();
+
+			position: relative;
 		}
 
 		&__imagewrapper {
@@ -243,8 +245,29 @@ Context: Magine Marketing
 Context: Siemens
 --------------------------------------------------- */
 .c-scroll-item--siemens {
-	.scroll-item__bg {
-		background: $case-siemens;
+	.scroll-item {
+		&__textouter {
+			top: 60%;
+			left: 10%;
+			transform: translateY(-50%);
+		}
+
+		&__headline {
+			text-indent: 25%;
+			color: $case-siemens-grey;
+		}
+
+		&__keywords-item {
+			color: $case-siemens-grey;
+
+			&::after {
+				background: $case-siemens-grey;
+			}
+		}
+
+		&__bg {
+			background: $case-siemens;
+		}
 	}
 }
 
@@ -252,8 +275,29 @@ Context: Siemens
 Context: Aperto
 --------------------------------------------------- */
 .c-scroll-item--aperto {
-	.scroll-item__bg {
-		background: $case-aperto;
+	.scroll-item {
+		&__textouter {
+			top: 60%;
+			right: 20%;
+			transform: translateY(-50%);
+		}
+
+		&__headline {
+			text-indent: -50%;
+			color: $white;
+		}
+
+		&__keywords-item {
+			color: $white;
+
+			&::after {
+				background: $white;
+			}
+		}
+
+		&__bg {
+			background: $case-aperto;
+		}
 	}
 }
 

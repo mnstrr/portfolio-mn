@@ -9,13 +9,15 @@ Global Styles
 	position: absolute;
 	top: 50%;
 	right: $frame-spacing + 40px;
-	transform: translateY(-50%);
 	z-index: $z-index-pagination;
 	opacity: 0;
-	transition: opacity $transition-duration-default $transition-timing-default;
-	transition-delay: .7s;
+	transform: translate3d(10px, -50%, 0);
+	transition: opacity 700ms $transition-timing-cubic, transform 700ms $transition-timing-cubic;
+	transition-delay: .1s;
 
 	&.is-active {
+		transform: translate3d(0, -50%, 0);
+		transition-delay: .6s;
 		opacity: 1;
 	}
 
@@ -37,6 +39,7 @@ Global Styles
 		&__btn {
 			@include font-pagination();
 
+			outline: none;
 			background: none;
 			border: none;
 			border-radius: 0;

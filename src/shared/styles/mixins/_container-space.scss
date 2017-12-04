@@ -1,8 +1,5 @@
 @mixin container-space() {
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: calc(100% - #{$frame-spacing * 2});
-	height: calc(100% - #{$frame-spacing * 2});
+	height: calc(100vh - #{$frame-spacing * 2});
 	margin: $frame-spacing;
 }
