@@ -96,7 +96,10 @@ class Pagination extends VeamsComponent {
 	 * @param e
 	 */
 	handleClick(e) {
+		const $el = $(e.currentTarget);
+		const index = this.$paginationItems.index($el);
 
+		Veams.Vent.trigger(Veams.EVENTS.pagination.clicked, index + 1);
 	}
 }
 

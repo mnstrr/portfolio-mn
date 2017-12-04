@@ -64,7 +64,8 @@ class ScrollContainer extends VeamsComponent {
 	get subscribe() {
 		return {
 			'{{Veams.EVENTS.logo.clicked}}': 'activateFirstSection',
-			'{{Veams.EVENTS.navigation.clicked}}': 'activateSectionByID'
+			'{{Veams.EVENTS.navigation.clicked}}': 'activateSectionByID',
+			'{{Veams.EVENTS.pagination.clicked}}': 'activateSectionByIndex'
 		};
 	}
 

@@ -46,7 +46,7 @@ EVENTS.navigation = {
  * Events for Pagination
  */
 EVENTS.pagination = {
-	eventName: 'pagination:eventName'
+	clicked: 'pagination:clicked'
 };
 
 // @INSERTPOINT :: @ref: js-events
