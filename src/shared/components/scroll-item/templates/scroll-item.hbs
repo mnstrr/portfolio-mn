@@ -7,7 +7,37 @@
 	 data-js-module="scroll-item"{{#if settings.scrollItemJsOptions}}
 	 data-js-options='{{stringify settings.scrollItemJsOptions}}'{{/if}}>
 
-	<div class="scroll-item__bg"></div>
+	<div class="scroll-item__header">
+		<div class="scroll-item__bg">
+			<div class="scroll-item__bg-overlay"></div>
+		</div>
 
-	{{docs.variationName}}
+		{{#if content.img}}
+			<div class="scroll-item__imagewrapper">
+				<img class="scroll-item__image" src="{{getUrl content.img.src}}" alt="{{content.img.alt}}"/>
+			</div>
+		{{/if}}
+
+		<div class="scroll-item__textouter">
+			<div class="scroll-item__textinner">
+				{{#if content.headline}}
+					<h2 class="scroll-item__headline">{{content.headline}}</h2>
+				{{/if}}
+
+				{{#if content.keywords}}
+					<ul class="scroll-item__keywords">
+						{{#each content.keywords}}
+							<li class="scroll-item__keywords-item">
+								{{this}}
+							</li>
+						{{/each}}
+					</ul>
+				{{/if}}
+			</div>
+		</div>
+		{{#if content.cta}}
+			<button class="scroll-item__cta">{{content.cta.name}}</button>
+		{{/if}}
+	</div>
+
 </div>

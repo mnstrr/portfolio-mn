@@ -41,6 +41,14 @@ Mixin Typography
 	line-height: rem($lineheight-headline);
 }
 
+@mixin font-caseheadline() {
+	font-family: $font-butler;
+	font-weight: 900;
+
+	font-size: rem($fontsize-caseheadline);
+	line-height: rem($lineheight-caseheadline);
+}
+
 @mixin font-paragraph() {
 	@include font-normal();
 
@@ -60,4 +68,11 @@ Mixin Typography
 
 	font-size: rem($fontsize-meta);
 	line-height: rem($line-height-meta);
+}
+
+@mixin font-keywords {
+	@include font-light();
+
+	font-size: rem($fontsize-keywords);
+	line-height: rem($lineheight-keywords);
 }

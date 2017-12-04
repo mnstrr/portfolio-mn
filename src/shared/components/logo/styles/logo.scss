@@ -31,6 +31,7 @@ Global Styles
 		width: $logo-width;
 		height: $logo-height;
 		transition: opacity $transition-duration-default $transition-timing-default;
+		transition-delay: .7s;
 	}
 
 	&::before {

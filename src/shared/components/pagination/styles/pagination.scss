@@ -6,16 +6,17 @@ component: pagination
 Global Styles
 --------------------------------------------------- */
 [data-css="c-pagination"] {
-	@include fade-out(0.2s, linear);
-
 	position: absolute;
 	top: 50%;
 	right: $frame-spacing + 40px;
 	transform: translateY(-50%);
 	z-index: $z-index-pagination;
+	opacity: 0;
+	transition: opacity $transition-duration-default $transition-timing-default;
+	transition-delay: .7s;
 
 	&.is-active {
-		@include fade-in();
+		opacity: 1;
 	}
 
 	.pagination {
@@ -42,6 +43,8 @@ Global Styles
 			color: $white;
 			opacity: 0.8;
 			cursor: pointer;
+			transition: color 600ms $transition-timing-cubic, font-weight 600ms $transition-timing-cubic;
+			transition-delay: .4s;
 
 			&.is-active {
 				font-weight: bold;

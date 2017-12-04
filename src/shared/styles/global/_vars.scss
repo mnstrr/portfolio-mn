@@ -30,12 +30,15 @@ $breakpoints: (
 
 // Colors
 $black: #000000;
+$darkgrey: #181A1D;
 $white: #FFFFFF;
 $grey: #333333;
 
 $case-intro: radial-gradient(circle, #1E1E3C 0%, #000000 100%);;
 $case-magine-a: #E10B25;
+$case-magine-a-contrast: #21D2B9;
 $case-magine-b: #29B6F6;
+$case-magine-b-contrast: #FA0046;
 $case-siemens: #009BA5;
 $case-siemens-grey: #262626;
 $case-aperto: #6C8C08;
@@ -48,11 +51,17 @@ $font-butler: "Butler", Georgia, serif;
 // Typo
 $rem-baseline: 16px !default;
 
+$fontsize-caseheadline: 140;
+$lineheight-caseheadline: 168;
+
 $fontsize-headline: 38;
 $lineheight-headline: 26;
 
 $fontsize-paragraph: 18;
 $lineheight-paragraph: 26;
+
+$fontsize-keywords: 24;
+$lineheight-keywords: 28;
 
 $fontsize-meta: 20;
 $line-height-meta: 24;
@@ -69,3 +78,4 @@ $z-index-pagination: 8000;
 $transition-duration-default: 0.2s;
 
 $transition-timing-default: linear;
+$transition-timing-cubic: cubic-bezier(0.8, 0, 0.55, 0.94);

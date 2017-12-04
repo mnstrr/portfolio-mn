@@ -28,18 +28,20 @@ Global Styles
 			&::after {
 				@extend %pseudo;
 
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 4px;
+				background: $grey;
 				opacity: 0;
 				transition: opacity $transition-duration-default $transition-timing-default;
+				transition-delay: .7s;
 			}
 
 			&.is-active {
 				&::after {
 					opacity: 1;
-					bottom: 0;
-					left: 0;
-					width: 100%;
-					height: 4px;
-					background: $grey;
+
 				}
 			}
 

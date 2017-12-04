@@ -11,7 +11,17 @@
 				"scrollItemJsOptions": {},
 				"scrollItemID": "home"
 			},
-			"content": {}
+			"content": {
+				"keywords": [
+					"Marina Neff",
+					"Digital Designer",
+					"Berlin"
+				],
+				"img": {
+					"src": "media/images/svg/logo-color.svg",
+					"alt": "Logo"
+				}
+			}
 		},
 		"magine1": {
 			"docs": {
@@ -24,7 +34,17 @@
 				"scrollItemID": "magine",
 				"paginationIndex": "01"
 			},
-			"content": {}
+			"content": {
+				"headline": "Magine TV",
+				"keywords": [
+					"Web",
+					"Touch Apps",
+					"Big Screens"
+				],
+				"case": {
+
+				}
+			}
 		},
 		"magine2": {
 			"docs": {
@@ -37,7 +57,16 @@
 				"scrollItemID": "magine2",
 				"paginationIndex": "02"
 			},
-			"content": {}
+			"content": {
+				"headline": "Magine TV",
+				"keywords": [
+					"Web",
+					"Marketing"
+				],
+				"case": {
+
+				}
+			}
 		},
 		"siemens": {
 			"docs": {
