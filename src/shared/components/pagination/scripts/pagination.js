@@ -6,9 +6,8 @@
  *
  * @author your_name
  */
-
 // Imports
-import { Veams } from 'app.veams';
+import {Veams} from 'app.veams';
 import VeamsComponent from 'veams/src/js/common/component'; // Only use that in combination with browserify
 // import VeamsComponent from 'veams/lib/common/component'; // Can be used in general
 
@@ -50,8 +49,8 @@ class Pagination extends VeamsComponent {
 	}
 
 	/**
-	* Event handling
-	*/
+	 * Event handling
+	 */
 	get events() {
 		return {
 			'click {{this.options.selectors.paginationItems}}': 'handleClick'
@@ -59,8 +58,8 @@ class Pagination extends VeamsComponent {
 	}
 
 	/**
-	* Subscribe handling
-	*/
+	 * Subscribe handling
+	 */
 	get subscribe() {
 		return {
 			'{{Veams.EVENTS.scrollContainer.updateMeta}}': 'render'
@@ -80,18 +79,15 @@ class Pagination extends VeamsComponent {
 	 * Render class
 	 */
 	render(e) {
-		if(e && typeof e.index === 'number') {
-			console.log(e);
-
+		if (e && typeof e.index === 'number') {
 			// toggle pagination visibility
-			this.$el.toggleClass(this.options.classes.active, e.index > 0 && e.index < e.scrollItemsCount -1);
+			this.$el.toggleClass(this.options.classes.active, e.index > 0 && e.index < e.scrollItemsCount - 1);
 
-			// activate pagination item
-			this.$paginationItems.eq(e.index -1).addClass(this.options.classes.active);
-			this.$paginationItems.eq(e.prevIndex -1).removeClass(this.options.classes.active);
-
-			// toggle color class
-			this.$el.toggleClass(this.options.classes.dark, )
+			if (e.index > 0 && e.index < e.scrollItemsCount - 1) {
+				// activate pagination item
+				this.$paginationItems.removeClass(this.options.classes.active);
+				this.$paginationItems.eq(e.index - 1).addClass(this.options.classes.active);
+			}
 		}
 	}
 

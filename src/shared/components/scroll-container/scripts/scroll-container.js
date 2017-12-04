@@ -36,6 +36,7 @@ class ScrollContainer extends VeamsComponent {
 			transitionDuration: 1500,
 		};
 
+
 		super(obj, options);
 	}
 
@@ -76,7 +77,7 @@ class ScrollContainer extends VeamsComponent {
 		this.activeIndex = 0;
 		this.canScroll = true;
 
-		this.attatchInputHandler();
+		this.attachInputHandler();
 	}
 
 	/**
@@ -92,38 +93,33 @@ class ScrollContainer extends VeamsComponent {
 	/**
 	 * Adds wheel and keydown input handler
 	 */
-	attatchInputHandler() {
-		$(window).on('DOMMouseScroll mousewheel keydown', (e) => this.detectInput(e));
+	attachInputHandler() {
+		$(window).on('DOMMouseScroll mousewheel keydown', (e) => this.handleInput(e));
 	}
 
 	/**
 	 * Removes wheel and keydown input handler
 	 */
-	detatchInputHandler() {
-		$(window).off('DOMMouseScroll mousewheel keydown', (e) => this.detectInput(e));
+	detachInputHandler() {
+		$(window).off('DOMMouseScroll mousewheel keydown', (e) => this.handleInput(e));
 	}
+
 
 	/**
 	 * Decides whether the scroll should be handled or not
 	 * Uses a timeout to block the scroll as long as the transition is ongoing
-	 * Further the timeout helps to get around mac trackpads firing the event for over a second
-	 * TODO: add touch support
-	 * @param e
 	 */
-	detectInput(e) {
-		if (this.canScroll) {
-			this.detatchInputHandler();
-			this.handleInput(e);
-			this.canScroll = false;
+	blockEvents() {
+		this.detachInputHandler();
+		this.canScroll = false;
 
-			clearTimeout((this.scrollTimeout));
+		clearTimeout((this.scrollTimeout));
 
-			// start timeout for attatching the handler
-			this.scrollTimeout = setTimeout(() => {
-				this.canScroll = true;
-				this.attatchInputHandler();
-			}, this.options.transitionDuration)
-		}
+		// start timeout for attaching the handler
+		this.scrollTimeout = setTimeout(() => {
+			this.canScroll = true;
+			this.attachInputHandler();
+		}, this.options.transitionDuration)
 	}
 
 	/**
@@ -131,15 +127,17 @@ class ScrollContainer extends VeamsComponent {
 	 * @param e
 	 */
 	handleInput(e) {
-		// normalize wheel event data
-		const wheelData = e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : e.originalEvent.detail;
+		if(this.canScroll) {
+			// normalize wheel event data
+			const wheelData = e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : e.originalEvent.detail * -1;
 
-		if ((wheelData && wheelData < 0) || e.keyCode === 40) {
-			//scroll down or down key
-			this.activateNextSection();
-		} else if ((wheelData && wheelData > 0) || e.keyCode === 38) {
-			//scroll up ur up key
-			this.activatePrevSection();
+			if ((wheelData && wheelData < 0) || e.keyCode === 40) {
+				//scroll down or down key
+				this.activateNextSection();
+			} else if ((wheelData && wheelData > 0) || e.keyCode === 38) {
+				//scroll up ur up key
+				this.activatePrevSection();
+			}
 		}
 	}
 
@@ -212,6 +210,7 @@ class ScrollContainer extends VeamsComponent {
 	 * @param newIndex
 	 */
 	goToSection(newIndex) {
+		this.blockEvents();
 		this.updateClasses(this.activeIndex, newIndex);
 		this.updateExternalComponents(this.activeIndex, newIndex);
 		this.activeIndex = newIndex;
@@ -231,7 +230,6 @@ class ScrollContainer extends VeamsComponent {
 	 * Fires events to update external components
 	 */
 	updateExternalComponents(prevIdx, newIdx) {
-		console.log('update');
 		Veams.Vent.trigger(Veams.EVENTS.scrollContainer.updateMeta, {
 			index: newIdx,
 			prevIndex: prevIdx,

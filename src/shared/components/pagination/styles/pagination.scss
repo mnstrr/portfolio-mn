@@ -19,6 +19,12 @@ Global Styles
 	}
 
 	.pagination {
+		&__list {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
 		&__list-item {
 			margin-bottom: 20px;
 
@@ -35,6 +41,7 @@ Global Styles
 			border-radius: 0;
 			color: $white;
 			opacity: 0.8;
+			cursor: pointer;
 
 			&.is-active {
 				font-weight: bold;
