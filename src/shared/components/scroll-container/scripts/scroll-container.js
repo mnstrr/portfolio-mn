@@ -219,6 +219,7 @@ class ScrollContainer extends VeamsComponent {
 
 	/**
 	 * Updates the classes on the old and new item
+	 * //TODO: handles classes in item componenet
 	 * @param prev
 	 * @param next
 	 */

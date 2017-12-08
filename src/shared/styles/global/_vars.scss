@@ -60,11 +60,14 @@ $lineheight-headline: 26;
 $fontsize-paragraph: 18;
 $lineheight-paragraph: 26;
 
-$fontsize-keywords: 24;
-$lineheight-keywords: 28;
+$fontsize-keywords: 30;
+$lineheight-keywords: 35;
 
 $fontsize-meta: 20;
 $line-height-meta: 24;
+
+$fontsize-link: 22;
+$lineheight-link: 25;
 
 // Spacings
 $frame-spacing: 30px;
@@ -72,6 +75,7 @@ $frame-spacing: 30px;
 // z-index
 $z-index-header: 9000;
 $z-index-pagination: 8000;
+$z-index-cta: 100;
 
 
 // Transitions

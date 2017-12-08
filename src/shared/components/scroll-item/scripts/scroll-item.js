@@ -28,8 +28,13 @@ class ScrollItem extends VeamsComponent {
 	 */
 	constructor(obj) {
 		let options = {
-			selectors: {},
-			classes: {}
+			selectors: {
+				ctaShow: '[data-js-item="open-case"]',
+				ctaHide: '[data-js-item="close-case"]'
+			},
+			classes: {
+				opened: 'is-open'
+			}
 		};
 
 		super(obj, options);
@@ -49,7 +54,8 @@ class ScrollItem extends VeamsComponent {
 	*/
 	get events() {
 		return {
-			// 'click': 'render'
+			'click {{this.options.selectors.ctaShow}}': 'openCase',
+			'click {{this.options.selectors.ctaHide}}': 'closeCase',
 		};
 	}
 
@@ -75,6 +81,16 @@ class ScrollItem extends VeamsComponent {
 	 */
 	render() {
 		return this;
+	}
+
+	openCase() {
+		console.log('open', this.$el);
+		this.$el.addClass(this.options.classes.opened);
+	}
+
+	closeCase() {
+		console.log('close');
+		this.$el.removeClass(this.options.classes.opened);
 	}
 }
 

@@ -70,6 +70,13 @@ Mixin Typography
 	line-height: rem($line-height-meta);
 }
 
+@mixin font-link {
+	@include font-heavy();
+
+	font-size: rem($fontsize-link);
+	line-height: rem($lineheight-link);
+}
+
 @mixin font-keywords {
 	@include font-light();
 

@@ -41,6 +41,10 @@
 					"Touch Apps",
 					"Big Screens"
 				],
+				"cta": {
+					"view": "View case",
+					"hide": "Back"
+				},
 				"case": {
 
 				}
