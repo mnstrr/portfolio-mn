@@ -65,7 +65,9 @@ class ScrollContainer extends VeamsComponent {
 		return {
 			'{{Veams.EVENTS.logo.clicked}}': 'activateFirstSection',
 			'{{Veams.EVENTS.navigation.clicked}}': 'activateSectionByID',
-			'{{Veams.EVENTS.pagination.clicked}}': 'activateSectionByIndex'
+			'{{Veams.EVENTS.pagination.clicked}}': 'activateSectionByIndex',
+			'{{Veams.EVENTS.scrollItem.opened}}': 'detachInputHandler',
+			'{{Veams.EVENTS.scrollItem.closed}}': 'attachInputHandler',
 		};
 	}
 
@@ -95,6 +97,7 @@ class ScrollContainer extends VeamsComponent {
 	 * Adds wheel and keydown input handler
 	 */
 	attachInputHandler() {
+		console.log('attach');
 		$(window).on('DOMMouseScroll mousewheel keydown', (e) => this.handleInput(e));
 	}
 
@@ -102,7 +105,8 @@ class ScrollContainer extends VeamsComponent {
 	 * Removes wheel and keydown input handler
 	 */
 	detachInputHandler() {
-		$(window).off('DOMMouseScroll mousewheel keydown', (e) => this.handleInput(e));
+		console.log('detach');
+		$(window).off('DOMMouseScroll mousewheel keydown');
 	}
 
 
@@ -219,7 +223,7 @@ class ScrollContainer extends VeamsComponent {
 
 	/**
 	 * Updates the classes on the old and new item
-	 * //TODO: handles classes in item componenet
+	 * //TODO: handles classes in item componenet via event
 	 * @param prev
 	 * @param next
 	 */

@@ -86,11 +86,15 @@ class ScrollItem extends VeamsComponent {
 	openCase() {
 		console.log('open', this.$el);
 		this.$el.addClass(this.options.classes.opened);
+		Veams.Vent.trigger(Veams.EVENTS.scrollItem.opened);
 	}
 
 	closeCase() {
 		console.log('close');
 		this.$el.removeClass(this.options.classes.opened);
+		Veams.Vent.trigger(Veams.EVENTS.scrollItem.closed);
+
+		//TODO: add delay for scrolling to top smoothly
 	}
 }
 

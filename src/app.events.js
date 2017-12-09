@@ -22,7 +22,8 @@ EVENTS.scrollContainer = {
  * Events for ScrollItem
  */
 EVENTS.scrollItem = {
-	eventName: 'scrollItem:eventName'
+	opened: 'scrollItem:opened',
+	closed: 'scrollItem:closed'
 };
 
 
