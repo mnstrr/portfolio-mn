@@ -191,9 +191,17 @@ array-map@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/array-map/-/array-map-0.0.0.tgz#88a2bab73d1cf7bcd5c1b118a003f66f665fa662"
 
+array-parallel@~0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/array-parallel/-/array-parallel-0.1.3.tgz#8f785308926ed5aa478c47e64d1b334b6c0c947d"
+
 array-reduce@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/array-reduce/-/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
+
+array-series@~0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/array-series/-/array-series-0.1.5.tgz#df5d37bfc5c2ef0755e2aa4f92feae7d4b5a972f"
 
 array-sort@^0.1.2:
   version "0.1.4"
@@ -1997,6 +2005,13 @@ cross-spawn@^3.0.0:
     lru-cache "^4.0.1"
     which "^1.2.9"
 
+cross-spawn@^4.0.0:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-4.0.2.tgz#7b9247621c23adfdd3856004a823cbe397424d41"
+  dependencies:
+    lru-cache "^4.0.1"
+    which "^1.2.9"
+
 cross-spawn@^5.0.1, cross-spawn@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -3300,6 +3315,15 @@ glogg@^1.0.0:
   dependencies:
     sparkles "^1.0.0"
 
+gm@~1.23.0:
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/gm/-/gm-1.23.0.tgz#80a2fe9cbf131515024846444658461269f52661"
+  dependencies:
+    array-parallel "~0.1.3"
+    array-series "~0.1.5"
+    cross-spawn "^4.0.0"
+    debug "~2.2.0"
+
 got@^5.0.0:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/got/-/got-5.7.1.tgz#5f81635a61e4a6589f180569ea4e381680a51f35"
@@ -3507,6 +3531,15 @@ grunt-postcss@~0.8.0:
     diff "^2.0.2"
     postcss "^5.0.0"
 
+grunt-responsive-images@^1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/grunt-responsive-images/-/grunt-responsive-images-1.10.1.tgz#5fb24d84444ddb9c282ae87f334142b17726b202"
+  dependencies:
+    async "~1.5.2"
+    gm "~1.23.0"
+    grunt ">=0.4.5"
+    lodash ">=4.6.1"
+
 grunt-sass-globber@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/grunt-sass-globber/-/grunt-sass-globber-2.0.3.tgz#1a280d36f4a02574c5ccc13eb4327d4500709beb"
@@ -3534,7 +3567,7 @@ grunt-text-replace@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/grunt-text-replace/-/grunt-text-replace-0.4.0.tgz#db9d9ce59e2fe49da277e9dbc195c3e11cfb16c2"
 
-grunt@^1.0.0:
+grunt@>=0.4.5, grunt@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/grunt/-/grunt-1.0.1.tgz#e8778764e944b18f32bb0f10b9078475c9dfb56b"
   dependencies:
@@ -4993,13 +5026,13 @@ lodash@3.x, lodash@^3.10.1, lodash@^3.3.1, lodash@^3.5.0, lodash@^3.6.0, lodash@
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
+lodash@>=4.6.1, lodash@^4.0.0, lodash@^4.0.1, lodash@^4.14.0, lodash@^4.14.2, lodash@^4.17.4, lodash@~4.17.4:
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+
 lodash@^2.4.1, lodash@~2.4.1:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-2.4.2.tgz#fadd834b9683073da179b3eae6d9c0d15053f73e"
-
-lodash@^4.0.0, lodash@^4.0.1, lodash@^4.14.0, lodash@^4.14.2, lodash@^4.17.4, lodash@~4.17.4:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
 lodash@~1.0.1:
   version "1.0.2"
@@ -7866,6 +7899,10 @@ validate-npm-package-license@^3.0.1:
 vary@~1.1.0, vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
+
+veams-component-picture@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/veams-component-picture/-/veams-component-picture-5.0.1.tgz#0d0bea32b1e483e38401f51c209503efd0f8d588"
 
 veams-plugin-dom@^1.0.0:
   version "1.0.2"

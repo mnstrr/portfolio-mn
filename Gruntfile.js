@@ -11,8 +11,8 @@
 
 /*
  * PERFORMANCE
- * 
- * 1. For performance reasons you should only matching one level down, if possible. 
+ *
+ * 1. For performance reasons you should only matching one level down, if possible.
  * 2. Try to keep your watch task clean. Do NOT watch everything (like icons).
  * 3. Add "spawn: false" to your watch task when you need to speed up your build.
  *
@@ -21,7 +21,7 @@
 const config = require('./veams-cli');
 
 module.exports = function(grunt) {
-	
+
 	// load only used tasks and add fallbacks for those which cannot be find
 	require('jit-grunt')(grunt, {
 		'replace': 'grunt-text-replace',
@@ -45,20 +45,24 @@ module.exports = function(grunt) {
 		'sassGlobber:dev',
 		'sass:dev'
 	]);
-	
+
 	// Icons Task
 	grunt.registerTask('icons', [
 		'grunticon',
 		'clean:grunticon',
 		'replace'
-	]); 
+	]);
 
 	// FE Templates Task
 	grunt.registerTask('jsTemplates', [
 		'handlebars',
 		'replace:jsTemplates'
-	]); 
-	
+	]);
+
+	// Picture Task (This task creates an additional JSON file with the path to your picture)
+	grunt.registerTask('pictures', [
+		'responsive_images'
+	]);
 
 	/*
 	 * ADVANCED TASKS
@@ -72,13 +76,13 @@ module.exports = function(grunt) {
 		'sass:docs',
 		'chokidar'
 	]);
-	
+
 	grunt.registerTask('build', [
 		'clean:dev',
 		'jsTemplates',
 		'browserify:dist',
 		'uglify',
-		'concurrent:syncing', 
+		'concurrent:syncing',
 		'sassGlobber:dist',
 		'sass:dev',
 		'sass:universal',
@@ -92,16 +96,16 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		'server'
 	]);
-	
+
 	// alias serve by grunt convention
 	grunt.registerTask('serve', [
 		'server'
 	]);
-	
+
 	grunt.registerTask('dist', [
 		'clean',
 		'build',
 		'copy:dist'
 	]);
-	
+
 };

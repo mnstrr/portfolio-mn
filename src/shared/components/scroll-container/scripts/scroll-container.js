@@ -215,6 +215,8 @@ class ScrollContainer extends VeamsComponent {
 	 * @param newIndex
 	 */
 	goToSection(newIndex) {
+		if(this.activeIndex === newIndex) return;
+
 		this.blockEvents();
 		this.updateClasses(this.activeIndex, newIndex);
 		this.updateExternalComponents(this.activeIndex, newIndex);

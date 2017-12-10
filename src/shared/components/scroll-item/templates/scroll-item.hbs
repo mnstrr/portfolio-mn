@@ -12,12 +12,6 @@
 			<div class="scroll-item__bg-overlay"></div>
 		</div>
 
-		{{#if content.img}}
-			<div class="scroll-item__imagewrapper">
-				<img class="scroll-item__image" src="{{getUrl content.img.src}}" alt="{{content.img.alt}}"/>
-			</div>
-		{{/if}}
-
 		<div class="scroll-item__textouter">
 			<div class="scroll-item__textinner">
 				{{#if content.headline}}
@@ -35,6 +29,13 @@
 				{{/if}}
 			</div>
 		</div>
+		{{#if content.image}}
+			<div class="scroll-item__imagewrapper">
+				{{#with content.image}}
+					{{> c-picture}}
+				{{/with}}
+			</div>
+		{{/if}}
 		{{#if content.cta}}
 			<div class="scroll-item__cta-wrapper">
 				<button class="scroll-item__cta is-view" data-js-item="open-case">{{content.cta.view}}</button>

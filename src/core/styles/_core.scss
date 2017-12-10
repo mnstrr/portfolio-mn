@@ -13,13 +13,17 @@ html {
 
 body {
 	height: 100%;
-	overflow: auto;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: $rem-baseline;
 	line-height: 1.4;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
+	overflow: hidden;
+
+	&.is-case-opened {
+		overflow: auto;
+	}
 }
 
 ::-webkit-scrollbar {

@@ -1,4 +1,5 @@
 import { Veams } from './app.veams';
+import Lazysizes from 'lazysizes';
 import ScrollContainer from './shared/components/scroll-container/scripts/scroll-container';
 import ScrollItem from './shared/components/scroll-item/scripts/scroll-item';
 import Logo from './shared/components/logo/scripts/logo';

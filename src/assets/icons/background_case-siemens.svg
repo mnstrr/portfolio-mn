@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1380px" height="770px" viewBox="0 0 1380 770" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>background_turquoise</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1380" height="770"></rect>
+        <radialGradient cx="50%" cy="47.3616209%" fx="50%" fy="47.3616209%" r="50.634714%" gradientTransform="translate(0.500000,0.473616),scale(0.353755,1.000000),rotate(84.574940),translate(-0.500000,-0.473616)" id="radialGradient-3">
+            <stop stop-color="#63BEB7" offset="0%"></stop>
+            <stop stop-color="#65BFB8" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-4.0%" y="-11.2%" width="107.9%" height="122.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="20" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <radialGradient cx="50%" cy="47.3616209%" fx="50%" fy="47.3616209%" r="50.634714%" id="radialGradient-5">
+            <stop stop-color="#63BEB7" offset="0%"></stop>
+            <stop stop-color="#65BFB8" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-3.4%" y="-3.4%" width="106.8%" height="106.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Portfolio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Portfolio-01-c" transform="translate(-30.000000, -30.000000)">
+            <g id="background_turquoise" transform="translate(30.000000, 30.000000)">
+                <rect id="turquoise" fill="#009BA5" x="0" y="0" width="1380" height="770"></rect>
+                <g id="gradient_turquoise">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <rect id="Rectangle-3" fill="url(#radialGradient-3)" filter="url(#filter-4)" mask="url(#mask-2)" x="-81" y="-30" width="1518" height="537"></rect>
+                    <circle id="Oval-3" fill="url(#radialGradient-5)" opacity="0.699999988" filter="url(#filter-6)" mask="url(#mask-2)" cx="307.5" cy="229.5" r="439.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

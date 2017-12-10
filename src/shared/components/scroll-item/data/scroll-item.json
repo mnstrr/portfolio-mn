@@ -45,6 +45,39 @@
 					"view": "View case",
 					"hide": "Back"
 				},
+				"image": {
+					"settings": {
+						"pictureContextClass": "default",
+						"pictureClasses": false,
+						"lazyload": true
+					},
+					"content": {
+						"fallbackSrc": "media/images/png/stage-backgrounds/Magine_Header_01@2x-480.png",
+						"alt": "Alternative text that describes the image",
+						"items": [
+							{
+								"srcset": [
+									{
+										"src": "media/images/png/stage-backgrounds/Magine_Header_01@2x-480.png",
+										"imageWidth": "400w"
+									},
+									{
+										"src": "media/images/png/stage-backgrounds/Magine_Header_01@2x-960.png",
+										"imageWidth": "960w"
+									},
+									{
+										"src": "media/images/png/stage-backgrounds/Magine_Header_01@2x-1200.png",
+										"imageWidth": "1100w"
+									},
+									{
+										"src": "media/images/png/stage-backgrounds/Magine_Header_01@2x-1400.png",
+										"imageWidth": "1300w"
+									}
+								]
+							}
+						]
+					}
+				},
 				"case": {
 
 				}

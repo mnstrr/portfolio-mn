@@ -33,7 +33,8 @@ class ScrollItem extends VeamsComponent {
 				ctaHide: '[data-js-item="close-case"]'
 			},
 			classes: {
-				opened: 'is-open'
+				opened: 'is-open',
+				openedBody: 'is-case-opened'
 			}
 		};
 
@@ -64,7 +65,7 @@ class ScrollItem extends VeamsComponent {
 	*/
 	get subscribe() {
 		return {
-			// '{{Veams.EVENTS.resize}}': 'render'
+			'{{Veams.EVENTS.scrollContainer.updateMeta}}': 'handleNewCase'
 		};
 	}
 
@@ -74,6 +75,8 @@ class ScrollItem extends VeamsComponent {
 	 */
 	initialize() {
 		console.log('init ScrollItem');
+
+		this.body = $('body');
 	}
 
 	/**
@@ -84,17 +87,29 @@ class ScrollItem extends VeamsComponent {
 	}
 
 	openCase() {
-		console.log('open', this.$el);
 		this.$el.addClass(this.options.classes.opened);
+		this.body.addClass(this.options.classes.openedBody);
+		this.isOpened = true;
+
+		// trigger event to detach scroll handler
 		Veams.Vent.trigger(Veams.EVENTS.scrollItem.opened);
 	}
 
 	closeCase() {
-		console.log('close');
 		this.$el.removeClass(this.options.classes.opened);
+		this.body.removeClass(this.options.classes.openedBody);
+		this.isOpened = false;
+
+		// trigger event to attach scroll handler
 		Veams.Vent.trigger(Veams.EVENTS.scrollItem.closed);
 
 		//TODO: add delay for scrolling to top smoothly
+	}
+
+	handleNewCase(e) {
+		if(this.isOpened && e.index != e.prevIndex) {
+			this.closeCase();
+		}
 	}
 }
 

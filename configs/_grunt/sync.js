@@ -16,6 +16,7 @@ module.exports = {
 				cwd: '<%= paths.src %>/assets',
 				src: [
 					'**/{,*/}*'
+					//TODO: add exception for source images
 				],
 				dest: '<%= paths.app %>'
 			}
