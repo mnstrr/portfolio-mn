@@ -13,13 +13,18 @@ module.exports = {
 					quality: 80
 				},
 				{
-					name: "1100",
-					width: 1100,
+					name: "1200",
+					width: 1200,
 					quality: 80
 				},
 				{
-					name: "1400",
-					width: 1400,
+					name: "1600",
+					width: 1600,
+					quality: 80
+				},
+				{
+					name: "2000",
+					width: 2000,
 					quality: 80
 				}
 			]

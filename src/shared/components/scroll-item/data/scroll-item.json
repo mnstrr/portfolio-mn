@@ -17,9 +17,25 @@
 					"Digital Designer",
 					"Berlin"
 				],
-				"img": {
-					"src": "media/images/svg/logo-color.svg",
-					"alt": "Logo"
+				"image": {
+					"settings": {
+						"pictureContextClass": "default",
+						"pictureClasses": false,
+						"lazyload": true
+					},
+					"content": {
+						"fallbackSrc": "media/images/svg/logo-color.svg",
+						"alt": "Alternative text that describes the image",
+						"items": [
+							{
+								"srcset": [
+									{
+										"src": "media/images/svg/logo-color.svg"
+									}
+								]
+							}
+						]
+					}
 				}
 			}
 		},
@@ -52,26 +68,26 @@
 						"lazyload": true
 					},
 					"content": {
-						"fallbackSrc": "media/images/png/stage-backgrounds/Magine_Header_01@2x-480.png",
+						"fallbackSrc": "media/images/png/stage-backgrounds/Magine_Header_01-480.png",
 						"alt": "Alternative text that describes the image",
 						"items": [
 							{
 								"srcset": [
 									{
-										"src": "media/images/png/stage-backgrounds/Magine_Header_01@2x-480.png",
+										"src": "media/images/png/stage-backgrounds/Magine_Header_01-480.png",
 										"imageWidth": "400w"
 									},
 									{
-										"src": "media/images/png/stage-backgrounds/Magine_Header_01@2x-960.png",
+										"src": "media/images/png/stage-backgrounds/Magine_Header_01-960.png",
 										"imageWidth": "960w"
 									},
 									{
-										"src": "media/images/png/stage-backgrounds/Magine_Header_01@2x-1200.png",
-										"imageWidth": "1100w"
+										"src": "media/images/png/stage-backgrounds/Magine_Header_01-1200.png",
+										"imageWidth": "1200w"
 									},
 									{
-										"src": "media/images/png/stage-backgrounds/Magine_Header_01@2x-1400.png",
-										"imageWidth": "1300w"
+										"src": "media/images/png/stage-backgrounds/Magine_Header_01-1600.png",
+										"imageWidth": "1600w"
 									}
 								]
 							}
@@ -100,6 +116,39 @@
 					"Web",
 					"Marketing"
 				],
+				"image": {
+					"settings": {
+						"pictureContextClass": "default",
+						"pictureClasses": false,
+						"lazyload": true
+					},
+					"content": {
+						"fallbackSrc": "media/images/png/stage-backgrounds/Magine_Header_01-480.png",
+						"alt": "Alternative text that describes the image",
+						"items": [
+							{
+								"srcset": [
+									{
+										"src": "media/images/png/stage-backgrounds/Magine_Header_02-480.png",
+										"imageWidth": "400w"
+									},
+									{
+										"src": "media/images/png/stage-backgrounds/Magine_Header_02-960.png",
+										"imageWidth": "960w"
+									},
+									{
+										"src": "media/images/png/stage-backgrounds/Magine_Header_02-1200.png",
+										"imageWidth": "1200w"
+									},
+									{
+										"src": "media/images/png/stage-backgrounds/Magine_Header_02-1600.png",
+										"imageWidth": "1600w"
+									}
+								]
+							}
+						]
+					}
+				},
 				"case": {
 
 				}
@@ -122,6 +171,39 @@
 					"E-Commerce",
 					"Landingpage"
 				],
+				"image": {
+					"settings": {
+						"pictureContextClass": "default",
+						"pictureClasses": false,
+						"lazyload": true
+					},
+					"content": {
+						"fallbackSrc": "media/images/png/stage-backgrounds/Magine_Header_01-480.png",
+						"alt": "Alternative text that describes the image",
+						"items": [
+							{
+								"srcset": [
+									{
+										"src": "media/images/png/stage-backgrounds/Simens_header_pic-480.png",
+										"imageWidth": "400w"
+									},
+									{
+										"src": "media/images/png/stage-backgrounds/Simens_header_pic-960.png",
+										"imageWidth": "960w"
+									},
+									{
+										"src": "media/images/png/stage-backgrounds/Simens_header_pic-1200.png",
+										"imageWidth": "1200w"
+									},
+									{
+										"src": "media/images/png/stage-backgrounds/Simens_header_pic-1600.png",
+										"imageWidth": "1600w"
+									}
+								]
+							}
+						]
+					}
+				},
 				"case": {
 
 				}
@@ -145,6 +227,39 @@
 					"Mobile",
 					"Print template"
 				],
+				"image": {
+					"settings": {
+						"pictureContextClass": "default",
+						"pictureClasses": false,
+						"lazyload": true
+					},
+					"content": {
+						"fallbackSrc": "media/images/png/stage-backgrounds/Magine_Header_01-480.png",
+						"alt": "Alternative text that describes the image",
+						"items": [
+							{
+								"srcset": [
+									{
+										"src": "media/images/png/stage-backgrounds/Aperto_Header_pic-480.png",
+										"imageWidth": "400w"
+									},
+									{
+										"src": "media/images/png/stage-backgrounds/Aperto_Header_pic-960.png",
+										"imageWidth": "960w"
+									},
+									{
+										"src": "media/images/png/stage-backgrounds/Aperto_Header_pic-1200.png",
+										"imageWidth": "1200w"
+									},
+									{
+										"src": "media/images/png/stage-backgrounds/Aperto_Header_pic-1600.png",
+										"imageWidth": "1600w"
+									}
+								]
+							}
+						]
+					}
+				},
 				"case": {
 
 				}

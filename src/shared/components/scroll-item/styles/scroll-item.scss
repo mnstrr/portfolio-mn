@@ -37,6 +37,7 @@ Global Styles
 
 		&__textouter {
 			position: absolute;
+			z-index: $z-index-stage-text;
 		}
 
 		&__textinner {
@@ -138,6 +139,7 @@ Global Styles
 			position: absolute;
 			opacity: 0;
 			transition: opacity 700ms $transition-timing-cubic;
+			z-index: $z-index-stage-image;
 		}
 
 		&__case {
@@ -214,10 +216,11 @@ Context: Intro
 			background-position: 50%;
 		}
 
-		&__image {
-			display: block;
-			margin: 0 auto;
-			width: 340px;
+		&__imagewrapper {
+			top: 50%;
+			left: 50%;
+			width: 330px;
+			transform: translate(-50%, -50%);
 		}
 
 		&__textouter {
@@ -285,8 +288,11 @@ Context: Magine Product
 		}
 
 		&__imagewrapper {
-			top: 0;
-			right: 0;
+			top: 55%;
+			right: 50px;
+			width: 70%;
+			max-width: 650px;
+			transform: translateY(-50%);
 		}
 
 		&__cta-wrapper {
@@ -302,7 +308,7 @@ Context: Magine Marketing
 .c-scroll-item--magine-b {
 	.scroll-item {
 		&__textouter {
-			top: 65%;
+			top: 75%;
 			left: 10%;
 			transform: translateY(-50%);
 		}
@@ -328,6 +334,13 @@ Context: Magine Marketing
 
 			background-size: cover;
 			background-position: right center;
+		}
+
+		&__imagewrapper {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 70%;
 		}
 	}
 
@@ -367,6 +380,14 @@ Context: Siemens
 
 			background-size: cover;
 		}
+
+		&__imagewrapper {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 60%;
+			max-width: 900px;
+		}
 	}
 }
 
@@ -402,6 +423,13 @@ Context: Aperto
 			@extend %icon-background_case-aperto;
 
 			background-size: cover;
+		}
+
+		&__imagewrapper {
+			bottom: 0;
+			left: 5%;
+			width: 60%;
+			max-width: 900px;
 		}
 	}
 }

@@ -107,7 +107,7 @@ class ScrollItem extends VeamsComponent {
 	}
 
 	handleNewCase(e) {
-		if(this.isOpened && e.index != e.prevIndex) {
+		if(this.isOpened && e.index !== e.prevIndex) {
 			this.closeCase();
 		}
 	}
