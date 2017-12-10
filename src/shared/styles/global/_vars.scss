@@ -87,3 +87,16 @@ $transition-duration-medium: 0.5s;
 
 $transition-timing-default: linear;
 $transition-timing-cubic: cubic-bezier(0.8, 0, 0.55, 0.94);
+
+
+/* ===================================================
+LOST SETTINGS
+=================================================== */
+@lost flexbox flex;
+@lost gutter 30px;
+
+$max-width: 1440px;
+
+body {
+	lost-utility: edit;
+}

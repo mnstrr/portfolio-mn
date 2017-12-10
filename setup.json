@@ -16,7 +16,7 @@
       "jquery"
     ],
     "cssLibs": [
-      "bourbon-neat",
+      "lost-grid",
       "include-media"
     ],
     "testAndQA": false,

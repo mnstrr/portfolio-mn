@@ -62,7 +62,9 @@ class Pagination extends VeamsComponent {
 	 */
 	get subscribe() {
 		return {
-			'{{Veams.EVENTS.scrollContainer.updateMeta}}': 'render'
+			'{{Veams.EVENTS.scrollContainer.updateMeta}}': 'render',
+			'{{Veams.EVENTS.scrollItem.closed}}': 'showPagination',
+			'{{Veams.EVENTS.scrollItem.opened}}': 'hidePagination'
 		};
 	}
 
@@ -85,7 +87,7 @@ class Pagination extends VeamsComponent {
 
 			if (e.index > 0 && e.index < e.scrollItemsCount - 1) {
 				// activate pagination item
-				this.$paginationItems.removeClass(this.options.classes.active);
+				this.hidePagination();
 				this.$paginationItems.eq(e.index - 1).addClass(this.options.classes.active);
 			}
 		}
@@ -100,6 +102,22 @@ class Pagination extends VeamsComponent {
 		const index = this.$paginationItems.index($el);
 
 		Veams.Vent.trigger(Veams.EVENTS.pagination.clicked, index + 1);
+	}
+
+	/**
+	 * Adds class to hide pagination
+	 */
+	showPagination() {
+		console.log('shownav');
+		this.$el.addClass(this.options.classes.active);
+	}
+
+	/**
+	 * Removes class to hide pagination
+	 */
+	hidePagination() {
+		console.log('hidenav');
+		this.$el.removeClass(this.options.classes.active);
 	}
 }
 
