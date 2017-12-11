@@ -1,0 +1,104 @@
+/* ===================================================
+component: case-content
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-case-content"] {
+	lost-center: 1000px 60px flex;
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-case-content--intro {
+	margin-top: 60px;
+
+	.case-content {
+		&__headline {
+			@include font-headline();
+
+			margin-bottom: 40px;
+			color: $intro-grey;
+		}
+
+		&__paragraph {
+			@include font-paragraph();
+
+			margin-bottom: 26px;
+			font-style: italic;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		&__meta-item {
+			margin-bottom: 26px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		&__meta-title {
+			@include font-paragraph-bold();
+
+			color: $intro-grey-light;
+			text-transform: uppercase;
+			font-style: italic;
+		}
+
+		&__meta-description {
+			@include font-paragraph();
+
+			color: $intrgo-grey-mid;
+			font-style: italic;
+		}
+
+		&__icon-list {
+			display: flex;
+			flex-direction: row;
+		}
+
+		&__icon {
+			margin: 17px 17px 0 0;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			&.is-sketch {
+				@extend %icon-sketch;
+
+				height: 50px;
+				width: 55px;
+			}
+
+			&.is-invision {
+				@extend %icon-invision;
+
+				height: 50px;
+				width: 50px;
+			}
+
+			&.is-zeplin {
+				@extend %icon-zeplin;
+
+				height: 50px;
+				width: 66px;
+			}
+		}
+	}
+
+	//TODO: add col classes loop
+	.left {
+		lost-column: 7/12;
+	}
+
+	.right {
+		lost-offset: 1/12;
+		lost-column: 4/12;
+	}
+}

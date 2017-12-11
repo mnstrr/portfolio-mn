@@ -1,0 +1,11 @@
+
+{
+    "paths": {
+        "scripts": "src/shared/components/case-content/scripts/case-content",
+        "styles": "src/shared/components/case-content/styles/case-content"
+    },
+    "type": "component",
+    "contextData": "case-content",
+    "layout": "lyt-docs",
+    "publish": true
+}

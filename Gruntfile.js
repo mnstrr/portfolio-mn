@@ -74,6 +74,7 @@ module.exports = function(grunt) {
 		'concurrent:syncing',
 		'watchCSS',
 		'sass:docs',
+		'postcss:dev',
 		'chokidar'
 	]);
 

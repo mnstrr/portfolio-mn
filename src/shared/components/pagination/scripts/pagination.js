@@ -82,12 +82,14 @@ class Pagination extends VeamsComponent {
 	 */
 	render(e) {
 		if (e && typeof e.index === 'number') {
-			// toggle pagination visibility
-			this.$el.toggleClass(this.options.classes.active, e.index > 0 && e.index < e.scrollItemsCount - 1);
+			const needsUpdate = e.index > 0 && e.index < e.scrollItemsCount - 1;
 
-			if (e.index > 0 && e.index < e.scrollItemsCount - 1) {
+			// toggle pagination visibility
+			this.$el.toggleClass(this.options.classes.active, needsUpdate);
+
+			if (needsUpdate) {
 				// activate pagination item
-				this.hidePagination();
+				this.$paginationItems.removeClass(this.options.classes.active);
 				this.$paginationItems.eq(e.index - 1).addClass(this.options.classes.active);
 			}
 		}

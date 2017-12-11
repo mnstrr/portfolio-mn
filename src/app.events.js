@@ -50,6 +50,14 @@ EVENTS.pagination = {
 	clicked: 'pagination:clicked'
 };
 
+
+/**
+ * Events for CaseContent
+ */
+EVENTS.caseContent = {
+	eventName: 'caseContent:eventName'
+};
+
 // @INSERTPOINT :: @ref: js-events
 
 export default EVENTS;

@@ -1,4 +1,3 @@
-
 {
 	"variations": {
 		"intro": {
@@ -95,7 +94,44 @@
 					}
 				},
 				"case": {
-
+					"items": [
+						{
+							"settings": {
+								"caseContentType": "intro",
+								"caseContentContextClass": "intro",
+								"caseContentClasses": false
+							},
+							"content": {
+								"headline": "A new TV experience",
+								"paragraphs": [
+									"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as shorten the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the visitors.",
+									"I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
+								],
+								"metaList": [
+									{
+										"title": "Company",
+										"description": "Magine TV"
+									},
+									{
+										"title": "Role",
+										"description": "UI designer"
+									},
+									{
+										"title": "Year",
+										"description": "2017"
+									},
+									{
+										"title": "Programs",
+										"icons": [
+											"sketch",
+											"invision",
+											"zeplin"
+										]
+									}
+								]
+							}
+						}
+					]
 				}
 			}
 		},
@@ -116,6 +152,10 @@
 					"Web",
 					"Marketing"
 				],
+				"cta": {
+					"view": "View case",
+					"hide": "Back"
+				},
 				"image": {
 					"settings": {
 						"pictureContextClass": "default",
@@ -150,7 +190,44 @@
 					}
 				},
 				"case": {
-
+					"items": [
+						{
+							"settings": {
+								"caseContentType": "intro",
+								"caseContentContextClass": "intro",
+								"caseContentClasses": false
+							},
+							"content": {
+								"headline": "A new TV experience",
+								"paragraphs": [
+									"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as shorten the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the visitors.",
+									"I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
+								],
+								"metaList": [
+									{
+										"title": "Company",
+										"description": "Magine TV"
+									},
+									{
+										"title": "Role",
+										"description": "UI designer"
+									},
+									{
+										"title": "Year",
+										"description": "2017"
+									},
+									{
+										"title": "Programs",
+										"icons": [
+											"sketch",
+											"invision",
+											"zeplin"
+										]
+									}
+								]
+							}
+						}
+					]
 				}
 			}
 		},
@@ -171,6 +248,10 @@
 					"E-Commerce",
 					"Landingpage"
 				],
+				"cta": {
+					"view": "View case",
+					"hide": "Back"
+				},
 				"image": {
 					"settings": {
 						"pictureContextClass": "default",
@@ -205,7 +286,44 @@
 					}
 				},
 				"case": {
-
+					"items": [
+						{
+							"settings": {
+								"caseContentType": "intro",
+								"caseContentContextClass": "intro",
+								"caseContentClasses": false
+							},
+							"content": {
+								"headline": "A new TV experience",
+								"paragraphs": [
+									"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as shorten the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the visitors.",
+									"I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
+								],
+								"metaList": [
+									{
+										"title": "Company",
+										"description": "Magine TV"
+									},
+									{
+										"title": "Role",
+										"description": "UI designer"
+									},
+									{
+										"title": "Year",
+										"description": "2017"
+									},
+									{
+										"title": "Programs",
+										"icons": [
+											"sketch",
+											"invision",
+											"zeplin"
+										]
+									}
+								]
+							}
+						}
+					]
 				}
 			}
 		},
@@ -227,6 +345,10 @@
 					"Mobile",
 					"Print template"
 				],
+				"cta": {
+					"view": "View case",
+					"hide": "Back"
+				},
 				"image": {
 					"settings": {
 						"pictureContextClass": "default",
@@ -261,7 +383,44 @@
 					}
 				},
 				"case": {
-
+					"items": [
+						{
+							"settings": {
+								"caseContentType": "intro",
+								"caseContentContextClass": "intro",
+								"caseContentClasses": false
+							},
+							"content": {
+								"headline": "A new TV experience",
+								"paragraphs": [
+									"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as shorten the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the visitors.",
+									"I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
+								],
+								"metaList": [
+									{
+										"title": "Company",
+										"description": "Magine TV"
+									},
+									{
+										"title": "Role",
+										"description": "UI designer"
+									},
+									{
+										"title": "Year",
+										"description": "2017"
+									},
+									{
+										"title": "Programs",
+										"icons": [
+											"sketch",
+											"invision",
+											"zeplin"
+										]
+									}
+								]
+							}
+						}
+					]
 				}
 			}
 		},

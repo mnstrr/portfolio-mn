@@ -43,6 +43,9 @@ $case-siemens: #009BA5;
 $case-siemens-grey: #262626;
 $case-aperto: #6C8C08;
 $case-about: linear-gradient(135deg, #EE0909 0%, #FF00CC 100%);
+$intro-grey: #1E2325;
+$intrgo-grey-mid: #3E464C;
+$intro-grey-light: #A3AEB8;
 
 // Font
 $font-roboto: "Roboto", Arial, sans-serif;
@@ -93,10 +96,10 @@ $transition-timing-cubic: cubic-bezier(0.8, 0, 0.55, 0.94);
 LOST SETTINGS
 =================================================== */
 @lost flexbox flex;
-@lost gutter 30px;
+@lost gutter 20px;
 
-$max-width: 1440px;
+$max-width: 1000px;
 
 body {
-	lost-utility: edit;
+	//lost-utility: edit;
 }

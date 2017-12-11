@@ -142,7 +142,7 @@ Global Styles
 			z-index: $z-index-stage-image;
 		}
 
-		&__case {
+		&__case-wrapper {
 			display: none;
 		}
 	}
@@ -193,7 +193,7 @@ Global Styles
 				}
 			}
 
-			&__case {
+			&__case-wrapper {
 				display: block;
 			}
 		}
@@ -236,23 +236,6 @@ Context: Intro
 
 			&::after {
 				opacity: 0.5;
-			}
-		}
-
-		&__cta {
-			color: $white;
-			padding-bottom: 70px;
-
-			&::after {
-				@extend %pseudo;
-
-				position: absolute;
-				width: 2px;
-				height: 60px;
-				left: 50%;
-				bottom: 0;
-				transform: translateX(-50%);
-				background: $white;
 			}
 		}
 	}
@@ -342,6 +325,11 @@ Context: Magine Marketing
 			transform: translate(-50%, -50%);
 			width: 70%;
 		}
+
+		&__cta-wrapper {
+			bottom: 18%;
+			left: 50%;
+		}
 	}
 
 
@@ -388,6 +376,11 @@ Context: Siemens
 			width: 60%;
 			max-width: 900px;
 		}
+
+		&__cta-wrapper {
+			bottom: 18%;
+			left: 50%;
+		}
 	}
 }
 
@@ -430,6 +423,11 @@ Context: Aperto
 			left: 5%;
 			width: 60%;
 			max-width: 900px;
+		}
+
+		&__cta-wrapper {
+			bottom: 18%;
+			left: 50%;
 		}
 	}
 }

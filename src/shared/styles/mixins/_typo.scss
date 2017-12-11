@@ -56,6 +56,13 @@ Mixin Typography
 	line-height: rem($lineheight-paragraph);
 }
 
+@mixin font-paragraph-bold() {
+	@include font-heavy();
+
+	font-size: rem($fontsize-paragraph);
+	line-height: rem($lineheight-paragraph);
+}
+
 @mixin font-navi {
 	@include font-heavy();
 
