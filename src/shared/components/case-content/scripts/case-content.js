@@ -49,7 +49,6 @@ class CaseContent extends VeamsComponent {
 	*/
 	get events() {
 		return {
-			// 'click': 'render'
 		};
 	}
 
@@ -58,7 +57,6 @@ class CaseContent extends VeamsComponent {
 	*/
 	get subscribe() {
 		return {
-			// '{{Veams.EVENTS.resize}}': 'render'
 		};
 	}
 

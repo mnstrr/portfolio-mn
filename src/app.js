@@ -9,18 +9,35 @@ import CaseContent from './shared/components/case-content/scripts/case-content';
 
 // Initialize modules with Veams
 
-Veams.modules.add('scroll-container', ScrollContainer);
+Veams.modules.add({
+	namespace: 'scroll-container',
+	module: ScrollContainer
+});
 
-Veams.modules.add('scroll-item', ScrollItem);
+Veams.modules.add({
+	namespace: 'scroll-item',
+	module: ScrollItem
+});
 
-Veams.modules.add('logo', Logo);
+Veams.modules.add({
+	namespace: 'logo',
+	module: Logo
+});
 
-Veams.modules.add('navigation', Navigation);
+Veams.modules.add({
+	namespace: 'navigation',
+	module: Navigation
+});
 
-Veams.modules.add('pagination', Pagination);
+Veams.modules.add({
+	namespace: 'pagination',
+	module: Pagination
+});
 
-
-Veams.modules.add('case-content', CaseContent);
+Veams.modules.add({
+	namespace: 'case-content',
+	module: CaseContent
+});
 
 // @INSERTPOINT :: @ref: js-init-v5, @keep: true //
 // @INSERTPOINT :: @ref: js-init-once-v5, @keep: true //
