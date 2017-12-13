@@ -1,0 +1,122 @@
+/* ===================================================
+component: case-magine-a
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-case-magine-a"] {
+	position: relative;
+	margin-top: 70px;
+
+	@for $i from 1 through 12 {
+		.is-col-#{$i} {
+			lost-column: $i/12;
+		}
+	}
+
+	.is-section {
+		lost-center: 1000px 60px flex;
+	}
+
+	.case-magine-a {
+		&__headline {
+			@include case-headline($white, $case-magine-a-casebg, $white, $case-magine-b-contrast);
+		}
+
+		&__subline {
+			@include case-subline($white, $case-magine-a-subline);
+		}
+
+		&__paragraph {
+			color: $white;
+			margin-top: 35px;
+		}
+
+		&__section-wrapper {
+			background-color: $case-magine-a-casebg;
+		}
+
+		&__intro {
+			position: relative;
+			top: -150px;
+		}
+
+		&__intro-image {
+			width: 100%;
+			display: block;
+		}
+
+		&__colors {
+			margin-top: -50px;
+		}
+
+		&__color-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__color-wrapper {
+			display: flex;
+			justify-content: space-around;
+			margin-top: 60px;
+		}
+
+		&__color-headline {
+			@include font-paragraph();
+
+			color: $case-magine-a-color;
+			text-transform: uppercase;
+			width: 150px;
+			padding: 0 15px;
+			text-align: center;
+			border-bottom: 1px solid $case-magine-a-colorline;
+		}
+
+		&__color-imagewrapper {
+			margin-top: 40px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&.is-group {
+				flex-direction: row;
+
+				.case-magine-a__color-image {
+					width: 75px;
+					height: 83px;
+				}
+
+				.case-magine-a__color-group {
+					margin-right: 20px;
+
+					&:last-of-type {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+
+		&__color-group {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__color-image {
+			width: 118px;
+			height: 130px;
+			background-size: cover;
+
+			@extend %icon-color_red;
+		}
+
+		&__color-code {
+			@include font-paragraph();
+
+			color: $case-magine-a-color;
+			margin-top: 15px;
+		}
+	}
+}

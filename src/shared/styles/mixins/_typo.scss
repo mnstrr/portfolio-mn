@@ -90,3 +90,10 @@ Mixin Typography
 	font-size: rem($fontsize-keywords);
 	line-height: rem($lineheight-keywords);
 }
+
+@mixin font-content-h {
+	@include font-heavy();
+
+	font-size: rem($fontsize-content-h);
+	line-height: rem($lineheight-content-h);
+}

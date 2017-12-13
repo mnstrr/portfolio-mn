@@ -1,21 +1,26 @@
 /* ===================================================
-component: case-content
+component: case-intro
 =================================================== */
 
 /* ---------------------------------------------------
 Global Styles
 --------------------------------------------------- */
-[data-css="c-case-content"] {
-	lost-center: 1000px 60px flex;
+[data-css="c-case-intro"] {
+	.case-intro {
+		&__wrapper {
+			lost-center: 1000px 60px flex;
+		}
+	}
 }
 
 /* ---------------------------------------------------
 Context: Default
 --------------------------------------------------- */
-.c-case-content--intro {
+.c-case-intro--intro {
 	margin-top: 60px;
+	position: relative;
 
-	.case-content {
+	.case-intro {
 		&__headline {
 			@include font-headline();
 

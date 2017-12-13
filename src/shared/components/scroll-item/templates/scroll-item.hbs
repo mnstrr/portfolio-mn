@@ -46,12 +46,15 @@
 
 	{{#if content.case}}
 		<div class="scroll-item__case-wrapper">
-			<div class="scroll-item__case-content">
-				{{#with content.case}}
-					{{> case-content}}
-				{{/with}}
-			</div>
+			{{#with content.intro}}
+				{{> case-intro}}
+			{{/with}}
+
+			{{#with content.case}}
+				{{#compare type "magine-a" operator="==="}}
+					{{> case-magine-a}}
+				{{/compare}}
+			{{/with}}
 		</div>
 	{{/if}}
-
 </div>

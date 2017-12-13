@@ -3,8 +3,85 @@ module.exports = function(Handlebars) {
 window["App"] = window["App"] || {};
 window["App"]["Templates"] = window["App"]["Templates"] || {};
 
-window["App"]["Templates"]["CASECONTENT"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "	LOL\n";
+window["App"]["Templates"]["CASEINTRO"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "	<div class=\"c-case-intro"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseContentContextClass : stack1),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseContentClasses : stack1),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\"\n		 data-css=\"c-case-intro\">\n\n			<div class=\"case-intro__wrapper\">\n				<div class=\"left\">\n					<h3 class=\"case-intro__headline\">"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.headline : stack1), depth0))
+    + "</h3>\n"
+    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.paragraphs : stack1),{"name":"each","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "				</div>\n				<div class=\"right is-flex-row\">\n"
+    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.metaList : stack1),{"name":"each","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "				</div>\n			</div>\n	</div>\n";
+},"2":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "--"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseContentContextClass : stack1), depth0));
+},"4":function(container,depth0,helpers,partials,data) {
+    return "--default";
+},"6":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return " "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseContentClasses : stack1), depth0));
+},"8":function(container,depth0,helpers,partials,data) {
+    return "						<p class=\"case-intro__paragraph\">"
+    + container.escapeExpression(container.lambda(depth0, depth0))
+    + "</p>\n";
+},"10":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "						<div class=\"case-intro__meta-item\">\n							<h6 class=\"case-intro__meta-title\">"
+    + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
+    + "</h6>\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.description : depth0),{"name":"if","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.icons : depth0),{"name":"if","hash":{},"fn":container.program(13, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "						</div>\n";
+},"11":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "								<p class=\"case-intro__meta-description\">"
+    + container.escapeExpression(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"description","hash":{},"data":data}) : helper)))
+    + "</p>\n";
+},"13":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "								<ul class=\"case-intro__icon-list\">\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.icons : depth0),{"name":"each","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "								</ul>\n";
+},"14":function(container,depth0,helpers,partials,data) {
+    return "										<li class=\"case-intro__icon is-"
+    + container.escapeExpression(container.lambda(depth0, depth0))
+    + "\"></li>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"useData":true});
+
+window["App"]["Templates"]["CASEMAGINEA"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "--"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseMagineAContextClass : stack1), depth0));
+},"3":function(container,depth0,helpers,partials,data) {
+    return "--default";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return " "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseMagineAClasses : stack1), depth0));
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "\n\n<div class=\"c-case-magine-a"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseMagineAContextClass : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseMagineAClasses : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\"\n     data-css=\"c-case-magine-a\">\n     case-magine-a\n     \n</div>\n";
 },"useData":true});
 
 window["App"]["Templates"]["HEADER"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
@@ -336,12 +413,12 @@ window["App"]["Templates"]["SCROLLITEM"] = Handlebars.template({"1":function(con
     var stack1;
 
   return "		<div class=\"scroll-item__case-wrapper\">\n			<div class=\"scroll-item__case-content\">\n"
-    + ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1["case"] : stack1),{"name":"with","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "			</div>\n		</div>\n";
+    + ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.intro : stack1),{"name":"with","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n			</div>\n		</div>\n";
 },"20":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = container.invokePartial(partials["case-content"],depth0,{"name":"case-content","data":data,"indent":"\t\t\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+  return ((stack1 = container.invokePartial(partials["case-intro"],depth0,{"name":"case-intro","data":data,"indent":"\t\t\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 

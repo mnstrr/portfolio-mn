@@ -1,0 +1,51 @@
+<div class="c-case-magine-a{{#if
+	settings.caseMagineAContextClass}}--{{settings.caseMagineAContextClass}}{{else}}--default{{/if}}{{#if
+	settings.caseMagineAClasses}} {{settings.caseMagineAClasses}}{{/if}}"
+	 data-css="c-case-magine-a">
+
+	<img src="media/images/svg/case-magine-a_bg-top.svg" class="case-magine-a__intro-image"/>
+
+	<div class="case-magine-a__section-wrapper">
+		<section class="case-magine-a__intro is-section">
+			<div class="is-col-12">
+				<h3 class="case-magine-a__headline is-headline" data-number="1">{{content.intro.headline}}</h3>
+			</div>
+			<div class="is-col-7">
+				<p class="case-magine-a__paragraph">{{content.intro.text}}</p>
+			</div>
+		</section>
+		<section class="case-magine-a__colors is-section">
+			<div class="is-col-12">
+				<h3 class="case-magine-a__subline is-subline">{{content.colors.subline}}</h3>
+			</div>
+			<div class="is-col-8">
+				<p class="case-magine-a__paragraph">{{content.colors.text}}</p>
+			</div>
+
+			{{! TODO: outsource as color component}}
+			<div class="is-col-12">
+				<div class="case-magine-a__color-wrapper">
+					{{#each content.colors.items}}
+						<div class="case-magine-a__color-item">
+							<p class="case-magine-a__color-headline">{{headline}}</p>
+							<div class="case-magine-a__color-imagewrapper {{#if isGroup}}is-group{{/if}}">
+								{{#each colors}}
+									<div class="case-magine-a__color-group">
+										<div class="case-magine-a__color-image {{colorClass}}"></div>
+										<p class="case-magine-a__color-code">{{code}}</p>
+									</div>
+								{{/each}}
+							</div>
+						</div>
+					{{/each}}
+				</div>
+			</div>
+		</section>
+		<section >
+
+		</section>
+	</div>
+</div>
+
+
+

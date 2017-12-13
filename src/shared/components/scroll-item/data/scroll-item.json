@@ -93,45 +93,97 @@
 						]
 					}
 				},
-				"case": {
-					"items": [
-						{
-							"settings": {
-								"caseContentType": "intro",
-								"caseContentContextClass": "intro",
-								"caseContentClasses": false
+				"intro": {
+					"settings": {
+						"caseContentType": "intro",
+						"caseContentContextClass": "intro",
+						"caseContentClasses": false
+					},
+					"content": {
+						"headline": "A new TV experience",
+						"paragraphs": [
+							"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as shorten the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the visitors.",
+							"I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
+						],
+						"metaList": [
+							{
+								"title": "Company",
+								"description": "Magine TV"
 							},
-							"content": {
-								"headline": "A new TV experience",
-								"paragraphs": [
-									"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as shorten the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the visitors.",
-									"I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
-								],
-								"metaList": [
-									{
-										"title": "Company",
-										"description": "Magine TV"
-									},
-									{
-										"title": "Role",
-										"description": "UI designer"
-									},
-									{
-										"title": "Year",
-										"description": "2017"
-									},
-									{
-										"title": "Programs",
-										"icons": [
-											"sketch",
-											"invision",
-											"zeplin"
-										]
-									}
+							{
+								"title": "Role",
+								"description": "UI designer"
+							},
+							{
+								"title": "Year",
+								"description": "2017"
+							},
+							{
+								"title": "Programs",
+								"icons": [
+									"sketch",
+									"invision",
+									"zeplin"
 								]
 							}
+						]
+					}
+				},
+				"case": {
+					"type": "magine-a",
+					"settings": {},
+					"content": {
+						"intro": {
+							"headline": "Big Screen",
+							"text": "To keep the number of the template low for this project the focus was to leave it with three main templates and work with modules that can work for every section or just be suitable for a specific case. With this workaround, specific modules can be edited instead of a various number of templates. Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv."
+						},
+						"colors": {
+							"subline": "Colors",
+							"text": "Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv. The other colors are there for to give every section it’s on color code.",
+							"items": [
+								{
+									"headline": "Primary",
+									"colors": [
+										{
+											"colorCLass": "is-red",
+											"code": "#FFFFFF"
+										}
+									]
+								},
+								{
+									"headline": "Primary",
+									"colors": [
+										{
+											"colorCLass": "is-red",
+											"code": "#FFFFFF"
+										}
+									]
+								},
+								{
+									"isGroup": true,
+									"headline": "Primary",
+									"colors": [
+										{
+											"colorClass": "is-red",
+											"code": "#FFFFFF"
+										},
+										{
+											"colorClass": "is-red",
+											"code": "#FFFFFF"
+										},
+										{
+											"colorClass": "is-red",
+											"code": "#FFFFFF"
+										}
+									]
+								}
+							]
+						},
+						"packages": {
+							"subline": "Packages",
+							"paragraph": "Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv. The other colors are there for to give every section it’s on color code."
 						}
-					]
+					}
 				}
 			}
 		},
@@ -189,46 +241,43 @@
 						]
 					}
 				},
-				"case": {
-					"items": [
-						{
-							"settings": {
-								"caseContentType": "intro",
-								"caseContentContextClass": "intro",
-								"caseContentClasses": false
+				"intro": {
+					"settings": {
+						"caseContentType": "intro",
+						"caseContentContextClass": "intro",
+						"caseContentClasses": false
+					},
+					"content": {
+						"headline": "A new TV experience",
+						"paragraphs": [
+							"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as shorten the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the visitors.",
+							"I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
+						],
+						"metaList": [
+							{
+								"title": "Company",
+								"description": "Magine TV"
 							},
-							"content": {
-								"headline": "A new TV experience",
-								"paragraphs": [
-									"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as shorten the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the visitors.",
-									"I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
-								],
-								"metaList": [
-									{
-										"title": "Company",
-										"description": "Magine TV"
-									},
-									{
-										"title": "Role",
-										"description": "UI designer"
-									},
-									{
-										"title": "Year",
-										"description": "2017"
-									},
-									{
-										"title": "Programs",
-										"icons": [
-											"sketch",
-											"invision",
-											"zeplin"
-										]
-									}
+							{
+								"title": "Role",
+								"description": "UI designer"
+							},
+							{
+								"title": "Year",
+								"description": "2017"
+							},
+							{
+								"title": "Programs",
+								"icons": [
+									"sketch",
+									"invision",
+									"zeplin"
 								]
 							}
-						}
-					]
-				}
+						]
+					}
+				},
+				"case": "magine-b"
 			}
 		},
 		"siemens": {

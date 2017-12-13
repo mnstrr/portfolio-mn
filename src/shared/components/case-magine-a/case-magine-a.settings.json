@@ -1,0 +1,10 @@
+
+{
+    "paths": {
+        "styles": "src/shared/components/case-magine-a/styles/case-magine-a"
+    },
+    "type": "component",
+    "contextData": "case-magine-a",
+    "layout": "lyt-docs",
+    "publish": true
+}
