@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1167px" viewBox="0 0 1440 1167" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>background_form</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="37.161176%" y1="58.9757273%" x2="10.7127033%" y2="0.0404037324%" id="linearGradient-1">
+            <stop stop-color="#1F2326" offset="0%"></stop>
+            <stop stop-color="#131617" offset="85.3882632%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Portfolio-02-a" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -3885.000000)" opacity="0.600000024">
+        <g id="background_form" transform="translate(-26.000000, 3879.000000)" fill="url(#linearGradient-1)">
+            <polygon id="Rectangle-26" points="0 0 1199 284.8125 1199 1024.8125 0 740"></polygon>
+            <polygon id="Rectangle-26" transform="translate(866.500000, 660.406250) scale(-1, 1) translate(-866.500000, -660.406250) " points="267 148 1466 432.8125 1466 1172.8125 267 888"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+/**
+Basic grid classes based on lost-grid
+ */
+
+@for $i from 1 through 12 {
+	.is-col-#{$i} {
+		lost-column: $i/12;
+	}
+
+	.is-offset-#{$i} {
+		lost-offset: $i/12;
+	}
+}

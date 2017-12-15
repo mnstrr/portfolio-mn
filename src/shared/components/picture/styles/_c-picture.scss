@@ -6,8 +6,11 @@ COMPONENT: PICTURE
 Global Styles
 --------------------------------------------------- */
 [data-css="c-picture"] {
+	display: block;
+	width: 100%;
 
 	.picture__image {
+		display: block;
 		width: 100%;
 		overflow: hidden;
 		transition: filter 300ms ease;

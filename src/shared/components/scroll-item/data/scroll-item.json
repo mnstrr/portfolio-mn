@@ -181,7 +181,482 @@
 						},
 						"packages": {
 							"subline": "Packages",
-							"text": "Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv. The other colors are there for to give every section it’s on color code."
+							"text": "Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv. The other colors are there for to give every section it’s on color code.",
+							"image": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-a__packages-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-a/Package_modul-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-a/Package_modul-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/Package_modul-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/Package_modul-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/Package_modul-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/Package_modul-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "60vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"epg": {
+							"image": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-a__epg-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-a/EPG_modul-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-a/EPG_modul-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/EPG_modul-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/EPG_modul-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/EPG_modul-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/EPG_modul-2000.png",
+													"imageWidth": "2000w"
+												}
+											]
+										}
+									]
+								}
+							},
+							"caption": "Elektronischer Programm Guide legt sich über das Programm, so entgeht dem User sein Programm nicht. Klare erkennung des laufenden Programms. Gespeerte Kanäle, Nutzer weiß welches Paket nötig ist."
+						},
+						"player": {
+							"image-1": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-a__player-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-a/magine_player_tv-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-a/magine_player_tv-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/magine_player_tv-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/magine_player_tv-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/magine_player_tv-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/magine_player_tv-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "50vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"subline": "Player",
+							"text": "Hauptpunkt ist der Player. Möglich zwischen dem Programm zu switchen oder nach speziellem Programm zu suchen. Programm wird wenn nötig nicht unterbrochen. ",
+							"image-2": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-a__player-image-2",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-a/TV_screens-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-a/TV_screens-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/TV_screens-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/TV_screens-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/TV_screens-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/TV_screens-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "80vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"image-3": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-a__player-image-3",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-a/Card_modul-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-a/Card_modul-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/Card_modul-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/Card_modul-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/Card_modul-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/Card_modul-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "50vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"caption": "Upsell in den Programmkarten vorhanden. Alle wichtigen Informationen für den User angegeben."
+						},
+						"web": {
+							"headline": "Web",
+							"text": "Die best Besuchte App des Unternehmens. Hauptmerkmal der webanwendung wurde auf Live TV umgebaut. Verschiedene Bereiche erarbeitet, wie der Mediathek.",
+							"image": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-a__web-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-a/web_player-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-a/web_player-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/web_player-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/web_player-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/web_player-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/web_player-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "80vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"caption": "User kann sofort mit dem fernsehen beginnen. klar markiert welche Programme nur durch erwerb eines Produktes zugänglich sind. Leichtes Umschalten und Programminformationen durch die ein- und ausblendbare Senderübersicht."
+						},
+						"mediathek": {
+							"image": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": false,
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-a/mediathek_steps-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-a/mediathek_steps-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/mediathek_steps-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/mediathek_steps-1200.pngg",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/mediathek_steps-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/mediathek_steps-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "80vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"caption": "Hauptmerkmal der Mediathek im Gegensatz zum Live TV Bereich bilden die Programm-Karten. Klare Filterung/Sortierung nach Sendern und Suche innerhalb des Senders möglich."
+						},
+						"single": {
+							"image": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": false,
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-a/Single_modules-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-a/Single_modules-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/Single_modules-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/Single_modules-1200.pngg",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/Single_modules-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/Single_modules-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "80vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"channel": {
+							"image": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": false,
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-a/header_channel_page-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-a/header_channel_page-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/header_channel_page-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/header_channel_pages-1200.pngg",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/header_channel_page-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/header_channel_page-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "80vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"touch": {
+							"headline": "Touch Apps",
+							"text": "Letzter Abschluss des einheitlichen Designs bilden die Touch Apps. Designt und angepasst an klare Bedürfnisse der mobilen Geräte.",
+							"image": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-a__touch-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-a/TouchApps-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-a/TouchApps-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/TouchApps-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/TouchApps-1200.pngg",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/TouchApps-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-a/TouchApps-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "100vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "1000px"
+												}
+											]
+										}
+									]
+								}
+							}
 						}
 					}
 				}
@@ -269,15 +744,56 @@
 							{
 								"title": "Programs",
 								"icons": [
+									"photoshop",
+									"illustrator",
+									"indesign",
 									"sketch",
-									"invision",
-									"zeplin"
+									"invision"
 								]
 							}
 						]
 					}
 				},
-				"case": "magine-b"
+				"case": {
+					"type": "magine-b",
+					"content": {
+						"colors": {
+							"subline": "Colors",
+							"text": "Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv. The other colors are there for to give every section it’s on color code.",
+							"content": {
+								"colorItems": [
+									{
+										"headline": "Primary",
+										"colors": [
+											{
+												"colorCLass": "is-red",
+												"code": "#FFFFFF"
+											}
+										]
+									},
+									{
+										"headline": "Primary",
+										"colors": [
+											{
+												"colorCLass": "is-red",
+												"code": "#FFFFFF"
+											}
+										]
+									},
+									{
+										"headline": "Primary",
+										"colors": [
+											{
+												"colorCLass": "is-red",
+												"code": "#FFFFFF"
+											}
+										]
+									}
+								]
+							}
+						}
+					}
+				}
 			}
 		},
 		"siemens": {

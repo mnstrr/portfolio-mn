@@ -1,0 +1,84 @@
+/* ===================================================
+component: color
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-color"] {
+
+	display: flex;
+	justify-content: space-around;
+	margin-top: 60px;
+
+	.color {
+
+		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__headline {
+			@include font-paragraph();
+
+			color: $case-magine-a-color;
+			text-transform: uppercase;
+			width: 150px;
+			padding: 0 15px;
+			text-align: center;
+			border-bottom: 1px solid $case-magine-a-colorline;
+		}
+
+		&__imagewrapper {
+			margin-top: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&.is-group {
+				flex-direction: row;
+
+				.color__image {
+					width: 75px;
+					height: 83px;
+				}
+
+				.color__group {
+					margin-right: 20px;
+
+					&:last-of-type {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+
+		&__group {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__image {
+			width: 118px;
+			height: 130px;
+			background-size: cover;
+
+			@extend %icon-color_red;
+		}
+
+		&__code {
+			@include font-paragraph();
+
+			color: $case-magine-a-color;
+			margin-top: 15px;
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-color--default {
+}

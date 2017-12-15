@@ -65,6 +65,7 @@ Context: Default
 		&__icon-list {
 			display: flex;
 			flex-direction: row;
+			flex-wrap: wrap;
 		}
 
 		&__icon {
@@ -79,6 +80,27 @@ Context: Default
 
 				height: 50px;
 				width: 55px;
+			}
+
+			&.is-photoshop {
+				@extend %icon-photoshop;
+
+				height: 50px;
+				width: 52px;
+			}
+
+			&.is-illustrator {
+				@extend %icon-illustrator;
+
+				height: 50px;
+				width: 51px;
+			}
+
+			&.is-indesign {
+				@extend %icon-indesign;
+
+				height: 50px;
+				width: 51px;
 			}
 
 			&.is-invision {

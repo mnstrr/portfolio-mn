@@ -1,0 +1,10 @@
+
+{
+    "paths": {
+        "styles": "src/shared/components/color/styles/color"
+    },
+    "type": "component",
+    "contextData": "color",
+    "layout": "lyt-docs",
+    "publish": true
+}

@@ -4,63 +4,59 @@ window["App"] = window["App"] || {};
 window["App"]["Templates"] = window["App"]["Templates"] || {};
 
 window["App"]["Templates"]["CASEINTRO"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
-
-  return "	<div class=\"c-case-intro"
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseContentContextClass : stack1),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseContentClasses : stack1),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\"\n		 data-css=\"c-case-intro\">\n\n			<div class=\"case-intro__wrapper\">\n				<div class=\"left\">\n					<h3 class=\"case-intro__headline\">"
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.headline : stack1), depth0))
-    + "</h3>\n"
-    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.paragraphs : stack1),{"name":"each","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "				</div>\n				<div class=\"right is-flex-row\">\n"
-    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.metaList : stack1),{"name":"each","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "				</div>\n			</div>\n	</div>\n";
-},"2":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "--"
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseContentContextClass : stack1), depth0));
-},"4":function(container,depth0,helpers,partials,data) {
+},"3":function(container,depth0,helpers,partials,data) {
     return "--default";
-},"6":function(container,depth0,helpers,partials,data) {
+},"5":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return " "
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseContentClasses : stack1), depth0));
-},"8":function(container,depth0,helpers,partials,data) {
+},"7":function(container,depth0,helpers,partials,data) {
     return "						<p class=\"case-intro__paragraph\">"
     + container.escapeExpression(container.lambda(depth0, depth0))
     + "</p>\n";
-},"10":function(container,depth0,helpers,partials,data) {
+},"9":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
   return "						<div class=\"case-intro__meta-item\">\n							<h6 class=\"case-intro__meta-title\">"
     + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
     + "</h6>\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.description : depth0),{"name":"if","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.icons : depth0),{"name":"if","hash":{},"fn":container.program(13, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.description : depth0),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.icons : depth0),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "						</div>\n";
-},"11":function(container,depth0,helpers,partials,data) {
+},"10":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "								<p class=\"case-intro__meta-description\">"
     + container.escapeExpression(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"description","hash":{},"data":data}) : helper)))
     + "</p>\n";
-},"13":function(container,depth0,helpers,partials,data) {
+},"12":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "								<ul class=\"case-intro__icon-list\">\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.icons : depth0),{"name":"each","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.icons : depth0),{"name":"each","hash":{},"fn":container.program(13, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "								</ul>\n";
-},"14":function(container,depth0,helpers,partials,data) {
+},"13":function(container,depth0,helpers,partials,data) {
     return "										<li class=\"case-intro__icon is-"
     + container.escapeExpression(container.lambda(depth0, depth0))
     + "\"></li>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1;
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+  return "<div class=\"c-case-intro"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseContentContextClass : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseContentClasses : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\"\n		 data-css=\"c-case-intro\">\n\n			<div class=\"case-intro__wrapper\">\n				<div class=\"left\">\n					<h3 class=\"case-intro__headline\">"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.headline : stack1), depth0))
+    + "</h3>\n"
+    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.paragraphs : stack1),{"name":"each","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "				</div>\n				<div class=\"right is-flex-row\">\n"
+    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.metaList : stack1),{"name":"each","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "				</div>\n			</div>\n	</div>\n";
 },"useData":true});
 
 window["App"]["Templates"]["CASEMAGINEA"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
@@ -75,13 +71,51 @@ window["App"]["Templates"]["CASEMAGINEA"] = Handlebars.template({"1":function(co
 
   return " "
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseMagineAClasses : stack1), depth0));
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+},"7":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "\n\n<div class=\"c-case-magine-a"
+  return "						<div class=\"case-magine-a__color-item\">\n							<p class=\"case-magine-a__color-headline\">"
+    + container.escapeExpression(((helper = (helper = helpers.headline || (depth0 != null ? depth0.headline : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"headline","hash":{},"data":data}) : helper)))
+    + "</p>\n							<div class=\"case-magine-a__color-imagewrapper "
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.isGroup : depth0),{"name":"if","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\">\n"
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.colors : depth0),{"name":"each","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "							</div>\n						</div>\n";
+},"8":function(container,depth0,helpers,partials,data) {
+    return "is-group";
+},"10":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "									<div class=\"case-magine-a__color-group\">\n										<div class=\"case-magine-a__color-image "
+    + alias4(((helper = (helper = helpers.colorClass || (depth0 != null ? depth0.colorClass : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"colorClass","hash":{},"data":data}) : helper)))
+    + "\"></div>\n										<p class=\"case-magine-a__color-code\">"
+    + alias4(((helper = (helper = helpers.code || (depth0 != null ? depth0.code : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"code","hash":{},"data":data}) : helper)))
+    + "</p>\n									</div>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression, alias4=container.lambda;
+
+  return "<div class=\"c-case-magine-a"
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseMagineAContextClass : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.settings : depth0)) != null ? stack1.caseMagineAClasses : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\"\n     data-css=\"c-case-magine-a\">\n     case-magine-a\n     \n</div>\n";
+    + "\"\n	 data-css=\"c-case-magine-a\">\n\n	<img src=\""
+    + alias3((helpers.getUrl || (depth0 && depth0.getUrl) || alias2).call(alias1,"media/images/svg/case-magine-a_bg-top.svg",{"name":"getUrl","hash":{},"data":data}))
+    + "\" class=\"case-magine-a__intro-image\"/>\n	<img src=\""
+    + alias3((helpers.getUrl || (depth0 && depth0.getUrl) || alias2).call(alias1,"media/images/png/splash.png",{"name":"getUrl","hash":{},"data":data}))
+    + "\" class=\"case-magine-a__intro-splash\"/>\n\n	<div class=\"case-magine-a__section-wrapper\">\n		<section class=\"case-magine-a__intro is-section\">\n			<div class=\"is-col-12\">\n				<h3 class=\"case-magine-a__headline is-headline\" data-number=\"1\">"
+    + alias3(alias4(((stack1 = ((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.intro : stack1)) != null ? stack1.headline : stack1), depth0))
+    + "</h3>\n			</div>\n			<div class=\"is-col-7\">\n				<p class=\"case-magine-a__paragraph\">"
+    + alias3(alias4(((stack1 = ((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.intro : stack1)) != null ? stack1.text : stack1), depth0))
+    + "</p>\n			</div>\n		</section>\n		<section class=\"case-magine-a__colors is-section\">\n			<div class=\"is-col-12\">\n				<h3 class=\"case-magine-a__subline is-subline\">"
+    + alias3(alias4(((stack1 = ((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.colors : stack1)) != null ? stack1.subline : stack1), depth0))
+    + "</h3>\n			</div>\n			<div class=\"is-col-8\">\n				<p class=\"case-magine-a__paragraph\">"
+    + alias3(alias4(((stack1 = ((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.colors : stack1)) != null ? stack1.text : stack1), depth0))
+    + "</p>\n			</div>\n\n			<div class=\"is-col-12\">\n				<div class=\"case-magine-a__color-wrapper\">\n"
+    + ((stack1 = helpers.each.call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.colors : stack1)) != null ? stack1.items : stack1),{"name":"each","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "				</div>\n			</div>\n		</section>\n		<section class=\"case-magine-a__packages is-section\">\n			<div class=\"is-col-12\">\n				<h3 class=\"case-magine-a__subline is-subline\">"
+    + alias3(alias4(((stack1 = ((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.packages : stack1)) != null ? stack1.subline : stack1), depth0))
+    + "</h3>\n			</div>\n			<div class=\"is-col-8\">\n				<p class=\"case-magine-a__paragraph\">"
+    + alias3(alias4(((stack1 = ((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.packages : stack1)) != null ? stack1.text : stack1), depth0))
+    + "</p>\n			</div>\n		</section>\n	</div>\n</div>\n\n\n\n";
 },"useData":true});
 
 window["App"]["Templates"]["HEADER"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
@@ -410,15 +444,25 @@ window["App"]["Templates"]["SCROLLITEM"] = Handlebars.template({"1":function(con
     + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.cta : stack1)) != null ? stack1.hide : stack1), depth0))
     + "</button>\n			</div>\n";
 },"19":function(container,depth0,helpers,partials,data) {
-    var stack1;
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "		<div class=\"scroll-item__case-wrapper\">\n			<div class=\"scroll-item__case-content\">\n"
-    + ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.intro : stack1),{"name":"with","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n			</div>\n		</div>\n";
+  return "		<div class=\"scroll-item__case-wrapper\">\n"
+    + ((stack1 = helpers["with"].call(alias1,((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.intro : stack1),{"name":"with","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers["with"].call(alias1,((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1["case"] : stack1),{"name":"with","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "		</div>\n";
 },"20":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = container.invokePartial(partials["case-intro"],depth0,{"name":"case-intro","data":data,"indent":"\t\t\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+  return ((stack1 = container.invokePartial(partials["case-intro"],depth0,{"name":"case-intro","data":data,"indent":"\t\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+},"22":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = (helpers.compare || (depth0 && depth0.compare) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.type : depth0),"magine-a",{"name":"compare","hash":{"operator":"==="},"fn":container.program(23, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"23":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = container.invokePartial(partials["case-magine-a"],depth0,{"name":"case-magine-a","data":data,"indent":"\t\t\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
@@ -439,7 +483,7 @@ window["App"]["Templates"]["SCROLLITEM"] = Handlebars.template({"1":function(con
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.cta : stack1),{"name":"if","hash":{},"fn":container.program(17, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "	</div>\n\n"
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1["case"] : stack1),{"name":"if","hash":{},"fn":container.program(19, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n</div>\n";
+    + "</div>\n";
 },"usePartial":true,"useData":true});
 
 return window["App"]["Templates"];
