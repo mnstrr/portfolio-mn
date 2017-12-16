@@ -58,6 +58,7 @@ Global Styles
 
 			.case-magine-b__paragraph.is-arrow {
 				position: relative;
+				margin-top: 0;
 
 				&::before {
 					@extend %pseudo;

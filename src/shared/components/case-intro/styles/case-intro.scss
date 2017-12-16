@@ -116,6 +116,13 @@ Context: Default
 				height: 50px;
 				width: 66px;
 			}
+
+			&.is-fireworks {
+				@extend %icon-fireworks_icon;
+
+				height: 50px;
+				width: 51px;
+			}
 		}
 	}
 

@@ -1,0 +1,10 @@
+
+{
+    "paths": {
+        "styles": "src/shared/components/case-siemens/styles/case-siemens"
+    },
+    "type": "component",
+    "contextData": "case-siemens",
+    "layout": "lyt-docs",
+    "publish": true
+}
