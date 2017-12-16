@@ -76,6 +76,16 @@ Global Styles
 		.is-image {
 			margin-top: 60px;
 		}
+
+		&__marketing {
+			.case-magine-b__marketing-image2 {
+				margin-top: -250px;
+			}
+		}
+
+		&__marketing2 {
+			@extend %icon-background_grey_02;
+		}
 	}
 }
 
