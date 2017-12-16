@@ -6,6 +6,10 @@ component: case-magine-b
 Global Styles
 --------------------------------------------------- */
 [data-css="c-case-magine-b"] {
+	.is-image {
+		margin-top: 60px;
+	}
+
 	.case-magine-b {
 		&__headline {
 			@include case-headline($black, $white, $case-magine-b-grey, $case-magine-b);
@@ -40,6 +44,37 @@ Global Styles
 				lost-column: 5/6;
 				margin-top: 60px;
 			}
+
+			.case-magine-b__pages-image4 {
+				position: relative;
+				margin-top: -300px;
+				margin-left: -100px;
+
+				@include media('>=1200px') {
+					margin-left: -150px;
+				}
+
+			}
+
+			.case-magine-b__paragraph.is-arrow {
+				position: relative;
+
+				&::before {
+					@extend %pseudo;
+					@extend %icon-arrow_blue;
+
+					top: 0;
+					left: -120px;
+					width: 106px;
+					height: 45px;
+				}
+			}
+		}
+
+		&__modules-image,
+		&__signup-image,
+		.is-image {
+			margin-top: 60px;
 		}
 	}
 }

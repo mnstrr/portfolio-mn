@@ -939,6 +939,428 @@
 										}
 									]
 								}
+							},
+							"image-4": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-b__pages-image4",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-b/devices-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-b/devices-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/devices-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/devicese-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/devices-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/devices-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "90vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"caption": "Alle Module funktionieren auf jedem mobilen Gerät."
+						},
+						"module": {
+							"subline": "Module iteration",
+							"text": "Wichtige Module wurden immer wieder durch Iterationen verbessert und weiterentwickelt, damit sie die Marketing KPIs erfüllten. Wurden durch A/B Tests überprüft.",
+							"image": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-b__modules-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-b/channel_header-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-b/channel_header-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/channel_header-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/channel_header-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/channel_header-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/channel_header-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "80vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"signup": {
+							"subline": "Sign up completed",
+							"text": "Durch die Einführung dieser Section nach der Registrierung von Neukunden konnte der Verkauf erhöht werden. Zu speziellen Events/ Angeboten, wie Olympia oder Weihnachten wurde dieser Bereich visuell angepasst und mehr Eyecatcher.",
+							"image": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-b__signup-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-b/SignUpCompleted-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-b/SignUpCompleted-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/SignUpCompleted-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/SignUpCompleted-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/SignUpCompleted-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/SignUpCompleted-2000.png",
+													"imageWidth": "2000w"
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"pricing": {
+							"subline": "Pricing page",
+							"text": "UX Design der Seite wurde überarbeitet, einhergehend UI Design angepasst. Fokus liegt in der Bewerbung der beiden Hauptprodukte. User können Produkte besser miteinander vergleichen. Verkäufe wurden erhöht.",
+							"image-1": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "is-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-b/pricing_01-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-b/pricing_01-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/pricing_01-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/pricing_01-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/pricing_01-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/pricing_01-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "80vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"image-2": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "is-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-b/pricing_02-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-b/pricing_02-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/pricing_02-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/pricing_02-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/pricing_02-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/pricing_02-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "80vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"marketing": {
+							"headline": "Marketing",
+							"text": "Erstellung eines marketing und business relevanter Werbe- und Marketingmittel, wie  Whitelable EPGs der an Partner weiterverkauft werden kann oder spezieller Newsletter. 2 Ansichten, kompakte Version des Programms, ausgehend der schnellen Erfassung des momentan laufenden Programms und der Primetimehighlights. EPG kann von Partnern angepasst und sortiert werden. Detailierte Auflistung des genauen TV-Programms. Übergreifende Marketingkampagnen auf verschiedenen Medien.",
+							"image-1": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "is-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-b/white_label_epg-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-b/white_label_epg-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/white_label_epg-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/white_label_epg-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/white_label_epg-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/white_label_epg-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "40vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"image-2": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-b__marketing-image2",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-b/Newsletter-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-b/Newsletter-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/Newsletter-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/Newsletter-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/Newsletter-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/Newsletter-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "40vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"image-3": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-b__marketing-image3",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-b/facebook-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-b/facebook-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/facebook-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/facebook-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/facebook-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/facebook-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "40vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"image-4": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-b__marketing-image4",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-b/landingpage-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-b/landingpage-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/landingpage-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/landingpage-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/landingpage-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/landingpage-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "40vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
 							}
 						}
 					}
