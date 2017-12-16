@@ -758,9 +758,12 @@
 					"type": "magine-b",
 					"content": {
 						"colors": {
-							"subline": "Colors",
+							"headline": "Colors",
 							"text": "Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv. The other colors are there for to give every section it’s on color code.",
 							"content": {
+								"settings": {
+								 "colorContextClass": "magine-b"
+								},
 								"colorItems": [
 									{
 										"headline": "Primary",
@@ -790,6 +793,152 @@
 										]
 									}
 								]
+							}
+						},
+						"website": {
+							"headline": "Website",
+							"text": "Schwerpunkt liegt in der Registrierung der Kunden. werden auf verschiedenen Seiten auf unterschiedliche Weise dazu beworben. Modularer Aufbau der Website, Module können ohne Probleme auf jeder Seite verwendet werden und sind leicht zu befüllen."
+						},
+						"pages": {
+							"subline": "Pages",
+							"text": "Verschieden wichtige Bereich der Website mit verschiedenen Aufgabenbereichen. Startseite Erklärung des Dienstes und dessen Umfang. Bewerbung verschiedener Produktpakete. Senderseiten durch Bewerbung aktueller der Senderinhalte und -vielfalt. Ebenso Seite die aufzeigt auf welchen Geräten der Dienst verfügbar ist.",
+							"image-1": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-b__pages-image1",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-b/homepage-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-b/homepage-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/homepage-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/homepage-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/homepage-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/homepage-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "30vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"image-2": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-b__pages-image2",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-b/channel-page-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-b/channel-page-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/channel-page-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/channel-page-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/channel-page-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/channel-page-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "30vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"image-3": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-magine-b__pages-image3",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-magine-b/package-page-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-magine-b/package-page-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/package-page-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/package-page-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/package-page-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-magine-b/package-page-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "30vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
 							}
 						}
 					}

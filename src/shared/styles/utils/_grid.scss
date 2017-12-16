@@ -11,3 +11,16 @@ Basic grid classes based on lost-grid
 		lost-offset: $i/12;
 	}
 }
+
+.is-section {
+	margin-top: 120px;
+}
+
+.is-grid-row {
+	lost-center: 1000px 60px flex;
+}
+
+.is-flex-end {
+	display: flex;
+	align-items: flex-end;
+}

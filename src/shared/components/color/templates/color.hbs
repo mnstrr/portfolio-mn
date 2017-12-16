@@ -1,7 +1,7 @@
 <div class="c-color{{#if settings.colorContextClass}}--{{settings.colorContextClass}}{{else}}--default{{/if}}{{#if settings.colorClasses}} {{settings.colorClasses}}{{/if}}"
      data-css="c-color">
-
-	{{#each colorsItems}}
+{{debug this}}
+	{{#each colorItems}}
 		<div class="color__item">
 			<p class="color__headline">{{headline}}</p>
 			<div class="color__imagewrapper {{#if isGroup}}is-group{{/if}}">
@@ -15,3 +15,4 @@
 		</div>
 	{{/each}}
 </div>
+

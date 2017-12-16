@@ -22,12 +22,11 @@ Global Styles
 		&__headline {
 			@include font-paragraph();
 
-			color: $case-magine-a-color;
+
 			text-transform: uppercase;
 			width: 150px;
 			padding: 0 15px;
 			text-align: center;
-			border-bottom: 1px solid $case-magine-a-colorline;
 		}
 
 		&__imagewrapper {
@@ -71,14 +70,39 @@ Global Styles
 		&__code {
 			@include font-paragraph();
 
-			color: $case-magine-a-color;
 			margin-top: 15px;
 		}
 	}
 }
 
 /* ---------------------------------------------------
-Context: Default
+Context: Magine-a
 --------------------------------------------------- */
-.c-color--default {
+.c-color--magine-a {
+	.color {
+		&__headline {
+			color: $case-magine-a-color;
+			border-bottom: 1px solid $case-magine-a-colorline;
+		}
+
+		&__code {
+			color: $case-magine-a-color;
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context: Magine-b
+--------------------------------------------------- */
+.c-color--magine-b {
+	.color {
+		&__headline {
+			color: #A3AEB8;
+			border-bottom: 1px solid #B2BCC5;
+		}
+
+		&__code {
+			color: #181A1D;
+		}
+	}
 }

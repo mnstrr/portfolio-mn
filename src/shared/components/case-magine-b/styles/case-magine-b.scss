@@ -6,6 +6,42 @@ component: case-magine-b
 Global Styles
 --------------------------------------------------- */
 [data-css="c-case-magine-b"] {
+	.case-magine-b {
+		&__headline {
+			@include case-headline($black, $white, $case-magine-b-grey, $case-magine-b);
+		}
+
+		&__subline {
+			@include case-subline($black, $case-magine-b-lightgrey);
+		}
+
+		&__paragraph {
+			@include font-paragraph();
+
+			color: $black;
+			margin-top: 35px;
+			position: relative;
+		}
+
+		&__pages {
+			.case-magine-b__subline,
+			.case-magine-b__paragraph {
+				lost-column: 5/6;
+			}
+
+			.case-magine-b__pages-image1 {
+				lost-column: 5/6;
+				lost-offset: 1/6;
+				margin-top: 112px;
+			}
+
+			.case-magine-b__pages-image2,
+			.case-magine-b__pages-image3 {
+				lost-column: 5/6;
+				margin-top: 60px;
+			}
+		}
+	}
 }
 
 /* ---------------------------------------------------
