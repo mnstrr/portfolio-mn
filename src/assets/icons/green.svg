@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="130px" viewBox="0 0 150 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>green</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="85.4837515%" x2="54.112388%" y2="60.8419898%" id="linearGradient-1">
+            <stop stop-color="#698904" offset="0%"></stop>
+            <stop stop-color="#94BA1C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="105.682292%" y1="69.3441629%" x2="50%" y2="69.3464543%" id="linearGradient-2">
+            <stop stop-color="#AAD22F" offset="0%"></stop>
+            <stop stop-color="#82A80D" offset="45.6991927%"></stop>
+            <stop stop-color="#698904" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="19.9735927%" y1="59.5750041%" x2="109.157783%" y2="46.7778716%" id="linearGradient-3">
+            <stop stop-color="#AAD22F" offset="0%"></stop>
+            <stop stop-color="#82A80D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="95.7772943%" y1="5.22265625%" x2="19.2271559%" y2="81%" id="linearGradient-4">
+            <stop stop-color="#99CC00" offset="0%"></stop>
+            <stop stop-color="#99CC00" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="100%" x2="100%" y2="4.25249169%" id="linearGradient-5">
+            <stop stop-color="#99CC00" offset="0%"></stop>
+            <stop stop-color="#99CC00" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="96.7832624%" y2="96.3112358%" id="linearGradient-6">
+            <stop stop-color="#99CC00" offset="0%"></stop>
+            <stop stop-color="#99CC00" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Portfolio-02-d" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-305.000000, -3176.000000)">
+        <g id="color_green" transform="translate(305.000000, 3108.000000)">
+            <g id="green" transform="translate(0.000000, 68.000000)">
+                <g id="triangle">
+                    <polygon id="Path-6" fill="url(#linearGradient-1)" points="0 130 149.996834 130 75.000492 0"></polygon>
+                    <polygon id="Path-6" fill="url(#linearGradient-2)" points="0 130 75 83.341661 75 0"></polygon>
+                    <polygon id="Path-6" fill="url(#linearGradient-3)" points="75 83.3469286 150 130 75 0"></polygon>
+                </g>
+                <path d="M75.0036621,83.6265869 L1,129" id="Line-2" stroke="url(#linearGradient-4)" stroke-linecap="square"></path>
+                <path d="M75,83.5662842 L75,1" id="Line-2" stroke="url(#linearGradient-5)" stroke-linecap="square"></path>
+                <path d="M74.9689941,83.6589355 L152,130" id="Line-2" stroke="url(#linearGradient-6)" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

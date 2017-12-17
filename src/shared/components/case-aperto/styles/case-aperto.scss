@@ -1,0 +1,66 @@
+/* ===================================================
+component: case-aperto
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-case-aperto"] {
+	.case-aperto {
+		&__headline {
+			@include case-headline($black, $white, $case-magine-b-grey, $case-aperto-contrast);
+		}
+
+		&__subline {
+			@include case-subline($black, $case-magine-b-lightgrey);
+		}
+
+		&__paragraph,
+		&__caption {
+			@include font-paragraph();
+
+			color: $black;
+		}
+
+		&__paragraph {
+			margin-top: 35px;
+			position: relative;
+		}
+
+		&__wireframes-image {
+			margin-top: 20px;
+		}
+
+		&__detail-image {
+			width: auto;
+			margin-right: calc(((100vw - (100% * 1.5)) / 2) * -1);
+		}
+
+		&__teaser {
+			.case-aperto__caption {
+				position: relative;
+				padding-bottom: 60px;
+
+				&::before {
+					@extend %pseudo;
+					@extend %icon-arrow_white;
+
+					top: 0;
+					left: -110px;
+					height: 87px;
+					width: 87px;
+				}
+			}
+		}
+
+		&__teaser-image {
+			margin-left: calc(((100vw - (100% * 1.5)) / 2) * -1);
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-case-aperto--default {
+}

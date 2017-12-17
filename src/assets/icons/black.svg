@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="130px" viewBox="0 0 150 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>black</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="60.788762%" x2="46.2861331%" y2="84.5327524%" id="linearGradient-1">
+            <stop stop-color="#212121" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="104.445312%" y1="55.1397236%" x2="43.9557292%" y2="66.6962139%" id="linearGradient-2">
+            <stop stop-color="#212121" offset="0%"></stop>
+            <stop stop-color="#131313" offset="45.076208%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="19.9735927%" y1="59.5750041%" x2="109.157783%" y2="46.7778716%" id="linearGradient-3">
+            <stop stop-color="#212121" offset="0%"></stop>
+            <stop stop-color="#131313" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="95.7772943%" y1="5.22265625%" x2="19.2271559%" y2="81%" id="linearGradient-4">
+            <stop stop-color="#3C3C3C" offset="0%"></stop>
+            <stop stop-color="#212121" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="100%" x2="100%" y2="4.25249169%" id="linearGradient-5">
+            <stop stop-color="#3C3C3C" offset="0%"></stop>
+            <stop stop-color="#212121" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="96.7832624%" y2="96.3112358%" id="linearGradient-6">
+            <stop stop-color="#3C3C3C" offset="0%"></stop>
+            <stop stop-color="#212121" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Portfolio-02-d" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-644.000000, -3176.000000)">
+        <g id="color_black" transform="translate(644.000000, 3108.000000)">
+            <g id="black" transform="translate(0.000000, 68.000000)">
+                <g id="triangle">
+                    <polygon id="Path-6" fill="url(#linearGradient-1)" points="0 130 149.996834 130 75.000492 0"></polygon>
+                    <polygon id="Path-6" fill="url(#linearGradient-2)" points="0 130 75 83.341661 75 0"></polygon>
+                    <polygon id="Path-6" fill="url(#linearGradient-3)" points="75 83.3469286 150 130 75 0"></polygon>
+                </g>
+                <path d="M75,84 L1,129" id="Line-2" stroke="url(#linearGradient-4)" stroke-linecap="square"></path>
+                <path d="M75,84 L75,1" id="Line-2" stroke="url(#linearGradient-5)" stroke-linecap="square"></path>
+                <path d="M75,84.0029297 L152,130" id="Line-2" stroke="url(#linearGradient-6)" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

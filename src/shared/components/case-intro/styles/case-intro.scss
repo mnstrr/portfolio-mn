@@ -123,6 +123,13 @@ Context: Default
 				height: 50px;
 				width: 51px;
 			}
+
+			&.is-c4d {
+				@extend %icon-C4D-Logo;
+
+				height: 50px;
+				width: 51px;
+			}
 		}
 	}
 

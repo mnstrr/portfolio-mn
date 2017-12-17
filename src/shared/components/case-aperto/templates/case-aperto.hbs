@@ -1,0 +1,73 @@
+<div class="c-case-aperto{{#if
+	settings.caseApertoContextClass}}--{{settings.caseApertoContextClass}}{{else}}--default{{/if}}{{#if
+	settings.caseApertoClasses}} {{settings.caseApertoClasses}}{{/if}}"
+	 data-css="c-case-aperto">
+	<div class="case-aperto__section-wrapper">
+		<section class="case-aperto__wireframes is-section">
+			<div class="is-grid-row">
+				<div class="is-col-12">
+					<h3 class="case-aperto__headline" data-number="1">{{content.wireframes.headline}}</h3>
+				</div>
+				<div class="is-col-8">
+					<p class="case-aperto__paragraph">{{content.wireframes.text}}</p>
+				</div>
+			</div>
+			{{#with content.wireframes.image}}
+				{{> c-picture}}
+			{{/with}}
+		</section>
+		<section class="case-aperto__colors is-section">
+			<div class="is-grid-row">
+				<div class="is-col-12">
+					<h3 class="case-aperto__headline" data-number="2">{{content.colors.headline}}</h3>
+				</div>
+				<div class="is-col-8">
+					<p class="case-aperto__paragraph">{{content.colors.text}}</p>
+				</div>
+			</div>
+			<div class="is-grid-row">
+				<div class="is-col-10 is-offset-1">
+					{{#with content.colors.content}}
+						{{> color}}
+					{{/with}}
+				</div>
+			</div>
+		</section>
+		<section class="case-aperto__detail is-section is-grid-row">
+			<div class="is-col-4">
+				<h3 class="case-aperto__subline">{{content.detail.subline}}</h3>
+				<p class="case-aperto__paragraph">{{content.detail.text}}</p>
+			</div>
+			<div class="is-col-8">
+				{{#with content.detail.image}}
+					{{> c-picture}}
+				{{/with}}
+			</div>
+		</section>
+		<section class="case-aperto__other is-section is-grid-row">
+			<div class="is-col-7">
+				{{#with content.other.image}}
+					{{> c-picture}}
+				{{/with}}
+			</div>
+			<div class="is-col-5">
+				<h3 class="case-aperto__subline">{{content.other.subline}}</h3>
+				<p class="case-aperto__paragraph">{{content.other.text}}</p>
+			</div>
+		</section>
+		<section class="case-aperto__teaser is-section">
+			<div class="is-grid-row">
+				<div class="is-col-8 is-offset-3">
+					<p class="case-aperto__caption">{{content.teaser.caption}}</p>
+				</div>
+			</div>
+			<div class="is-grid-row">
+				<div class="is-col-8">
+					{{#with content.teaser.image}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

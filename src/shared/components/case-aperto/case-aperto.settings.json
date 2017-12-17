@@ -1,0 +1,10 @@
+
+{
+    "paths": {
+        "styles": "src/shared/components/case-aperto/styles/case-aperto"
+    },
+    "type": "component",
+    "contextData": "case-aperto",
+    "layout": "lyt-docs",
+    "publish": true
+}
