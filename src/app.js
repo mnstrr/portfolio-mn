@@ -1,10 +1,11 @@
 import { Veams } from './app.veams';
-import Lazysizes from 'lazysizes';
+import 'lazysizes';
 import ScrollContainer from './shared/components/scroll-container/scripts/scroll-container';
 import ScrollItem from './shared/components/scroll-item/scripts/scroll-item';
 import Logo from './shared/components/logo/scripts/logo';
 import Navigation from './shared/components/navigation/scripts/navigation';
 import Pagination from './shared/components/pagination/scripts/pagination';
+import Video from './shared/components/video/scripts/video';
 
 // Initialize modules with Veams
 
@@ -31,6 +32,11 @@ Veams.modules.add({
 Veams.modules.add({
 	namespace: 'pagination',
 	module: Pagination
+});
+
+Veams.modules.add({
+	namespace: 'video',
+	module: Video
 });
 
 

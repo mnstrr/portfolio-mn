@@ -10,6 +10,7 @@
 // Imports
 import { Veams } from 'app.veams';
 import VeamsComponent from 'veams/src/js/common/component'; // Only use that in combination with browserify
+import isInViewport from 'veams/src/js/utils/helpers/is-in-viewport';
 // import VeamsComponent from 'veams/lib/common/component'; // Can be used in general
 
 // Variables

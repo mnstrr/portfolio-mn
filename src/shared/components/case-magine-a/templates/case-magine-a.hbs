@@ -22,24 +22,10 @@
 			<div class="is-col-8">
 				<p class="case-magine-a__paragraph">{{content.colors.text}}</p>
 			</div>
-
-			{{! TODO: outsource as color component}}
 			<div class="is-col-12">
-				<div class="case-magine-a__color-wrapper">
-					{{#each content.colors.items}}
-						<div class="case-magine-a__color-item">
-							<p class="case-magine-a__color-headline">{{headline}}</p>
-							<div class="case-magine-a__color-imagewrapper {{#if isGroup}}is-group{{/if}}">
-								{{#each colors}}
-									<div class="case-magine-a__color-group">
-										<div class="case-magine-a__color-image {{colorClass}}"></div>
-										<p class="case-magine-a__color-code">{{code}}</p>
-									</div>
-								{{/each}}
-							</div>
-						</div>
-					{{/each}}
-				</div>
+				{{#with content.colors.content}}
+					{{> color}}
+				{{/with}}
 			</div>
 		</section>
 		<section class="case-magine-a__packages is-section is-grid-row">

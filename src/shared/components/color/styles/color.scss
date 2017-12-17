@@ -22,7 +22,6 @@ Global Styles
 		&__headline {
 			@include font-paragraph();
 
-
 			text-transform: uppercase;
 			width: 150px;
 			padding: 0 15px;
@@ -64,7 +63,6 @@ Global Styles
 			height: 130px;
 			background-size: cover;
 
-			@extend %icon-color_red;
 		}
 
 		&__code {
@@ -88,6 +86,28 @@ Context: Magine-a
 		&__code {
 			color: $case-magine-a-color;
 		}
+
+		&__image {
+			&.is-magine-red {
+				@extend %icon-color_red;
+			}
+
+			&.is-magine-blue {
+				@extend %icon-color_blue;
+			}
+
+			&.is-magine-green {
+				@extend %icon-color_green;
+			}
+
+			&.is-magine-yellow {
+				@extend %icon-color_yellow;
+			}
+
+			&.is-magine-purple {
+				@extend %icon-color_purple;
+			}
+		}
 	}
 }
 
@@ -103,6 +123,53 @@ Context: Magine-b
 
 		&__code {
 			color: #181A1D;
+		}
+
+		&__image {
+			&.is-magine-red {
+				@extend %icon-color_red;
+			}
+
+			&.is-magine-blue {
+				@extend %icon-color_blue;
+			}
+
+			&.is-magine-green {
+				@extend %icon-color_green2;
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context:Aperto
+--------------------------------------------------- */
+.c-color--aperto {
+	.color {
+		&__headline {
+			color: #A3AEB8;
+			border-bottom: 1px solid #B2BCC5;
+		}
+
+		&__code {
+			color: #181A1D;
+		}
+
+		&__image {
+			height: 130px;
+			width: 151px;
+
+			&.is-aperto-green {
+				@extend %icon-green;
+			}
+
+			&.is-aperto-black {
+				@extend %icon-black;
+			}
+
+			&.is-aperto-grey {
+				@extend %icon-grey;
+			}
 		}
 	}
 }

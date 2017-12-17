@@ -102,8 +102,8 @@
 					"content": {
 						"headline": "A new TV experience",
 						"paragraphs": [
-							"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as shorten the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the visitors.",
-							"I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
+							"Magine TV is a Swedish TV streaming network which is also available on the German market with multiple apps. With the creation of the new exclusive PS4 app Magine expanded its range of products. Simultaneously the other apps, amazon TV, web app and all touch apps were updated and got the same concept and design.",
+							"I was responsible for the whole UI Design of all product apps and the creation of the new key visual. And also helped to solve some UX issues. The challenge was to design for surfaces and products that aren’t conventional online platforms."
 						],
 						"metaList": [
 							{
@@ -135,53 +135,58 @@
 					"content": {
 						"intro": {
 							"headline": "Big Screen",
-							"text": "To keep the number of the template low for this project the focus was to leave it with three main templates and work with modules that can work for every section or just be suitable for a specific case. With this workaround, specific modules can be edited instead of a various number of templates. Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv."
+							"text": "One Gist of the big screen design was the design of the key visual that pulls through the whole app surfaces. The challenge was to create and design the apps in order that the same functionality and concept was guaranteed to the user no matter what controller and device are used. Also, it was important to design every element, that they don’t disturb the users in their TV experience but rather support and improve them."
 						},
 						"colors": {
 							"subline": "Colors",
-							"text": "Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv. The other colors are there for to give every section it’s on color code.",
-							"items": [
-								{
-									"headline": "Primary",
-									"colors": [
-										{
-											"colorCLass": "is-red",
-											"code": "#FFFFFF"
-										}
-									]
+							"text": "Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv. The other colors are there to give every section it’s on color code.",
+							"content": {
+								"settings": {
+									"colorContextClass": "magine-a"
 								},
-								{
-									"headline": "Primary",
-									"colors": [
-										{
-											"colorCLass": "is-red",
-											"code": "#FFFFFF"
-										}
-									]
-								},
-								{
-									"isGroup": true,
-									"headline": "Primary",
-									"colors": [
-										{
-											"colorClass": "is-red",
-											"code": "#FFFFFF"
-										},
-										{
-											"colorClass": "is-red",
-											"code": "#FFFFFF"
-										},
-										{
-											"colorClass": "is-red",
-											"code": "#FFFFFF"
-										}
-									]
-								}
-							]
+								"colorItems": [
+									{
+										"headline": "Primary",
+										"colors": [
+											{
+												"colorClass": "is-magine-red",
+												"code": "#FA0046"
+											}
+										]
+									},
+									{
+										"headline": "Primary",
+										"colors": [
+											{
+												"colorClass": "is-magine-blue",
+												"code": "#FA0046"
+											}
+										]
+									},
+									{
+										"isGroup": true,
+										"headline": "Primary",
+										"colors": [
+											{
+												"colorClass": "is-magine-green",
+												"code": "#15D8C6"
+											},
+											{
+												"colorClass": "is-magine-yellow",
+												"code": "#FFFF00"
+											},
+											{
+												"colorClass": "is-magine-purple",
+												"code": "#451FA3"
+											}
+										]
+									}
+								]
+							}
 						},
 						"packages": {
 							"subline": "Packages",
-							"text": "Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv. The other colors are there for to give every section it’s on color code.",
+							"text": "A special offer was acquired together with PlayStation for their customer's and is placed in the focus of the package overview. Each package got a unique color variation of the key visual.",
 							"image": {
 								"settings": {
 									"pictureContextClass": "default",
@@ -267,7 +272,7 @@
 									]
 								}
 							},
-							"caption": "Elektronischer Programm Guide legt sich über das Programm, so entgeht dem User sein Programm nicht. Klare erkennung des laufenden Programms. Gespeerte Kanäle, Nutzer weiß welches Paket nötig ist."
+							"caption": "The electronic program guide settles over the current program, this way the user won’t miss anything. A clear marker of the running programme. Blocked channels are visibly marked for the user, simultaneously they know which package contains the requested channel."
 						},
 						"player": {
 							"image-1": {
@@ -317,7 +322,7 @@
 								}
 							},
 							"subline": "Player",
-							"text": "Hauptpunkt ist der Player. Möglich zwischen dem Programm zu switchen oder nach speziellem Programm zu suchen. Programm wird wenn nötig nicht unterbrochen. ",
+							"text": "The gist of the big screen app is the player. It’s possible to switch between channels or search in specific view through all channels. The programme will not be disturbed when it’s not necessary.",
 							"image-2": {
 								"settings": {
 									"pictureContextClass": "default",
@@ -410,11 +415,11 @@
 									]
 								}
 							},
-							"caption": "Upsell in den Programmkarten vorhanden. Alle wichtigen Informationen für den User angegeben."
+							"caption": "The upsell marker communicates the package that is required to see the channel. All important information is displayed to the user."
 						},
 						"web": {
 							"headline": "Web",
-							"text": "Die best Besuchte App des Unternehmens. Hauptmerkmal der webanwendung wurde auf Live TV umgebaut. Verschiedene Bereiche erarbeitet, wie der Mediathek.",
+							"text": "The web app is the platform with the highest traffic and therefore the most important product field. The main aspect was to rebuild the product with the focus on the player. Above that various new section like the media library and catch up were designed.",
 							"image": {
 								"settings": {
 									"pictureContextClass": "default",
@@ -461,7 +466,7 @@
 									]
 								}
 							},
-							"caption": "User kann sofort mit dem fernsehen beginnen. klar markiert welche Programme nur durch erwerb eines Produktes zugänglich sind. Leichtes Umschalten und Programminformationen durch die ein- und ausblendbare Senderübersicht."
+							"caption": "The user can start right away to watch TV. Blocked channels and the required package to watch them are clearly visible. It’s easy for the user to switch channels through the channel overview which will blend in or out."
 						},
 						"mediathek": {
 							"image": {
@@ -485,7 +490,7 @@
 													"imageWidth": "960w"
 												},
 												{
-													"src": "media/images/png/case-magine-a/mediathek_steps-1200.pngg",
+													"src": "media/images/png/case-magine-a/mediathek_steps-1200.png",
 													"imageWidth": "1200w"
 												},
 												{
@@ -510,7 +515,7 @@
 									]
 								}
 							},
-							"caption": "Hauptmerkmal der Mediathek im Gegensatz zum Live TV Bereich bilden die Programm-Karten. Klare Filterung/Sortierung nach Sendern und Suche innerhalb des Senders möglich."
+							"caption": "Unlike the live TV section, the media library focus on the channels and their programme cards. The user can filter for the specific content of a requested broadcaster."
 						},
 						"single": {
 							"image": {
@@ -534,7 +539,7 @@
 													"imageWidth": "960w"
 												},
 												{
-													"src": "media/images/png/case-magine-a/Single_modules-1200.pngg",
+													"src": "media/images/png/case-magine-a/Single_modules-1200.png",
 													"imageWidth": "1200w"
 												},
 												{
@@ -582,7 +587,7 @@
 													"imageWidth": "960w"
 												},
 												{
-													"src": "media/images/png/case-magine-a/header_channel_pages-1200.pngg",
+													"src": "media/images/png/case-magine-a/header_channel_pages-1200.png",
 													"imageWidth": "1200w"
 												},
 												{
@@ -610,7 +615,7 @@
 						},
 						"touch": {
 							"headline": "Touch Apps",
-							"text": "Letzter Abschluss des einheitlichen Designs bilden die Touch Apps. Designt und angepasst an klare Bedürfnisse der mobilen Geräte.",
+							"text": "The final issue forms the touch apps of Magine. Designed and adjusted for the distinct need of mobile devices. The small space that was provided through the mobile devices was optimally used to created necessary features.",
 							"image": {
 								"settings": {
 									"pictureContextClass": "default",
@@ -632,7 +637,7 @@
 													"imageWidth": "960w"
 												},
 												{
-													"src": "media/images/png/case-magine-a/TouchApps-1200.pngg",
+													"src": "media/images/png/case-magine-a/TouchApps-1200.png",
 													"imageWidth": "1200w"
 												},
 												{
@@ -723,10 +728,10 @@
 						"caseContentClasses": false
 					},
 					"content": {
-						"headline": "A new TV experience",
+						"headline": "Watch wherever you want",
 						"paragraphs": [
-							"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as shorten the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the visitors.",
-							"I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
+							"Magine TV is a Swedish TV streaming network which is also available on the German market on various platforms and also a web application. One important point was the permanent improvement of the website, on a desktop, tablet, and smartphone. Further, there were new upsell options designed for the product.",
+							"Newsletter, Banner or Facebook Post, it was my responsibility to work together with the marketing team to fill this channels or create new business opportunities, like the white label EPG. All UI decisions lay in my responsibility. Through the adjustments of marketing relevant channels, it was able to increase registrations and sales, thereby the companies KPIs could be achieved."
 						],
 						"metaList": [
 							{
@@ -735,11 +740,11 @@
 							},
 							{
 								"title": "Role",
-								"description": "UI designer"
+								"description": "UI/UX Designer"
 							},
 							{
 								"title": "Year",
-								"description": "2017"
+								"description": "2015 -2017"
 							},
 							{
 								"title": "Programs",
@@ -758,8 +763,8 @@
 					"type": "magine-b",
 					"content": {
 						"colors": {
-							"headline": "Colors",
-							"text": "Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv. The other colors are there for to give every section it’s on color code.",
+							"headline": "Color",
+							"text": "Magine TVs signal color is red. All important CTAs and the advertising of the main product are displayed in this color. Due to cultural distinctions, the color green is taking this task for the Swedish market. The blue color is a supporting color for both markets.",
 							"content": {
 								"settings": {
 								 "colorContextClass": "magine-b"
@@ -769,26 +774,26 @@
 										"headline": "Primary",
 										"colors": [
 											{
-												"colorCLass": "is-red",
-												"code": "#FFFFFF"
+												"colorClass": "is-magine-red",
+												"code": "#FA0046"
 											}
 										]
 									},
 									{
-										"headline": "Primary",
+										"headline": "Secondary",
 										"colors": [
 											{
-												"colorCLass": "is-red",
-												"code": "#FFFFFF"
+												"colorClass": "is-magine-blue",
+												"code": "#29B6F6"
 											}
 										]
 									},
 									{
-										"headline": "Primary",
+										"headline": "Tertiary",
 										"colors": [
 											{
-												"colorCLass": "is-red",
-												"code": "#FFFFFF"
+												"colorClass": "is-magine-green",
+												"code": "#71C2AE"
 											}
 										]
 									}
@@ -797,11 +802,11 @@
 						},
 						"website": {
 							"headline": "Website",
-							"text": "Schwerpunkt liegt in der Registrierung der Kunden. werden auf verschiedenen Seiten auf unterschiedliche Weise dazu beworben. Modularer Aufbau der Website, Module können ohne Probleme auf jeder Seite verwendet werden und sind leicht zu befüllen."
+							"text": "The main task of the website is to convince users to register. The user is convinced on various pages with different reasons to become a customer of Magines product. The website is built on a modular system which enables the possibility to place any module on any page and is easy to fill with content."
 						},
 						"pages": {
 							"subline": "Pages",
-							"text": "Verschieden wichtige Bereich der Website mit verschiedenen Aufgabenbereichen. Startseite Erklärung des Dienstes und dessen Umfang. Bewerbung verschiedener Produktpakete. Senderseiten durch Bewerbung aktueller der Senderinhalte und -vielfalt. Ebenso Seite die aufzeigt auf welchen Geräten der Dienst verfügbar ist.",
+							"text": "There are various important pages of the website with a different area of responsibility. For example, the homepage conducive to explain the service to potential customers. The channel page promotes the content and the channels itself to the user.",
 							"image-1": {
 								"settings": {
 									"pictureContextClass": "default",
@@ -986,11 +991,11 @@
 									]
 								}
 							},
-							"caption": "Alle Module funktionieren auf jedem mobilen Gerät."
+							"caption": "All modules are able to display on any device."
 						},
 						"module": {
 							"subline": "Module iteration",
-							"text": "Wichtige Module wurden immer wieder durch Iterationen verbessert und weiterentwickelt, damit sie die Marketing KPIs erfüllten. Wurden durch A/B Tests überprüft.",
+							"text": "Important modules were consistently improved and advanced through multiple iterations, thereby to fulfill the marketing KPIs. All iterations were verified through A/B testing.",
 							"image": {
 								"settings": {
 									"pictureContextClass": "default",
@@ -1040,7 +1045,7 @@
 						},
 						"signup": {
 							"subline": "Sign up completed",
-							"text": "Durch die Einführung dieser Section nach der Registrierung von Neukunden konnte der Verkauf erhöht werden. Zu speziellen Events/ Angeboten, wie Olympia oder Weihnachten wurde dieser Bereich visuell angepasst und mehr Eyecatcher.",
+							"text": "By implementing this section after the registration of new users, it was able to increase the sales numbers. Special events such as Olympia or Christmas got a visual adjustment.",
 							"image": {
 								"settings": {
 									"pictureContextClass": "default",
@@ -1081,7 +1086,7 @@
 						},
 						"pricing": {
 							"subline": "Pricing page",
-							"text": "UX Design der Seite wurde überarbeitet, einhergehend UI Design angepasst. Fokus liegt in der Bewerbung der beiden Hauptprodukte. User können Produkte besser miteinander vergleichen. Verkäufe wurden erhöht.",
+							"text": "The whole concept together with the UI of this page got edited. The focus now lies on the advertising of the main products basic and premium. This way it’s easier for the customer to compare the packages with each other. The sales improved by this changes.",
 							"image-1": {
 								"settings": {
 									"pictureContextClass": "default",
@@ -1177,7 +1182,7 @@
 						},
 						"marketing": {
 							"headline": "Marketing",
-							"text": "Erstellung eines marketing und business relevanter Werbe- und Marketingmittel, wie  Whitelable EPGs der an Partner weiterverkauft werden kann oder spezieller Newsletter. 2 Ansichten, kompakte Version des Programms, ausgehend der schnellen Erfassung des momentan laufenden Programms und der Primetimehighlights. EPG kann von Partnern angepasst und sortiert werden. Detailierte Auflistung des genauen TV-Programms. Übergreifende Marketingkampagnen auf verschiedenen Medien.",
+							"text": "Creation of cross-cutting marketing and business relevant advertising material on different media, such as a newsletter, banner or a white label EPG which can be resold to business partners. There are two possible views for the EPG. One compact version of the current TV schedule additional with the TV highlights of the day. The other one is the detailed version for all yet airing shows of the day. The design of the EPG is easy to adjust to the brand guidelines of the partner.",
 							"image-1": {
 								"settings": {
 									"pictureContextClass": "default",
@@ -1428,23 +1433,27 @@
 						"caseContentClasses": false
 					},
 					"content": {
-						"headline": "A new TV experience",
+						"headline": "Smoothly way of shopping",
 						"paragraphs": [
-							"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as shorten the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the visitors.",
-							"I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
+							"A new e-commerce webpage for an important Siemens retailer was created. Together with a landing page that promotes special events, services etc. of the retail store. Both websites form a consistent image. The new brand design of the store was implemented and advanced for the online environment. The design was adapted into the clean and reduced UI design of the Siemens world. Special attention was laid on to SEO aspects.",
+							"I was responsible for the development of the online shop. In collaboration with the lead designer, a consistent visual online brand was created. Together with the concept team, I elaborated a new filter principle."
 						],
 						"metaList": [
 							{
-								"title": "Company",
-								"description": "Magine TV"
+								"title": "Agency",
+								"description": "Aperto – An IBM Company"
 							},
 							{
 								"title": "Role",
-								"description": "UI designer"
+								"description": "Designer"
 							},
 							{
 								"title": "Year",
-								"description": "2017"
+								"description": "2015"
+							},
+							{
+								"title": "Client",
+								"description": "Siemens"
 							},
 							{
 								"title": "Programs",
@@ -1549,7 +1558,7 @@
 						},
 						"pages": {
 							"headline": "Pages & details",
-							"text": "To keep the number of the template low for this project the focus was to leave it with three main templates and work with modules that can work for every section or just be suitable for a specific case. With this workaround, specific modules can be edited instead of a various number of templates."
+							"text": "The pages are built on clean and simple modules. The main design aspect is the product pictures which are displayed in various executions together with the CTA button."
 						},
 						"homepage": {
 							"subline": "Homepage",
@@ -1599,11 +1608,11 @@
 									]
 								}
 							},
-							"caption": "Markierung hilft Usern zu sehen welche Produkte auch im Geschäft zu erwerben sind."
+							"caption": "The tag helps the user to know if the product is also available in the physical store."
 						},
 						"productlist": {
 							"subline": "Product list",
-							"text": "Suchergebnisse der Produkte lässt sich durch detailierten Filter optimieren. Kann je nach belieben ein- oder ausgeblendet werden. Schnelle visuelle Erkennung der Effizienzklasse und Marke.",
+							"text": "For a detailed search result it’s possible for the user to optimize the search. Additionally the filter module can be blend in or out depending on the need of the user. The user is also able to quickly recognise the efficency class and brand of the product.",
 							"image": {
 								"settings": {
 									"pictureContextClass": "default",
@@ -1650,11 +1659,11 @@
 									]
 								}
 							},
-							"caption": "Produkte lassen sich in zwei verschiedene Ansicht anzeigen lassen."
+							"caption": "It’s able to switch the product grid into two different views."
 						},
 						"productdetail": {
 							"subline": "Product detail page",
-							"text": "Großes Produktbild mit Vergrößerungsoption für alle Produkte. Starker, visueller CTA-Button. Spezielle Siemens Highlights haben einen großen Bereich erhalten.",
+							"text": "The product detail page contains a strong CTA. Siemens product highlights are displayed and detailed explained in an own module to the customer.",
 							"image": {
 								"settings": {
 									"pictureContextClass": "default",
@@ -1701,12 +1710,12 @@
 									]
 								}
 							},
-							"caption-1": "Globale Verlinkung zur Ladenpage.",
-							"caption-2": "Warenkorb mit visueller Darstellung des enthaltenen Produkts."
+							"caption-1": "Global link to the store landing page.",
+							"caption-2": "Shopping basket with a visual display of the contained products."
 						},
 						"store": {
 							"headline": "Store landingpage",
-							"text": "Im Zuge der neuen Ladeneröffnung wurde eine neue Landingpage dafür erstellt um es zu bewerben. Starke visuelle Sprache. Startseite  aufgebaut auf paralaxen Kacheln-Design, die die verschiedenen Bereiche abbilden.",
+							"text": "As part of the new store opening an especially therefor landing page was created. It’s got a strong visual language through the tile and parallax design.",
 							"image": {
 								"settings": {
 									"pictureContextClass": "default",
@@ -1753,7 +1762,7 @@
 									"lazyload": true
 								},
 								"content": {
-									"fallbackSrc": "media/images/png/case-siemens/landingpagee-480.png",
+									"fallbackSrc": "media/images/png/case-siemens/landingpage-480.png",
 									"alt": "Alternative text that describes the image",
 									"items": [
 										{
@@ -1775,7 +1784,7 @@
 													"imageWidth": "1600w"
 												},
 												{
-													"src": "media/images/png/case-siemens/landingpagee-2000.png",
+													"src": "media/images/png/case-siemens/landingpage-2000.png",
 													"imageWidth": "2000w"
 												}
 											],
@@ -1792,7 +1801,7 @@
 									]
 								}
 							},
-							"caption": "Kachel kann für verschiedene Zwecke verwendet werden."
+							"caption": "The tile can be used for various purposes and needs."
 						}
 					}
 				}
@@ -1860,23 +1869,26 @@
 						"caseContentClasses": false
 					},
 					"content": {
-						"headline": "A new TV experience",
+						"headline": "New look & feel",
 						"paragraphs": [
-							"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as shorten the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the visitors.",
-							"I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
+							"To give Aperto's new profile a well rounded look, the agency got a new and responsive website. Bigger images, appealing texts, an easier navigation as well as compress the content to the essential gave the website a modern and fresh appearance. Next to cases and Aperto's range of services, there can be found whitepapers by which Aperto shares their knowledge with the user.", "I was responsible for designing whole module concepts up to the  implementation of the final design. My work included image editing, creation of mobile and tablet views, mockups for the keyvisual, 3D-artworks as well as the creation of design templates for building the whitepaper in the new look of the agency."
 						],
 						"metaList": [
 							{
-								"title": "Company",
-								"description": "Magine TV"
+								"title": "Agency",
+								"description": "Aperto – An IBM Company"
 							},
 							{
 								"title": "Role",
-								"description": "UI designer"
+								"description": "Designer"
 							},
 							{
 								"title": "Year",
-								"description": "2017"
+								"description": "2014"
+							},
+							{
+								"title": "Client",
+								"description": "Aperto – An IBM Company"
 							},
 							{
 								"title": "Programs",
@@ -1937,18 +1949,18 @@
 						},
 						"colors": {
 							"headline": "Colors",
-							"text": "Magine TV provides a big range of colors. The color red offers a visual destinction to it’s direct competitors zattoo and waiputv. The other colors are there for to give every section it’s on color code.",
+							"text": "Aperto provides a clean and minimal color plate. The black color transmits together with the white a luxurious feeling. Thereby, that the green is the only real color it gets a special visual attention from the user.",
 							"content": {
 								"settings": {
-									"colorContextClass": "magine-b"
+									"colorContextClass": "aperto"
 								},
 								"colorItems": [
 									{
-										"headline": "Primary",
+										"headline": "Accent",
 										"colors": [
 											{
-												"colorCLass": "is-red",
-												"code": "#FFFFFF"
+												"colorClass": "is-aperto-green",
+												"code": "#99CC00"
 											}
 										]
 									},
@@ -1956,21 +1968,38 @@
 										"headline": "Primary",
 										"colors": [
 											{
-												"colorCLass": "is-red",
-												"code": "#FFFFFF"
+												"colorClass": "is-aperto-black",
+												"code": "#212121"
 											}
 										]
 									},
 									{
-										"headline": "Primary",
+										"headline": "Secondary",
 										"colors": [
 											{
-												"colorCLass": "is-red",
-												"code": "#FFFFFF"
+												"colorClass": "is-aperto-grey",
+												"code": "#444444"
 											}
 										]
 									}
 								]
+							}
+						},
+						"homepage": {
+							"settings": {
+								"videoContextClass": false,
+								"videoClasses": false,
+								"videoOptions": "buffer loop muted"
+							},
+							"content": {
+								"videoPoster": "media/images/png/aperto_homepage.png",
+								"videoMp4": "media/videos/Aperto_Startseite_Animation.mp4",
+								"videoWebm": "media/videos/Aperto_Startseite_Animation.webm",
+								"videoTrack": {
+									"trackSubtitle": false,
+									"trackLang": false,
+									"trackLabel": false
+								}
 							}
 						},
 						"detail": {
@@ -2051,7 +2080,7 @@
 													"imageWidth": "1200w"
 												},
 												{
-													"src": "media/images/png/case-aperto/other_pagese-1600.png",
+													"src": "media/images/png/case-aperto/other_pages-1600.png",
 													"imageWidth": "1600w"
 												},
 												{
@@ -2073,11 +2102,11 @@
 								}
 							}
 						},
-						"teaser": {
+						"desktop": {
 							"image": {
 								"settings": {
 									"pictureContextClass": "default",
-									"pictureClasses": "case-aperto__teaser-image",
+									"pictureClasses": "case-aperto__desktop-image",
 									"lazyload": true
 								},
 								"content": {
@@ -2120,7 +2149,149 @@
 									]
 								}
 							},
-							"caption": "A specific grid for the teaser module was design to display these without any problem on all devices."
+							"hint": "A specific grid for the teaser module was design to display these without any problem on all devices.",
+							"caption": "Desktop"
+						},
+						"tablet": {
+							"image": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-aperto__tablet-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-aperto/grid_tablet-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-aperto/grid_tablet-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-aperto/grid_tablet-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-aperto/grid_tablet-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-aperto/grid_tablet-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-aperto/grid_tablet-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "60vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"caption": "Tablet",
+							"caption-2": "Landspace"
+						},
+						"smartphone": {
+							"image": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-aperto__smartphone-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-aperto/grid_smartphone-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-aperto/grid_smartphone-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-aperto/grid_smartphone-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-aperto/grid_smartphone-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-aperto/grid_smartphone-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-aperto/grid_smartphone-2000.png",
+													"imageWidth": "2000w"
+												}
+											],
+											"sizes": [
+												{
+													"imageWidth": "60vw"
+												},
+												{
+													"screenWidth": "(min-width: 1000px)",
+													"imageWidth": "830px"
+												}
+											]
+										}
+									]
+								}
+							},
+							"caption": "Smartphone",
+							"caption-2": "Portrait"
+						},
+						"magazine": {
+							"image": {
+								"settings": {
+									"pictureContextClass": "default",
+									"pictureClasses": "case-aperto__magazine-image",
+									"lazyload": true
+								},
+								"content": {
+									"fallbackSrc": "media/images/png/case-aperto/magazine-480.png",
+									"alt": "Alternative text that describes the image",
+									"items": [
+										{
+											"srcset": [
+												{
+													"src": "media/images/png/case-aperto/magazine-480.png",
+													"imageWidth": "480w"
+												},
+												{
+													"src": "media/images/png/case-aperto/magazine-960.png",
+													"imageWidth": "960w"
+												},
+												{
+													"src": "media/images/png/case-aperto/magazine-1200.png",
+													"imageWidth": "1200w"
+												},
+												{
+													"src": "media/images/png/case-aperto/magazine-1600.png",
+													"imageWidth": "1600w"
+												},
+												{
+													"src": "media/images/png/case-aperto/magazine-2000.png",
+													"imageWidth": "2000w"
+												}
+											]
+										}
+									]
+								}
+							},
+							"headline": "Print template",
+							"text": "All existing knowledge papers got a new and cohesive look based on the created web design. Additionally to the redesign, a print template for future papers was created. Thes knowledge papers can be downloaded as a PDF on the blog page. "
 						}
 					}
 				}
@@ -2136,7 +2307,41 @@
 				"scrollItemJsOptions": {},
 				"scrollItemID": "about"
 			},
-			"content": {}
+			"content": {
+				"headline": "Interface Designer",
+				"subline": "based in Berlin.",
+				"text": "Hi, I’m Marina Neff. I’m passionate about what I do, and I love to help people. Nothing is more fulfilling than being part of a team with similar interests, and an organization that values its employees. I have been working for 5 years as an Interface Designer. During this period I had clients in fields of NGO, Banking, Public and famous brands such as Siemens, Rossmann, and MAN. For the last two years, I worked for the TV streaming start-up Magine TV. Thereby I had the opportunity to work in a consumer-focused field.",
+				"meta": {
+					"mail": {
+						"subline": "Say hello!",
+						"link": {
+							"text": "mail@marinaneff.com",
+							"href": "mailto:mail@marinaneff.com"
+						}
+					},
+					"links": {
+						"subline": "Check out more",
+						"items": [
+							{
+								"icon": "linkedin",
+								"link": "#"
+							},
+							{
+								"icon": "xing",
+								"link": "#"
+							},
+							{
+								"icon": "cv",
+								"link": "#"
+							},
+							{
+								"icon": "dribble",
+								"link": "#"
+							}
+						]
+					}
+				}
+			}
 		}
 	}
 }

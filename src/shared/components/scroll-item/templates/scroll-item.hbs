@@ -15,7 +15,8 @@
 		<div class="scroll-item__textouter">
 			<div class="scroll-item__textinner">
 				{{#if content.headline}}
-					<h2 class="scroll-item__headline">{{{content.headline}}}</h2>
+					<h2 class="scroll-item__headline">{{{content.headline}}} {{#if content.subline}}
+						<span> {{content.subline}}</span>{{/if}}</h2>
 				{{/if}}
 
 				{{#if content.keywords}}
@@ -26,6 +27,26 @@
 							</li>
 						{{/each}}
 					</ul>
+				{{/if}}
+
+				{{#if content.text}}
+					<p class="scroll-item__text">{{content.text}}</p>
+				{{/if}}
+
+				{{#if content.meta}}
+					<div class="scroll-item__metawrapper">
+						<p class="scroll-item__subline">{{content.meta.mail.subline}}</p>
+						<a href="{{content.meta.mail.link.href}}"
+						   class="scroll-item__mail">{{content.meta.mail.link.text}}</a>
+						<p class="scroll-item__subline">{{content.meta.links.subline}}</p>
+						<ul class="scroll-item__links">
+							{{#each content.meta.links.items}}
+								<li class="scroll-item__linkitem">
+									<a href="{{link}}" target="_blank" class="scroll-item__linkitem-link is-{{icon}}"></a>
+								</li>
+							{{/each}}
+						</ul>
+					</div>
 				{{/if}}
 			</div>
 		</div>
