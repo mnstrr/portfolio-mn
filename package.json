@@ -18,6 +18,7 @@
         "picturefill": "^3.0.2",
         "veams": "^5.0.1",
         "veams-component-picture": "^5.0.1",
+        "veams-component-video": "^5.0.1",
         "veams-plugin-dom": "^1.0.0",
         "veams-plugin-logger": "^1.0.0",
         "veams-plugin-media-query-handler": "^1.0.0",
