@@ -79,7 +79,11 @@ class ScrollContainer extends VeamsComponent {
 		this.$scrollItems = this.$el.find(this.options.selectors.scrollItems);
 		this.activeIndex = 0;
 		this.canScroll = true;
+		this.touchStartY = 0;
+		this.touchEndY = 0;
 
+
+		console.log(Veams.detections.touch, Veams.detections.mobile);
 		this.attachInputHandler();
 	}
 
@@ -97,14 +101,24 @@ class ScrollContainer extends VeamsComponent {
 	 * Adds wheel and keydown input handler
 	 */
 	attachInputHandler() {
-		$(window).on('DOMMouseScroll mousewheel keydown', (e) => this.handleInput(e));
+		$(window).on('DOMMouseScroll mousewheel keydown touchend', (e) => this.handleInput(e));
+
+		$(window).on('touchstart', (e) => {
+			// store initial touchstart Y coordinate
+			this.touchStartY = e.originalEvent.touches[0].pageY;
+		});
+
+		$(window).on('touchmove', (e) => {
+			// store all touchmove Y coordinates
+			this.touchEndY = e.originalEvent.touches[0].pageY;
+		})
 	}
 
 	/**
 	 * Removes wheel and keydown input handler
 	 */
 	detachInputHandler() {
-		$(window).off('DOMMouseScroll mousewheel keydown');
+		$(window).off('DOMMouseScroll mousewheel keydown touchmove touchstart touchend');
 	}
 
 
@@ -130,9 +144,23 @@ class ScrollContainer extends VeamsComponent {
 	 * @param e
 	 */
 	handleInput(e) {
-		if(this.canScroll) {
-			// normalize wheel event data
-			const wheelData = e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : e.originalEvent.detail * -1;
+		if (this.canScroll) {
+
+			let wheelData;
+
+			if(Veams.detections.mobile && Veams.detections.touch) {
+				// stop if just tapped or touchend is on exact same position
+				if(this.touchStartY === this.touchEndY || this.touchEndY === 0) return;
+
+				// normalize touch event data
+				wheelData = this.touchStartY < this.touchEndY ? 1 : -1;
+
+				// reset
+				this.touchEndY = 0;
+			} else {
+				// normalize wheel event data
+				wheelData = e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : e.originalEvent.detail * -1;
+			}
 
 			if ((wheelData && wheelData < 0) || e.keyCode === 40) {
 				//scroll down or down key
@@ -180,7 +208,7 @@ class ScrollContainer extends VeamsComponent {
 	activateLastSection() {
 		// only if last slide isn't active
 		if (this.activeIndex < this.$scrollItems.length - 1 && this.canScroll) {
-			this.goToSection(this.$scrollItems.length -1);
+			this.goToSection(this.$scrollItems.length - 1);
 		}
 	}
 
@@ -190,7 +218,7 @@ class ScrollContainer extends VeamsComponent {
 	 * @param index
 	 */
 	activateSectionByIndex(index) {
-		if(typeof index === 'number' && index <= this.$scrollItems.length && this.canScroll) {
+		if (typeof index === 'number' && index <= this.$scrollItems.length && this.canScroll) {
 			this.goToSection(index);
 		}
 	}
@@ -200,7 +228,7 @@ class ScrollContainer extends VeamsComponent {
 	 * @param id
 	 */
 	activateSectionByID(id) {
-		if(id && typeof id === 'string' && this.canScroll) {
+		if (id && typeof id === 'string' && this.canScroll) {
 			const $el = $(id, this.$el);
 			const index = this.$scrollItems.index($el);
 
@@ -213,7 +241,7 @@ class ScrollContainer extends VeamsComponent {
 	 * @param newIndex
 	 */
 	goToSection(newIndex) {
-		if(this.activeIndex === newIndex) return;
+		if (this.activeIndex === newIndex) return;
 
 		this.blockEvents();
 		this.updateClasses(this.activeIndex, newIndex);
