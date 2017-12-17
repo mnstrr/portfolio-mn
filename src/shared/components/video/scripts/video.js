@@ -72,11 +72,11 @@ class Video extends VeamsComponent {
 	 * Render class
 	 */
 	render() {
+		// detect if video comes in viewport and start playing
 		if(isInViewport(this.el, false) && !this.isPlaying) {
 			this.el.play();
 			this.isPlaying = true;
 		}
-		console.log(isInViewport(this.el, false))
 	}
 }
 

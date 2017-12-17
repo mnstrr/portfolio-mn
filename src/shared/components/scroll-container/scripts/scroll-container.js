@@ -97,7 +97,6 @@ class ScrollContainer extends VeamsComponent {
 	 * Adds wheel and keydown input handler
 	 */
 	attachInputHandler() {
-		console.log('attach');
 		$(window).on('DOMMouseScroll mousewheel keydown', (e) => this.handleInput(e));
 	}
 
@@ -105,7 +104,6 @@ class ScrollContainer extends VeamsComponent {
 	 * Removes wheel and keydown input handler
 	 */
 	detachInputHandler() {
-		console.log('detach');
 		$(window).off('DOMMouseScroll mousewheel keydown');
 	}
 

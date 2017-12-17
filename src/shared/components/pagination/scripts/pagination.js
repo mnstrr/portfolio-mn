@@ -110,7 +110,6 @@ class Pagination extends VeamsComponent {
 	 * Adds class to hide pagination
 	 */
 	showPagination() {
-		console.log('shownav');
 		this.$el.addClass(this.options.classes.active);
 	}
 
@@ -118,7 +117,6 @@ class Pagination extends VeamsComponent {
 	 * Removes class to hide pagination
 	 */
 	hidePagination() {
-		console.log('hidenav');
 		this.$el.removeClass(this.options.classes.active);
 	}
 }

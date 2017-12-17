@@ -6,11 +6,10 @@
  *
  * @author your_name
  */
-
 // Imports
-import { Veams } from 'app.veams';
+import {Veams} from 'app.veams';
 import VeamsComponent from 'veams/src/js/common/component'; // Only use that in combination with browserify
-import isInViewport from 'veams/src/js/utils/helpers/is-in-viewport';
+
 // import VeamsComponent from 'veams/lib/common/component'; // Can be used in general
 
 // Variables
@@ -52,8 +51,8 @@ class ScrollItem extends VeamsComponent {
 	}
 
 	/**
-	* Event handling
-	*/
+	 * Event handling
+	 */
 	get events() {
 		return {
 			'click {{this.options.selectors.ctaShow}}': 'openCase',
@@ -62,8 +61,8 @@ class ScrollItem extends VeamsComponent {
 	}
 
 	/**
-	* Subscribe handling
-	*/
+	 * Subscribe handling
+	 */
 	get subscribe() {
 		return {
 			'{{Veams.EVENTS.scrollContainer.updateMeta}}': 'handleNewCase'
@@ -77,6 +76,7 @@ class ScrollItem extends VeamsComponent {
 	initialize() {
 		console.log('init ScrollItem');
 
+		this.ctaHide = this.$el.find(this.options.selectors.ctaHide);
 		this.body = $('body');
 	}
 
@@ -96,19 +96,22 @@ class ScrollItem extends VeamsComponent {
 		Veams.Vent.trigger(Veams.EVENTS.scrollItem.opened);
 	}
 
-	closeCase() {
-		this.$el.removeClass(this.options.classes.opened);
-		this.body.removeClass(this.options.classes.openedBody);
+	closeCase(e) {
 		this.isOpened = false;
 
-		// trigger event to attach scroll handler
-		Veams.Vent.trigger(Veams.EVENTS.scrollItem.closed);
+		$('html').animate({scrollTop: 0}, 600, 'swing', ()=> {
+			this.$el.removeClass(this.options.classes.opened);
+			this.body.removeClass(this.options.classes.openedBody);
 
-		//TODO: add delay for scrolling to top smoothly
+			if(e && e.currentTarget === this.ctaHide[0]) {
+				// trigger event to attach scroll handler
+				Veams.Vent.trigger(Veams.EVENTS.scrollItem.closed);
+			}
+		});
 	}
 
 	handleNewCase(e) {
-		if(this.isOpened && e.index !== e.prevIndex) {
+		if (this.isOpened && e.index !== e.prevIndex) {
 			this.closeCase();
 		}
 	}
