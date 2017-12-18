@@ -33,6 +33,13 @@
 					<p class="scroll-item__text">{{content.text}}</p>
 				{{/if}}
 
+				{{#if content.cta}}
+					<div class="scroll-item__cta-wrapper">
+						<button class="scroll-item__cta is-view" data-js-item="open-case">{{content.cta.view}}</button>
+						<button class="scroll-item__cta is-hide is-faded-out" data-js-item="close-case">{{content.cta.hide}}</button>
+					</div>
+				{{/if}}
+
 				{{#if content.meta}}
 					<div class="scroll-item__metawrapper">
 						<p class="scroll-item__subline">{{content.meta.mail.subline}}</p>
@@ -55,12 +62,6 @@
 				{{#with content.image}}
 					{{> c-picture}}
 				{{/with}}
-			</div>
-		{{/if}}
-		{{#if content.cta}}
-			<div class="scroll-item__cta-wrapper">
-				<button class="scroll-item__cta is-view" data-js-item="open-case">{{content.cta.view}}</button>
-				<button class="scroll-item__cta is-hide is-faded-out" data-js-item="close-case">{{content.cta.hide}}</button>
 			</div>
 		{{/if}}
 	</div>

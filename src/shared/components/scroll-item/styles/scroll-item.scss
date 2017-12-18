@@ -13,6 +13,7 @@ Global Styles
 	top: 0;
 	left: 0;
 	overflow: scroll;
+	pointer-events: none;
 
 	.scroll-item {
 		&__bg {
@@ -150,6 +151,8 @@ Global Styles
 	}
 
 	&.is-active {
+		pointer-events: auto;
+
 		.scroll-item {
 			&__bg {
 				opacity: 1;
@@ -255,10 +258,15 @@ Context: Magine Product
 --------------------------------------------------- */
 .c-scroll-item--magine-a {
 	.scroll-item {
+
 		&__textouter {
-			top: 55%;
+			top: 30%;
 			left: 10%;
 			transform: translateY(-50%);
+
+			@include media('>=tablet-l') {
+				top: 55%;
+			}
 		}
 
 		&__keywords-item {
@@ -280,16 +288,23 @@ Context: Magine Product
 		}
 
 		&__imagewrapper {
-			top: 55%;
-			right: 50px;
+			bottom: 10%;
+			left: 50%;
 			width: 70%;
 			max-width: 650px;
-			transform: translateY(-50%);
+			transform: translateX(-50%);
+
+			@include media('>=tablet-l') {
+				right: 50px;
+				left: auto;
+				bottom: 5%;
+				transform: translateX(0);
+			}
 		}
 
 		&__cta-wrapper {
-			bottom: 18%;
-			left: 50%;
+			bottom: -100px;
+			right: 160px;
 		}
 	}
 }
@@ -301,7 +316,7 @@ Context: Magine Marketing
 	.scroll-item {
 		&__textouter {
 			top: 75%;
-			left: 10%;
+			left: 8%;
 			transform: translateY(-50%);
 		}
 
@@ -329,15 +344,19 @@ Context: Magine Marketing
 		}
 
 		&__imagewrapper {
-			top: 50%;
+			top: 45%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			width: 70%;
+
+			@include media('>=tablet-l') {
+				top: 50%;
+			}
 		}
 
 		&__cta-wrapper {
-			bottom: 18%;
-			left: 50%;
+			bottom: -30px;
+			right: 0;
 		}
 	}
 
@@ -355,7 +374,7 @@ Context: Siemens
 		}
 
 		&__headline {
-			text-indent: 25%;
+			margin-left: 40%;
 			color: $case-siemens-grey;
 		}
 
@@ -386,8 +405,16 @@ Context: Siemens
 		}
 
 		&__cta-wrapper {
-			bottom: 18%;
-			left: 50%;
+			top: 50%;
+			left: 0;
+
+			.scroll-item__cta {
+				color: $case-siemens-contrast-2;
+
+				&::after {
+					@extend %icon-arrow-siemens;
+				}
+			}
 		}
 	}
 }
@@ -398,14 +425,21 @@ Context: Aperto
 .c-scroll-item--aperto {
 	.scroll-item {
 		&__textouter {
-			top: 60%;
-			right: 20%;
+			top: 50%;
+			left: 8%;
 			transform: translateY(-50%);
 		}
 
 		&__headline {
-			text-indent: -50%;
 			color: $white;
+		}
+
+		&__keywords {
+			margin-left: 0;
+
+			@include media('>=tablet-l') {
+				margin-left: 200px;
+			}
 		}
 
 		&__keywords-item {
@@ -427,15 +461,28 @@ Context: Aperto
 		}
 
 		&__imagewrapper {
-			bottom: 0;
-			left: 5%;
-			width: 60%;
-			max-width: 900px;
+			top: 55%;
+			left: 8%;
+			width: 80%;
+			transform: translateY(-50%);
+			max-width: 850px;
 		}
 
 		&__cta-wrapper {
-			bottom: 18%;
-			left: 50%;
+			bottom: 40px;
+			right: -5%;
+
+			@include media('>=tablet-l') {
+				right: 0;
+			}
+
+			.scroll-item__cta {
+				color: $grey;
+
+				&::after {
+					@extend %icon-arrow-aperto;
+				}
+			}
 		}
 	}
 }
@@ -495,6 +542,7 @@ Context: About
 		&__mail {
 			@include font-pagination();
 
+			pointer-events: none;
 			color: $white;
 			text-decoration: none;
 		}
@@ -508,6 +556,7 @@ Context: About
 			margin-top: 18px;
 			margin-right: 15px;
 			display: block;
+			pointer-events: none;
 
 			&.is-linkedin {
 				@extend %icon-linkedin;
@@ -540,6 +589,13 @@ Context: About
 
 		&__bg {
 			background: $case-about;
+		}
+
+		&.is-active {
+			&__mail,
+			&__linkitem-link {
+				pointer-events: auto;
+			}
 		}
 	}
 }

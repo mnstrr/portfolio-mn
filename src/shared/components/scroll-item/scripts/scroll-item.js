@@ -99,7 +99,7 @@ class ScrollItem extends VeamsComponent {
 	closeCase(e) {
 		this.isOpened = false;
 
-		$('html body').animate({scrollTop: 0}, 400, 'swing', ()=> {
+		$('html, body').animate({scrollTop: 0}, 400, 'swing', ()=> {
 			this.$el.removeClass(this.options.classes.opened);
 			this.body.removeClass(this.options.classes.openedBody);
 

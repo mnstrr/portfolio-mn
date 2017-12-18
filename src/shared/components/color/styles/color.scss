@@ -8,8 +8,13 @@ Global Styles
 [data-css="c-color"] {
 
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	margin-top: 60px;
+	flex-wrap: wrap;
+
+	@include media('>=tablet-l') {
+		justify-content: space-around;
+	}
 
 	.color {
 
@@ -17,6 +22,24 @@ Global Styles
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
+			&:first-child {
+				margin-right: 50px;
+
+				@include media('>=tablet-l') {
+					margin-right: 0;
+				}
+			}
+
+			&:nth-child(3) {
+				flex-basis: 100%;
+				margin-top: 60px;
+
+				@include media('>=tablet-l') {
+					flex-basis: auto;
+					margin-top: 0;
+				}
+			}
 		}
 
 		&__headline {

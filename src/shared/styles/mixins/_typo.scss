@@ -45,8 +45,13 @@ Mixin Typography
 	font-family: $font-butler;
 	font-weight: 900;
 
-	font-size: rem($fontsize-caseheadline);
-	line-height: rem($lineheight-caseheadline);
+	font-size: rem(100);
+	line-height: rem(121);
+
+	@include media('>=tablet-l') {
+		font-size: rem($fontsize-caseheadline);
+		line-height: rem($lineheight-caseheadline);
+	}
 }
 
 @mixin font-paragraph() {
@@ -80,15 +85,25 @@ Mixin Typography
 @mixin font-link {
 	@include font-heavy();
 
-	font-size: rem($fontsize-link);
-	line-height: rem($lineheight-link);
+	font-size: rem(18);
+	line-height: rem(21);
+
+	@include media('>=tablet-l') {
+		font-size: rem($fontsize-link);
+		line-height: rem($lineheight-link);
+	}
 }
 
 @mixin font-keywords {
 	@include font-light();
 
-	font-size: rem($fontsize-keywords);
-	line-height: rem($lineheight-keywords);
+	font-size: rem(20);
+	line-height: rem(24);
+
+	@include media('>=tablet-l') {
+		font-size: rem($fontsize-keywords);
+		line-height: rem($lineheight-keywords);
+	}
 }
 
 @mixin font-content-h {
