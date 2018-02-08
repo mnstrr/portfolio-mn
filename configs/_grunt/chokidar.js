@@ -28,7 +28,8 @@ module.exports = {
 			'<%= paths.src %>/shared/layouts/**/styles/**/*.scss'
 		],
 		tasks: [
-			'sass:dev'
+			'sass:dev',
+			'postcss:dev'
 		]
 	}
 };

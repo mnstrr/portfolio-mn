@@ -27,7 +27,7 @@ This project builds on following setup (please read requirements and getting sta
 
 - Desktop
 - Tablet
-- Phone
+- Phone (in the future)
 
 ### Breakpoints
 - $bp-mobile-s: (max 320px);

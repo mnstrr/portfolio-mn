@@ -1,0 +1,31 @@
+<div class="c-case-intro{{#if
+		settings.caseContentContextClass}}--{{settings.caseContentContextClass}}{{else}}--default{{/if}}{{#if
+		settings.caseContentClasses}} {{settings.caseContentClasses}}{{/if}}"
+		 data-css="c-case-intro">
+
+			<div class="case-intro__wrapper">
+				<div class="left">
+					<h3 class="case-intro__headline">{{content.headline}}</h3>
+					{{#each content.paragraphs}}
+						<p class="case-intro__paragraph">{{this}}</p>
+					{{/each}}
+				</div>
+				<div class="right is-flex-row">
+					{{#each content.metaList}}
+						<div class="case-intro__meta-item">
+							<h6 class="case-intro__meta-title">{{title}}</h6>
+							{{#if description}}
+								<p class="case-intro__meta-description">{{description}}</p>
+							{{/if}}
+							{{#if icons}}
+								<ul class="case-intro__icon-list">
+									{{#each icons}}
+										<li class="case-intro__icon is-{{this}}"></li>
+									{{/each}}
+								</ul>
+							{{/if}}
+						</div>
+					{{/each}}
+				</div>
+			</div>
+	</div>

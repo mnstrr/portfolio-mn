@@ -16,7 +16,6 @@ $bp-tablet-l: 1024px;
 $bp-desktop-m: 1230px;
 $bp-desktop-l: 1404px;
 
-
 // Breakpoints Map
 $breakpoints: (
 	'mobile-s': $bp-mobile-s,
@@ -29,4 +28,90 @@ $breakpoints: (
 	'desktop-l': $bp-desktop-l
 );
 
+// Colors
+$black: #000000;
+$darkgrey: #181A1D;
+$white: #FFFFFF;
+$grey: #333333;
 
+$case-intro: radial-gradient(circle, #1E1E3C 0%, #000000 100%);;
+$case-magine-a: #E10B25;
+$case-magine-a-contrast: #21D2B9;
+$case-magine-a-casebg: #1F2326;
+$case-magine-a-subline: #4F585F;
+$case-magine-a-color: #F6F6F6;
+$case-magine-a-colorline: #F8F8F8;
+$case-magine-b: #29B6F6;
+$case-magine-b-contrast: #FA0046;
+$case-magine-b-grey: #282E31;
+$case-magine-b-lightgrey: #E8E5E5;
+$case-siemens: #009BA5;
+$case-siemens-contrast: #41AAAA;
+$case-siemens-contrast-2: #D5D609;
+$case-siemens-grey: #262626;
+$case-aperto: #6C8C08;
+$case-aperto-contrast: #99CC00;
+$case-about: linear-gradient(135deg, #EE0909 0%, #FF00CC 100%);
+$intro-grey: #1E2325;
+$intrgo-grey-mid: #3E464C;
+$intro-grey-light: #A3AEB8;
+
+// Font
+$font-roboto: "Roboto", Arial, sans-serif;
+$font-butler: "Butler", Georgia, serif;
+
+// Typo
+$rem-baseline: 16px !default;
+
+$fontsize-caseheadline: 140;
+$lineheight-caseheadline: 168;
+
+$fontsize-headline: 38;
+$lineheight-headline: 26;
+
+$fontsize-paragraph: 18;
+$lineheight-paragraph: 26;
+
+$fontsize-keywords: 30;
+$lineheight-keywords: 35;
+
+$fontsize-meta: 20;
+$line-height-meta: 24;
+
+$fontsize-link: 22;
+$lineheight-link: 25;
+
+$fontsize-content-h: 24;
+$lineheight-content-h: 26;
+
+// Spacings
+$frame-spacing: 30px;
+
+// z-index
+$z-index-header: 9000;
+$z-index-pagination: 8000;
+$z-index-cta: 7000;
+$z-index-stage-text: 6000;
+$z-index-stage-image: 5950;
+
+
+
+// Transitions
+$transition-duration-default: 0.2s;
+$transition-duration-medium: 0.5s;
+
+$transition-timing-default: linear;
+$transition-timing-cubic: cubic-bezier(0.8, 0, 0.55, 0.94);
+
+
+/* ===================================================
+LOST SETTINGS
+=================================================== */
+@lost flexbox flex;
+@lost gutter 20px;
+
+$max-width: 1000px;
+
+body {
+	//lost-utility: edit;
+}

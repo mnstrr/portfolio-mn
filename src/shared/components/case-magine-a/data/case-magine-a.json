@@ -1,0 +1,15 @@
+
+{
+	"variations": {
+		"default": {
+			"docs": {
+				"variationName": "Default"
+			},
+			"settings": {
+				"caseMagineAContextClass": "default",
+				"caseMagineAClasses": false
+			},
+			"content": {}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+/* ===================================================
+component: logo
+=================================================== */
+$logo-width: 70px;
+$logo-height: 40px;
+
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-logo"] {
+	display: block;
+	position: absolute;
+	top: $frame-spacing;
+	left: $frame-spacing;
+	width: $logo-width;
+	height: $logo-height;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background: none;
+	cursor: pointer;
+	outline: none;
+
+	&::before,
+	&::after {
+		@extend %pseudo;
+
+		top: 0;
+		left: 0;
+		width: $logo-width;
+		height: $logo-height;
+		transition: opacity $transition-duration-default $transition-timing-default;
+		transition-delay: .7s;
+	}
+
+	&::before {
+		@extend %icon-logo-color;
+
+		opacity: 1;
+	}
+
+	&::after {
+		@extend %icon-logo-white;
+
+		opacity: 0;
+	}
+
+	&.is-white {
+		&::before {
+			opacity: 0;
+		}
+
+		&::after {
+			opacity: 1;
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-logo--default {
+}

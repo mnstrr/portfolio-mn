@@ -1,0 +1,32 @@
+{
+	"variations": {
+		"default": {
+			"docs": {
+				"variationName": "Default"
+			},
+			"settings": {
+				"navigationContextClass": "default",
+				"navigationClasses": false,
+				"navigationJsOptions": {}
+			},
+			"content": {
+				"items": [
+					{
+						"title": "Home",
+						"href": "home",
+						"class": "is-home",
+						"isActive": true
+					},
+					{
+						"title": "Work",
+						"href": "magine"
+					},
+					{
+						"title": "About",
+						"href": "about"
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+
+{
+	"variations": {
+		"default": {
+			"docs": {
+				"variationName": "Default"
+			},
+			"settings": {
+				"logoContextClass": "default",
+				"logoClasses": false,
+				"logoJsOptions": {}
+			},
+			"content": {}
+		}
+	}
+}

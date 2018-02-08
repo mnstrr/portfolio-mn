@@ -1,0 +1,16 @@
+
+{
+	"variations": {
+		"default": {
+			"docs": {
+				"variationName": "Default"
+			},
+			"settings": {
+				"scrollContainerContextClass": "default",
+				"scrollContainerClasses": false,
+				"scrollContainerJsOptions": {}
+			},
+			"content": {}
+		}
+	}
+}

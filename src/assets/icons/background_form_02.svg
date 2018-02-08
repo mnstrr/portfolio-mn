@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1438px" height="1155px" viewBox="0 0 1438 1155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>background_form_02</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="37.161176%" y1="58.9757273%" x2="10.7127033%" y2="0.0404037324%" id="linearGradient-1">
+            <stop stop-color="#1F2326" offset="0%"></stop>
+            <stop stop-color="#131617" offset="85.3882632%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="45.270147%" y1="59.5070745%" x2="10.7127033%" y2="0.0404037324%" id="linearGradient-2">
+            <stop stop-color="#1F2326" offset="0%"></stop>
+            <stop stop-color="#131617" offset="85.3882632%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Portfolio-02-a" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -5556.000000)" opacity="0.400000006">
+        <g id="background_form_02" transform="translate(0.000000, 5556.000000)">
+            <polygon id="Rectangle-26" fill="url(#linearGradient-1)" transform="translate(599.500000, 512.406250) scale(1, -1) translate(-599.500000, -512.406250) " points="0 0 1199 170.859375 1199 1024.8125 0 740"></polygon>
+            <polygon id="Rectangle-26" fill="url(#linearGradient-2)" transform="translate(838.500000, 642.406250) scale(-1, -1) translate(-838.500000, -642.406250) " points="239 130 1438 315.609375 1438 1154.8125 239 870"></polygon>
+        </g>
+    </g>
+</svg>

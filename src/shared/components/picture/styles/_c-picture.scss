@@ -1,0 +1,32 @@
+/* ===================================================
+COMPONENT: PICTURE
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-picture"] {
+	display: block;
+	width: 100%;
+
+	.picture__image {
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		transition: filter 300ms ease;
+
+		&.lazyload {
+			filter: blur(10px);
+		}
+
+		&.lazyloaded {
+			filter: blur(0);
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-picture--default {
+}

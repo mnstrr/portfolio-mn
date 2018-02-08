@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="105px" height="113px" viewBox="0 0 105 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>color_yellow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="37.2864804%" cy="14.2292668%" fx="37.2864804%" fy="14.2292668%" r="158.950345%" gradientTransform="translate(0.372865,0.142293),scale(1.000000,0.903614),rotate(54.200599),translate(-0.372865,-0.142293)" id="radialGradient-1">
+            <stop stop-color="#FFFF00" offset="0%"></stop>
+            <stop stop-color="#FBA900" offset="100%"></stop>
+        </radialGradient>
+        <path d="M167.197545,93.3174861 C164.063568,91.560838 158.935777,91.560838 155.802127,93.3174861 L129.697545,107.949822 C126.563895,109.706145 124,114.067995 124,117.64311 L124,149.357459 C124,152.93225 126.563895,157.294099 129.697545,159.050747 L155.802127,173.682758 C158.935777,175.439081 164.063568,175.439081 167.197545,173.682758 L193.302455,159.050747 C196.436105,157.294099 199,152.93225 199,149.357459 L199,117.64311 C199,114.067995 196.436105,109.706145 193.302455,107.949822 L167.197545,93.3174861" id="path-2"></path>
+        <filter x="-30.0%" y="-27.1%" width="160.0%" height="154.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Portfolio-02-a" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-944.000000, -2162.000000)">
+        <g id="brand_colors" transform="translate(285.000000, 2085.000000)">
+            <g id="accent" transform="translate(550.000000, 0.000000)">
+                <g id="color_yellow">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

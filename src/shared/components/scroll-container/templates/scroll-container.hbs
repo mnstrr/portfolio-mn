@@ -1,0 +1,10 @@
+
+
+<div class="c-scroll-container{{#if settings.scrollContainerContextClass}}--{{settings.scrollContainerContextClass}}{{else}}--default{{/if}}{{#if settings.scrollContainerClasses}} {{settings.scrollContainerClasses}}{{/if}}"
+     data-css="c-scroll-container"
+     data-js-module="scroll-container"{{#if settings.scrollContainerJsOptions}}
+     data-js-options='{{stringify settings.scrollContainerJsOptions}}'{{/if}}>
+
+	{{{yield}}}
+
+</div>

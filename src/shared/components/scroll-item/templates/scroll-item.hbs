@@ -1,0 +1,93 @@
+<div class="c-scroll-item{{#if
+	settings.scrollItemContextClass}}--{{settings.scrollItemContextClass}}{{else}}--default{{/if}} section{{#if
+	settings.scrollItemClasses}} {{settings.scrollItemClasses}}{{/if}}"
+	 id="{{settings.scrollItemID}}"
+	 data-css="c-scroll-item"
+	 data-js-item="scroll-item"
+	 data-js-module="scroll-item"{{#if settings.scrollItemJsOptions}}
+	 data-js-options='{{stringify settings.scrollItemJsOptions}}'{{/if}}>
+
+	<div class="scroll-item__header">
+		<div class="scroll-item__bg">
+			<div class="scroll-item__bg-overlay"></div>
+		</div>
+
+		<div class="scroll-item__textouter">
+			<div class="scroll-item__textinner">
+				{{#if content.headline}}
+					<h2 class="scroll-item__headline">{{{content.headline}}} {{#if content.subline}}
+						<span> {{content.subline}}</span>{{/if}}</h2>
+				{{/if}}
+
+				{{#if content.keywords}}
+					<ul class="scroll-item__keywords">
+						{{#each content.keywords}}
+							<li class="scroll-item__keywords-item">
+								{{this}}
+							</li>
+						{{/each}}
+					</ul>
+				{{/if}}
+
+				{{#if content.text}}
+					<p class="scroll-item__text">{{content.text}}</p>
+				{{/if}}
+
+				{{#if content.cta}}
+					<div class="scroll-item__cta-wrapper">
+						<button class="scroll-item__cta is-view" data-js-item="open-case">{{content.cta.view}}</button>
+						<button class="scroll-item__cta is-hide is-faded-out" data-js-item="close-case">{{content.cta.hide}}</button>
+					</div>
+				{{/if}}
+
+				{{#if content.meta}}
+					<div class="scroll-item__metawrapper">
+						<p class="scroll-item__subline">{{content.meta.mail.subline}}</p>
+						<a href="{{content.meta.mail.link.href}}"
+						   class="scroll-item__mail">{{content.meta.mail.link.text}}</a>
+						<p class="scroll-item__subline">{{content.meta.links.subline}}</p>
+						<ul class="scroll-item__links">
+							{{#each content.meta.links.items}}
+								<li class="scroll-item__linkitem">
+									<a href="{{link}}" target="_blank" class="scroll-item__linkitem-link is-{{icon}}"></a>
+								</li>
+							{{/each}}
+						</ul>
+					</div>
+				{{/if}}
+			</div>
+		</div>
+		{{#if content.image}}
+			<div class="scroll-item__imagewrapper">
+				{{#with content.image}}
+					{{> c-picture}}
+				{{/with}}
+			</div>
+		{{/if}}
+	</div>
+
+	{{#if content.case}}
+		<div class="scroll-item__case-wrapper">
+			{{#with content.intro}}
+				{{> case-intro}}
+			{{/with}}
+
+			{{#with content.case}}
+				{{#compare type "magine-a" operator="==="}}
+					{{> case-magine-a}}
+				{{/compare}}
+
+				{{#compare type "magine-b" operator="==="}}
+					{{> case-magine-b}}
+				{{/compare}}
+
+				{{#compare type "siemens" operator="==="}}
+					{{> case-siemens}}
+				{{/compare}}
+				{{#compare type "aperto" operator="==="}}
+					{{> case-aperto}}
+				{{/compare}}
+			{{/with}}
+		</div>
+	{{/if}}
+</div>

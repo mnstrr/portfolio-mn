@@ -1,0 +1,53 @@
+@mixin case-headline($fontcolor, $numbercolor, $numberbgcolor, $linecolor) {
+	@include font-content-h();
+
+	display: inline;
+	position: relative;
+	color: $fontcolor;
+	z-index: 1;
+
+	&::before {
+		content: attr(data-number);
+		position: absolute;
+		left: -34px;
+		bottom: -2px;
+		width: 24px;
+		height: 24px;
+		color: $numbercolor;
+		background-color: $numberbgcolor;
+		text-align: center;
+		font-size: rem(22);
+
+	}
+
+	&::after {
+		@extend %pseudo;
+
+		bottom: -2px;
+		left: -10px;
+		height: 17px;
+		right: -10px;
+		background-color: $linecolor;
+		z-index: -1;
+	}
+}
+
+@mixin case-subline ($fontcolor, $linecolor) {
+	@include font-content-h();
+
+	display: inline;
+	position: relative;
+	color: $fontcolor;
+	z-index: 1;
+
+	&::after {
+		@extend %pseudo;
+
+		bottom: -2px;
+		left: -10px;
+		height: 17px;
+		right: -10px;
+		background-color: $linecolor;
+		z-index: -1;
+	}
+}

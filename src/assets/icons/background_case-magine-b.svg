@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1380px" height="770px" viewBox="0 0 1380 770" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>background_blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1380" height="770"></rect>
+        <linearGradient x1="50%" y1="29.2568669%" x2="50.8041139%" y2="106.758611%" id="linearGradient-3">
+            <stop stop-color="#29B6F6" offset="0%"></stop>
+            <stop stop-color="#29B6F6" offset="61.1541506%"></stop>
+            <stop stop-color="#29B6F6" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-4.0%" y="-11.2%" width="107.9%" height="122.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="20" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <radialGradient cx="50%" cy="47.3616209%" fx="50%" fy="47.3616209%" r="48.6847195%" gradientTransform="translate(0.500000,0.473616),scale(0.763970,1.000000),rotate(87.482024),translate(-0.500000,-0.473616)" id="radialGradient-5">
+            <stop stop-color="#81D5FF" offset="0%"></stop>
+            <stop stop-color="#81D5FF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-2.5%" y="-3.3%" width="105.0%" height="106.6%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Portfolio-01-b" transform="translate(-30.000000, -30.000000)">
+            <g id="background_blue" transform="translate(30.000000, 30.000000)">
+                <rect id="blue" fill="#29B6F6" x="0" y="0" width="1380" height="770"></rect>
+                <g id="gradient">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <rect id="Rectangle-3" fill="url(#linearGradient-3)" filter="url(#filter-4)" mask="url(#mask-2)" x="-81" y="-30" width="1518" height="537"></rect>
+                    <ellipse id="Oval-3" fill="url(#radialGradient-5)" opacity="0.699999988" filter="url(#filter-6)" mask="url(#mask-2)" cx="518.5" cy="330" rx="599.5" ry="458"></ellipse>
+                    <path d="M1271.49902,94.7626953 L1154.14062,94.7626953 L1154.14062,413 L1059.87793,413 L1059.87793,94.7626953 L944.667969,94.7626953 L944.667969,21.984375 L1271.49902,21.984375 L1271.49902,94.7626953 Z M1116.27441,756.652344 L1194.15527,471.984375 L1299.42871,471.984375 L1167.83691,863 L1064.71191,863 L934.194336,471.984375 L1038.66211,471.984375 L1116.27441,756.652344 Z" id="T-V" fill="#FFFFFF" opacity="0.049999997" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

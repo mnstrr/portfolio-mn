@@ -1,0 +1,10 @@
+
+{
+    "paths": {
+        "styles": "src/shared/components/header/styles/header"
+    },
+    "type": "component",
+    "contextData": "header",
+    "layout": "lyt-docs",
+    "publish": true
+}

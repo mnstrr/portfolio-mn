@@ -1,0 +1,11 @@
+
+{
+    "paths": {
+        "scripts": "src/shared/components/scroll-item/scripts/scroll-item",
+        "styles": "src/shared/components/scroll-item/styles/scroll-item"
+    },
+    "type": "component",
+    "contextData": "scroll-item",
+    "layout": "lyt-docs",
+    "publish": true
+}

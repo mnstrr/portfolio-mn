@@ -1,0 +1,64 @@
+/* ===================================================
+component: pagination
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-pagination"] {
+	position: absolute;
+	top: 50%;
+	right: $frame-spacing + 40px;
+	z-index: $z-index-pagination;
+	opacity: 0;
+	transform: translate3d(10px, -50%, 0);
+	transition: opacity 700ms $transition-timing-cubic, transform 700ms $transition-timing-cubic;
+	transition-delay: .1s;
+
+	&.is-active {
+		transform: translate3d(0, -50%, 0);
+		transition-delay: .6s;
+		opacity: 1;
+	}
+
+	.pagination {
+		&__list {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__list-item {
+			margin-bottom: 20px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		&__btn {
+			@include font-pagination();
+
+			outline: none;
+			background: none;
+			border: none;
+			border-radius: 0;
+			color: $white;
+			opacity: 0.8;
+			cursor: pointer;
+			transition: color 600ms $transition-timing-cubic, font-weight 600ms $transition-timing-cubic;
+			transition-delay: .4s;
+
+			&.is-active {
+				font-weight: bold;
+				color: $grey;
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-pagination--default {
+}

@@ -16,7 +16,7 @@ Veams.onInitialize(() => {
     /**
     * Veams Plugins
     */
-    
+
     // Dom Plugin
     Veams.use(VeamsDOM, {
      DOM: $
@@ -28,7 +28,7 @@ Veams.onInitialize(() => {
     // 	state: INITIAL_STATE,
     // 	subjects: subjects
     // });
-    
+
     // Vent Plugin
     Veams.use(VeamsVent, {
         furtherEvents: EVENTS

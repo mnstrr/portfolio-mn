@@ -1,0 +1,130 @@
+<div class="c-case-aperto{{#if
+	settings.caseApertoContextClass}}--{{settings.caseApertoContextClass}}{{else}}--default{{/if}}{{#if
+	settings.caseApertoClasses}} {{settings.caseApertoClasses}}{{/if}}"
+	 data-css="c-case-aperto">
+	<div class="case-aperto__section-wrapper">
+		<section class="case-aperto__wireframes is-section">
+			<div class="is-grid-row">
+				<div class="is-col-12">
+					<h3 class="case-aperto__headline" data-number="1">{{content.wireframes.headline}}</h3>
+				</div>
+				<div class="is-col-8">
+					<p class="case-aperto__paragraph">{{content.wireframes.text}}</p>
+				</div>
+			</div>
+			{{#with content.wireframes.image}}
+				{{> c-picture}}
+			{{/with}}
+		</section>
+		<section class="case-aperto__colors is-section">
+			<div class="is-grid-row">
+				<div class="is-col-12">
+					<h3 class="case-aperto__headline" data-number="2">{{content.colors.headline}}</h3>
+				</div>
+				<div class="is-col-8">
+					<p class="case-aperto__paragraph">{{content.colors.text}}</p>
+				</div>
+			</div>
+			<div class="is-grid-row">
+				<div class="is-col-10 is-offset-1">
+					{{#with content.colors.content}}
+						{{> color}}
+					{{/with}}
+				</div>
+			</div>
+		</section>
+		<section class="case-aperto__homepage">
+			<div class="is-grid-row">
+				<div class="is-col-12">
+					<div class="case-aperto__homepage-video">
+						{{#with content.homepage}}
+							{{> c-video}}
+						{{/with}}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="case-aperto__detail is-section">
+			<div class="is-grid-row">
+				<div class="is-col-4">
+					<h3 class="case-aperto__subline">{{content.detail.subline}}</h3>
+					<p class="case-aperto__paragraph">{{content.detail.text}}</p>
+				</div>
+				<div class="is-col-8">
+					{{#with content.detail.image}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+			</div>
+		</section>
+		<section class="case-aperto__other is-section">
+			<div class="is-grid-row">
+				<div class="is-col-7">
+					{{#with content.other.image}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+				<div class="is-col-5">
+					<h3 class="case-aperto__subline">{{content.other.subline}}</h3>
+					<p class="case-aperto__paragraph">{{content.other.text}}</p>
+				</div>
+			</div>
+		</section>
+		<section class="case-aperto__desktop is-section">
+			<div class="is-grid-row">
+				<div class="is-col-8 is-offset-3">
+					<p class="case-aperto__hint">{{content.desktop.hint}}</p>
+				</div>
+			</div>
+			<div class="is-grid-row">
+				<div class="is-col-8">
+					<div class="case-aperto__devices-wrapper">
+						{{#with content.desktop.image}}
+							{{> c-picture}}
+						{{/with}}
+						<p class="case-aperto__caption">{{content.desktop.caption}}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="case-aperto__tablet">
+			<div class="is-grid-row">
+				<div class="is-col-7 is-offset-5">
+					<div class="case-aperto__devices-wrapper">
+						{{#with content.tablet.image}}
+							{{> c-picture}}
+						{{/with}}
+						<p class="case-aperto__caption">{{content.tablet.caption}}<span>{{content.tablet.caption-2}}</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="case-aperto__smartphone">
+			<div class="is-grid-row">
+				<div class="is-col-7">
+					<div class="case-aperto__devices-wrapper">
+						{{#with content.smartphone.image}}
+							{{> c-picture}}
+						{{/with}}
+						<p class="case-aperto__caption">{{content.smartphone.caption}}<span>{{content.smartphone.caption-2}}</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="case-aperto__magazine">
+			{{#with content.magazine.image}}
+				{{> c-picture}}
+			{{/with}}
+			<div class="case-aperto__magazine-content">
+				<div class="is-grid-row">
+					<div class="is-col-12">
+						<h3 class="case-aperto__headline" data-number="5">{{content.magazine.headline}}</h3>
+					</div>
+					<div class="is-col-8">
+						<p class="case-aperto__paragraph">{{content.magazine.text}}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

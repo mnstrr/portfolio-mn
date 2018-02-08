@@ -1,0 +1,100 @@
+<div class="c-case-siemens{{#if
+	settings.caseSiemensContextClass}}--{{settings.caseSiemensContextClass}}{{else}}--default{{/if}}{{#if
+	settings.caseSiemensClasses}} {{settings.caseSiemensClasses}}{{/if}}"
+	 data-css="c-case-siemens">
+	<div class="case-siemens__section-wrapper">
+		<section class="case-siemens__brand is-section">
+			<div class="is-grid-row">
+				<div class="is-col-12">
+					<h3 class="case-siemens__headline" data-number="1">{{content.brand.headline}}</h3>
+				</div>
+				<div class="is-col-8">
+					<p class="case-siemens__paragraph">{{content.brand.text}}</p>
+				</div>
+				<div class="is-col-12">
+					{{#with content.brand.image}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+			</div>
+			{{#with content.brand.image-2}}
+				{{> c-picture}}
+			{{/with}}
+		</section>
+		<section class="case-siemens__pages is-section is-grid-row">
+			<div class="is-col-12">
+				<h3 class="case-siemens__headline" data-number="2">{{content.pages.headline}}</h3>
+			</div>
+			<div class="is-col-8">
+				<p class="case-siemens__paragraph">{{content.pages.text}}</p>
+			</div>
+		</section>
+		<section class="case-siemens__homepage is-section is-grid-row">
+			<h3 class="case-siemens__subline">{{content.homepage.subline}}</h3>
+			<div class="case-siemens__homepage-wrapper is-col-11 is-offset-1">
+				{{#with content.homepage.image}}
+					{{> c-picture}}
+				{{/with}}
+				<p class="case-siemens__caption">{{content.homepage.caption}}</p>
+			</div>
+		</section>
+		<section class="case-siemens_productlist is-section is-grid-row">
+			<div class="is-col-12">
+				<h3 class="case-siemens__subline">{{content.productlist.subline}}</h3>
+			</div>
+			<div class="is-col-8">
+				<p class="case-siemens__paragraph">{{content.productlist.text}}</p>
+			</div>
+			<div class="case-siemens__productlist-wrapper">
+				{{#with content.productlist.image}}
+					{{> c-picture}}
+				{{/with}}
+				<p class="case-siemens__caption">{{content.productlist.caption}}</p>
+			</div>
+		</section>
+		<section class="case-siemens__productdetail is-section is-grid-row">
+			<div class="is-col-12">
+				<h3 class="case-siemens__subline">{{content.productdetail.subline}}</h3>
+			</div>
+			<div class="is-col-8">
+				<p class="case-siemens__paragraph">{{content.productdetail.text}}</p>
+			</div>
+			<div class="case-siemens__productdetail-wrapper is-col-12">
+				<div class="is-col-8 is-offset-1">
+					{{#with content.productdetail.image}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+				<p class="case-siemens__caption"><span>{{content.productdetail.caption-1}}</span></p>
+				<p class="case-siemens__caption">{{content.productdetail.caption-2}}</p>
+			</div>
+		</section>
+		<section class="case-siemens__store is-section">
+			<div class="is-grid-row">
+				<div class="is-col-12">
+					<h3 class="case-siemens__headline" data-number="3">{{content.store.headline}}</h3>
+				</div>
+				<div class="is-col-8">
+					<p class="case-siemens__paragraph">{{content.store.text}}</p>
+				</div>
+			</div>
+			{{#with content.store.image}}
+				{{> c-picture}}
+			{{/with}}
+		</section>
+		<section class="case-siemens__landingpage is-section ">
+			<div class="is-grid-row">
+				<div class="is-col-10 is-offset-2">
+					{{#with content.landingpage.image}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+			</div>
+			<div class="is-grid-row">
+				<div class="is-col-6 is-offset-6">
+					<p class="case-siemens__caption">{{content.landingpage.caption}}</p>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

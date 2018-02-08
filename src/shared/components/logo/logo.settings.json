@@ -1,0 +1,11 @@
+
+{
+    "paths": {
+        "scripts": "src/shared/components/logo/scripts/logo",
+        "styles": "src/shared/components/logo/styles/logo"
+    },
+    "type": "component",
+    "contextData": "logo",
+    "layout": "lyt-docs",
+    "publish": true
+}

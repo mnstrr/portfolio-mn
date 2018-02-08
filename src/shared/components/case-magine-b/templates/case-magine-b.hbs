@@ -1,0 +1,153 @@
+<div class="c-case-magine-b{{#if
+	settings.caseMagineBContextClass}}--{{settings.caseMagineBContextClass}}{{else}}--default{{/if}}{{#if
+	settings.caseMagineBClasses}} {{settings.caseMagineBClasses}}{{/if}}"
+	 data-css="c-case-magine-b">
+	<div class="case-magine-b__section-wrapper">
+		<section class="case-magine-b__colors is-grid-row is-section">
+			<div class="is-col-12">
+				<h3 class="case-magine-b__headline" data-number="1">{{content.colors.headline}}</h3>
+			</div>
+			<div class="is-col-8">
+				<p class="case-magine-b__paragraph">{{content.colors.text}}</p>
+			</div>
+			<div class="is-col-8 is-offset-2">
+				{{#with content.colors.content}}
+					{{> color}}
+				{{/with}}
+			</div>
+		</section>
+		<section class="case-magine-b__website is-grid-row is-section">
+			<div class="is-col-12">
+				<h3 class="case-magine-b__headline" data-number="2">{{content.website.headline}}</h3>
+			</div>
+			<div class="is-col-8">
+				<p class="case-magine-b__paragraph">{{content.website.text}}</p>
+			</div>
+		</section>
+		<section class="case-magine-b__pages is-section">
+			<div class="is-grid-row">
+				<div class="is-col-6">
+					<h3 class="case-magine-b__subline">{{content.pages.subline}}</h3>
+					<p class="case-magine-b__paragraph">{{content.pages.text}}</p>
+
+					{{#with content.pages.image-1}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+				<div class="is-col-6">
+					{{#with content.pages.image-2}}
+						{{> c-picture}}
+					{{/with}}
+					{{#with content.pages.image-3}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+			</div>
+			<div class="is-grid-row">
+				<div class="is-col-10">
+					{{#with content.pages.image-4}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+			</div>
+			<div class="is-grid-row">
+				<div class="is-col-5 is-offset-7">
+					<p class="case-magine-b__paragraph is-arrow">{{content.pages.caption}}</p>
+				</div>
+			</div>
+		</section>
+		<section class="case-magine-b__modules is-section">
+			<div class="is-grid-row">
+				<div class="is-col-12">
+					<h3 class="case-magine-b__subline">{{content.module.subline}}</h3>
+				</div>
+				<div class="is-col-8">
+					<p class="case-magine-b__paragraph is-arrow">{{content.module.text}}</p>
+				</div>
+			</div>
+			<div class="is-grid-row">
+				{{#with content.module.image}}
+					{{> c-picture}}
+				{{/with}}
+			</div>
+		</section>
+		<section class="case-magine-b__signup is-section">
+			<div class="is-grid-row">
+				<h3 class="case-magine-b__subline">{{content.signup.subline}}</h3>
+			</div>
+			{{#with content.signup.image}}
+				{{> c-picture}}
+			{{/with}}
+			<div class="is-grid-row">
+				<div class="is-col-8 is-offset-2">
+					<p class="case-magine-b__paragraph">{{content.signup.text}}</p>
+				</div>
+			</div>
+		</section>
+		<section class="case-magine-b__pricing is-section">
+			<div class="is-grid-row">
+				<div class="is-col-12">
+					<h3 class="case-magine-b__subline">{{content.pricing.subline}}</h3>
+				</div>
+				<div class="is-col-8">
+					<p class="case-magine-b__paragraph">{{content.pricing.text}}</p>
+				</div>
+			</div>
+			<div class="is-grid-row">
+				<div class="is-col-10 is-offset-1">
+					{{#with content.pricing.image-1}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+			</div>
+			<div class="is-grid-row">
+				<div class="is-col-10 is-offset-1">
+					{{#with content.pricing.image-2}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+			</div>
+		</section>
+		<section class="case-magine-b__marketing is-section">
+			<div class="is-grid-row">
+				<div class="is-col-12">
+					<h3 class="case-magine-b__headline" data-number="3">{{content.marketing.headline}}</h3>
+				</div>
+				<div class="is-col-8">
+					<p class="case-magine-b__paragraph">{{content.marketing.text}}</p>
+				</div>
+			</div>
+			<div class="is-grid-row">
+				<div class="is-col-11">
+					{{#with content.marketing.image-1}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+			</div>
+			<div class="is-grid-row">
+				<div class="is-col-7 is-offset-5">
+					{{#with content.marketing.image-2}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+			</div>
+		</section>
+
+		<section class="case-magine-b__marketing2">
+			<div class="is-grid-row">
+				<div class="is-col-10">
+					{{#with content.marketing.image-3}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+			</div>
+			<div class="is-grid-row">
+				<div class="is-col-8 is-offset-4">
+					{{#with content.marketing.image-4}}
+						{{> c-picture}}
+					{{/with}}
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

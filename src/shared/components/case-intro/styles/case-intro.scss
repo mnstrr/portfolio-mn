@@ -1,0 +1,145 @@
+/* ===================================================
+component: case-intro
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-case-intro"] {
+	.case-intro {
+		&__wrapper {
+			lost-center: 1000px 60px flex;
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-case-intro--intro {
+	margin-top: 60px;
+	position: relative;
+
+	.case-intro {
+		&__headline {
+			@include font-headline();
+
+			margin-bottom: 40px;
+			color: $intro-grey;
+		}
+
+		&__paragraph {
+			@include font-paragraph();
+
+			margin-bottom: 26px;
+			font-style: italic;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		&__meta-item {
+			margin-bottom: 26px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		&__meta-title {
+			@include font-paragraph-bold();
+
+			color: $intro-grey-light;
+			text-transform: uppercase;
+			font-style: italic;
+		}
+
+		&__meta-description {
+			@include font-paragraph();
+
+			color: $intrgo-grey-mid;
+			font-style: italic;
+		}
+
+		&__icon-list {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		&__icon {
+			margin: 17px 17px 0 0;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			&.is-sketch {
+				@extend %icon-sketch;
+
+				height: 50px;
+				width: 55px;
+			}
+
+			&.is-photoshop {
+				@extend %icon-photoshop;
+
+				height: 50px;
+				width: 52px;
+			}
+
+			&.is-illustrator {
+				@extend %icon-illustrator;
+
+				height: 50px;
+				width: 51px;
+			}
+
+			&.is-indesign {
+				@extend %icon-indesign;
+
+				height: 50px;
+				width: 51px;
+			}
+
+			&.is-invision {
+				@extend %icon-invision;
+
+				height: 50px;
+				width: 50px;
+			}
+
+			&.is-zeplin {
+				@extend %icon-zeplin;
+
+				height: 50px;
+				width: 66px;
+			}
+
+			&.is-fireworks {
+				@extend %icon-fireworks_icon;
+
+				height: 50px;
+				width: 51px;
+			}
+
+			&.is-c4d {
+				@extend %icon-C4D-Logo;
+
+				height: 50px;
+				width: 51px;
+			}
+		}
+	}
+
+	//TODO: add col classes loop
+	.left {
+		lost-column: 7/12;
+	}
+
+	.right {
+		lost-offset: 1/12;
+		lost-column: 4/12;
+	}
+}

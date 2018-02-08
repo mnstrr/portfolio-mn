@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1380px" height="830px" viewBox="0 0 1380 830" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Background_Start</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="28.9175725%" cy="23.7131696%" fx="28.9175725%" fy="23.7131696%" r="82.6121676%" gradientTransform="translate(0.289176,0.237132),scale(0.557971,1.000000),rotate(-152.667935),translate(-0.289176,-0.237132)" id="radialGradient-1">
+            <stop stop-color="#1E1E3C" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="16.7509883%" cy="12.8894484%" fx="16.7509883%" fy="12.8894484%" r="94.2418242%" gradientTransform="translate(0.167510,0.128894),scale(0.889793,1.000000),rotate(40.218224),translate(-0.167510,-0.128894)" id="radialGradient-2">
+            <stop stop-color="#F02FC2" offset="0%"></stop>
+            <stop stop-color="#6094EA" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-22.6%" y="-25.4%" width="145.2%" height="150.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="0%" y1="0%" x2="96.4696295%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#0F83DB" offset="0%"></stop>
+            <stop stop-color="#42E695" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-41.8%" y="-33.4%" width="183.5%" height="166.8%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="40" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Portfolio-01" transform="translate(-30.000000, 0.000000)">
+            <g id="Background_Start" transform="translate(30.000000, 30.000000)">
+                <rect id="Rectangle-2" fill="url(#radialGradient-1)" x="0" y="0" width="1380" height="770"></rect>
+                <g id="Group-5" opacity="0.800000012" transform="translate(388.000000, 89.000000)">
+                    <path d="M332,591.071434 C515.358537,591.071434 664,442.429971 664,259.071434 C664,75.7128973 471.804688,548.007812 289.703125,184.735497 C107.601563,-178.536819 0,75.7128973 0,259.071434 C0,442.429971 148.641463,591.071434 332,591.071434 Z" id="Oval" fill="url(#radialGradient-2)" opacity="0.200000003" filter="url(#filter-3)"></path>
+                    <path d="M286.905309,151.10561 C413.350621,257.32436 356.178746,405.496235 254.053746,405.496235 C151.928746,405.496235 375.459996,562.66811 486.108434,405.496235 C634.910005,194.129293 160.459996,44.8868605 286.905309,151.10561 Z" id="Path-2" fill="url(#linearGradient-4)" opacity="0.5" filter="url(#filter-5)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

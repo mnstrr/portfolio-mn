@@ -1,0 +1,198 @@
+/* ===================================================
+component: color
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-color"] {
+
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+	flex-wrap: wrap;
+
+	@include media('>=tablet-l') {
+		justify-content: space-around;
+	}
+
+	.color {
+
+		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&:first-child {
+				margin-right: 50px;
+
+				@include media('>=tablet-l') {
+					margin-right: 0;
+				}
+			}
+
+			&:nth-child(3) {
+				flex-basis: 100%;
+				margin-top: 60px;
+
+				@include media('>=tablet-l') {
+					flex-basis: auto;
+					margin-top: 0;
+				}
+			}
+		}
+
+		&__headline {
+			@include font-paragraph();
+
+			text-transform: uppercase;
+			width: 150px;
+			padding: 0 15px;
+			text-align: center;
+		}
+
+		&__imagewrapper {
+			margin-top: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&.is-group {
+				flex-direction: row;
+
+				.color__image {
+					width: 75px;
+					height: 83px;
+				}
+
+				.color__group {
+					margin-right: 20px;
+
+					&:last-of-type {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+
+		&__group {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__image {
+			width: 118px;
+			height: 130px;
+			background-size: cover;
+
+		}
+
+		&__code {
+			@include font-paragraph();
+
+			margin-top: 15px;
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context: Magine-a
+--------------------------------------------------- */
+.c-color--magine-a {
+	.color {
+		&__headline {
+			color: $case-magine-a-color;
+			border-bottom: 1px solid $case-magine-a-colorline;
+		}
+
+		&__code {
+			color: $case-magine-a-color;
+		}
+
+		&__image {
+			&.is-magine-red {
+				@extend %icon-color_red;
+			}
+
+			&.is-magine-blue {
+				@extend %icon-color_blue;
+			}
+
+			&.is-magine-green {
+				@extend %icon-color_green;
+			}
+
+			&.is-magine-yellow {
+				@extend %icon-color_yellow;
+			}
+
+			&.is-magine-purple {
+				@extend %icon-color_purple;
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context: Magine-b
+--------------------------------------------------- */
+.c-color--magine-b {
+	.color {
+		&__headline {
+			color: #A3AEB8;
+			border-bottom: 1px solid #B2BCC5;
+		}
+
+		&__code {
+			color: #181A1D;
+		}
+
+		&__image {
+			&.is-magine-red {
+				@extend %icon-color_red;
+			}
+
+			&.is-magine-blue {
+				@extend %icon-color_blue;
+			}
+
+			&.is-magine-green {
+				@extend %icon-color_green2;
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context:Aperto
+--------------------------------------------------- */
+.c-color--aperto {
+	.color {
+		&__headline {
+			color: #A3AEB8;
+			border-bottom: 1px solid #B2BCC5;
+		}
+
+		&__code {
+			color: #181A1D;
+		}
+
+		&__image {
+			height: 130px;
+			width: 151px;
+
+			&.is-aperto-green {
+				@extend %icon-green;
+			}
+
+			&.is-aperto-black {
+				@extend %icon-black;
+			}
+
+			&.is-aperto-grey {
+				@extend %icon-grey;
+			}
+		}
+	}
+}

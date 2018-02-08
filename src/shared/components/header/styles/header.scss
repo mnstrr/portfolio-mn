@@ -1,0 +1,30 @@
+/* ===================================================
+component: header
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-header"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% - #{$frame-spacing * 2});
+	height: 100px;
+	padding: $frame-spacing $frame-spacing 0 $frame-spacing;
+	z-index: $z-index-header;
+
+	.header {
+		&__content {
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-header--default {
+}

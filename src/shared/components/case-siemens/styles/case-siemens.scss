@@ -1,0 +1,100 @@
+/* ===================================================
+component: case-siemens
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-case-siemens"] {
+	.is-image {
+		margin-top: 60px;
+	}
+
+	.case-siemens {
+		&__headline {
+			@include case-headline($black, $white, $case-magine-b-grey, $case-siemens-contrast);
+		}
+
+		&__subline {
+			@include case-subline($black, $case-magine-b-lightgrey);
+		}
+
+		&__paragraph,
+		&__caption {
+			@include font-paragraph();
+
+			color: $black;
+		}
+
+		&__paragraph {
+			margin-top: 35px;
+			position: relative;
+		}
+
+		&__homepage-wrapper {
+			position: relative;
+
+			.case-siemens__caption {
+				lost-column: 3/12;
+				position: absolute;
+				top: 44%;
+				right: 0;
+			}
+		}
+
+		&__productlist-wrapper {
+			position: relative;
+
+			.case-siemens__caption {
+				lost-column: 4/12;
+				position: absolute;
+				top: 58%;
+				right: 0;
+			}
+		}
+
+		&__productdetail-wrapper {
+			position: relative;
+			margin-top: 60px;
+
+			.case-siemens__caption {
+				position: absolute;
+
+				&:nth-of-type(1) {
+					lost-column: 5/12;
+					right: 0;
+					top: 18px;
+					transform: translateY(-100%);
+
+					span {
+						display: block;
+						padding-left: 20px;
+					}
+				}
+
+				&:nth-of-type(2) {
+					lost-column: 3/12;
+					right: 0;
+					top: 15%;
+				}
+			}
+		}
+
+		&__store-picture {
+			margin-top: -60px;
+		}
+
+		&__landingpage {
+			@extend %icon-background_green;
+
+			padding-bottom: 250px;
+			background-position-y: 100%;
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-case-siemens--default {
+}

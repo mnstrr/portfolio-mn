@@ -1,0 +1,206 @@
+/* ===================================================
+component: case-magine-a
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-case-magine-a"] {
+	position: relative;
+	margin-top: 70px;
+
+	.case-magine-a {
+		&__headline {
+			@include case-headline($white, $case-magine-a-casebg, $white, $case-magine-b-contrast);
+		}
+
+		&__subline {
+			@include case-subline($white, $case-magine-a-subline);
+		}
+
+		&__paragraph {
+			@include font-paragraph();
+
+			color: $white;
+			margin-top: 35px;
+			position: relative;
+		}
+
+		&__section-wrapper {
+			background-color: $case-magine-a-casebg;
+		}
+
+		&__intro {
+			position: relative;
+			top: -150px;
+		}
+
+		&__intro-image {
+			width: 100%;
+			display: block;
+		}
+
+		&__intro-splash {
+			position: absolute;
+			top: -60px;
+			right: 15%;
+			width: 50%;
+		}
+
+		&__colors {
+			margin-top: -50px;
+		}
+
+		&__color-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__color-wrapper {
+			display: flex;
+			justify-content: space-around;
+			margin-top: 60px;
+		}
+
+		&__color-headline {
+			@include font-paragraph();
+
+			color: $case-magine-a-color;
+			text-transform: uppercase;
+			width: 150px;
+			padding: 0 15px;
+			text-align: center;
+			border-bottom: 1px solid $case-magine-a-colorline;
+		}
+
+		&__color-imagewrapper {
+			margin-top: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&.is-group {
+				flex-direction: row;
+
+				.case-magine-a__color-image {
+					width: 75px;
+					height: 83px;
+				}
+
+				.case-magine-a__color-group {
+					margin-right: 20px;
+
+					&:last-of-type {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+
+		&__color-group {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__color-image {
+			width: 118px;
+			height: 130px;
+			background-size: cover;
+
+			@extend %icon-color_red;
+		}
+
+		&__color-code {
+			@include font-paragraph();
+
+			color: $case-magine-a-color;
+			margin-top: 15px;
+		}
+
+		&__packages {
+			margin-top: 120px;
+		}
+
+		&__packages-image {
+			margin-top: 60px;
+		}
+
+		&__epg {
+			margin-top: 120px;
+		}
+
+		&__caption {
+			@include font-paragraph();
+
+			position: relative;
+			z-index: 1;
+			color: $white;
+		}
+
+		&__player {
+			position: relative;
+
+			&::before {
+				@extend %pseudo;
+				@extend %icon-background_form;
+
+				top: -110px;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+			}
+		}
+
+		&__player .case-magine-a__subline {
+			display: inline-block;
+			margin-top: 40px;
+		}
+
+		&__player-image {
+			margin-left: calc(((100vw - (100% * 2)) / 2 - 10px) * -1);
+			margin-right: 50px;
+		}
+
+		&__player-image-2 {
+			margin-right: -60px;
+			margin-top: -16%;
+		}
+
+		&__player-image-3 {
+			margin-top: -120px;
+		}
+
+		&__player-caption {
+			@include font-paragraph();
+
+			color: $white;
+		}
+
+		&__web {
+			position: relative;
+
+
+			&::after {
+				@extend %pseudo;
+				@extend %icon-background_form_02;
+
+				bottom: -200px;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+			}
+		}
+
+		&__web-image {
+			margin-top: 60px;
+		}
+
+		&__touch-image {
+			margin-top: 60px;
+		}
+	}
+}
