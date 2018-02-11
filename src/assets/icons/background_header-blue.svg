@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1380px" height="771px" viewBox="0 0 1380 771" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>background_blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.8041143%" y1="0%" x2="50.8041143%" y2="88.0610795%" id="linearGradient-1">
+            <stop stop-color="#29B6F6" offset="0%"></stop>
+            <stop stop-color="#54C6FF" offset="48.0121478%"></stop>
+            <stop stop-color="#29B6F6" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="1380" height="770"></rect>
+    </defs>
+    <g id="Portfolio-01-b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-30.000000, -30.000000)">
+        <g id="background_blue" transform="translate(30.000000, 30.000000)">
+            <rect id="blue" fill="url(#linearGradient-1)" x="0" y="0" width="1380" height="771"></rect>
+            <g id="background_TV">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <g id="Mask"></g>
+                <path d="M1271.49902,94.7626953 L1154.14062,94.7626953 L1154.14062,413 L1059.87793,413 L1059.87793,94.7626953 L944.667969,94.7626953 L944.667969,21.984375 L1271.49902,21.984375 L1271.49902,94.7626953 Z M1116.27441,756.652344 L1194.15527,471.984375 L1299.42871,471.984375 L1167.83691,863 L1064.71191,863 L934.194336,471.984375 L1038.66211,471.984375 L1116.27441,756.652344 Z" id="T-V" fill="#FFFFFF" opacity="0.0799999982" mask="url(#mask-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

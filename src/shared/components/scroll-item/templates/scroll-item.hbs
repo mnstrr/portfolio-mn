@@ -57,6 +57,11 @@
 				{{/if}}
 			</div>
 		</div>
+		{{#if content.explore}}
+			<button class="scroll-item__explore" data-js-item="explore">
+				{{content.explore}}
+			</button>
+		{{/if}}
 		{{#if content.image}}
 			<div class="scroll-item__imagewrapper">
 				{{#with content.image}}

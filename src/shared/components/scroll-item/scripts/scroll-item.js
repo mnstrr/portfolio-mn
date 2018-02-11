@@ -30,7 +30,8 @@ class ScrollItem extends VeamsComponent {
 		let options = {
 			selectors: {
 				ctaShow: '[data-js-item="open-case"]',
-				ctaHide: '[data-js-item="close-case"]'
+				ctaHide: '[data-js-item="close-case"]',
+				explore: '[data-js-item="explore"]'
 			},
 			classes: {
 				opened: 'is-open',
@@ -57,6 +58,7 @@ class ScrollItem extends VeamsComponent {
 		return {
 			'click {{this.options.selectors.ctaShow}}': 'openCase',
 			'click {{this.options.selectors.ctaHide}}': 'closeCase',
+			'click {{this.options.selectors.explore}}': 'explore',
 		};
 	}
 
@@ -108,6 +110,10 @@ class ScrollItem extends VeamsComponent {
 				Veams.Vent.trigger(Veams.EVENTS.scrollItem.closed);
 			}
 		});
+	}
+
+	explore() {
+		Veams.Vent.trigger(Veams.EVENTS.navigation.clicked, '#magine');
 	}
 
 	handleNewCase(e) {

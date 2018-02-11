@@ -58,6 +58,14 @@ EVENTS.caseContent = {
 	eventName: 'caseContent:eventName'
 };
 
+
+/**
+ * Events for DeviceHint
+ */
+EVENTS.deviceHint = {
+	eventName: 'deviceHint:eventName'
+};
+
 // @INSERTPOINT :: @ref: js-events
 
 export default EVENTS;

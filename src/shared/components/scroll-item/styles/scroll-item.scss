@@ -12,7 +12,7 @@ Global Styles
 	position: absolute;
 	top: 0;
 	left: 0;
-	overflow: scroll;
+	overflow: hidden;
 	pointer-events: none;
 
 	.scroll-item {
@@ -86,15 +86,41 @@ Global Styles
 			}
 		}
 
-		&__cta-wrapper {
+		&__explore {
+			@include font-paragraph();
+
+			opacity: 0;
+			color: $white;
+			background: none;
+			border: none;
+			border-radius: 0;
 			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			outline: none;
+			padding-bottom: 80px;
+			cursor: pointer;
+			transition: opacity 700ms $transition-timing-cubic, transform 700ms $transition-timing-cubic;
+
+			&::after {
+				@extend %pseudo;
+
+				top: 40px;
+				width: 1px;
+				height: 40px;
+				left: 50%;
+				transform: translateX(-50%);
+				background-color: #FFFFFF;
+			}
+
 		}
 
 		&__cta {
 			@include font-link();
 
 			display: block;
-			position: relative;
+			position: absolute;
 			padding: 0;
 			background: none;
 			border: none;
@@ -109,7 +135,6 @@ Global Styles
 
 			&::after {
 				@extend %pseudo;
-				@extend %icon-arrow-white;
 
 				width: 30px;
 				height: 20px;
@@ -164,6 +189,11 @@ Global Styles
 				transition-delay: .7s;
 			}
 
+			&__explore {
+				opacity: 1;
+				transition-delay: .7s;
+			}
+
 			&__image {
 				opacity: 1;
 				transition-delay: .8s;
@@ -179,6 +209,10 @@ Global Styles
 			&__imagewrapper {
 				opacity: 1;
 				transition-delay: .7s;
+			}
+
+			&__linkitem-link {
+				pointer-events: auto;
 			}
 		}
 	}
@@ -229,21 +263,21 @@ Context: Intro
 		}
 
 		&__imagewrapper {
-			top: 50%;
+			top: 45%;
 			left: 50%;
 			width: 330px;
 			transform: translate(-50%, -50%);
 		}
 
 		&__textouter {
-			bottom: 25%;
+			bottom: 30%;
 			left: 50%;
 			transform: translateX(-50%);
 		}
 
 		&__keywords-item {
 			font-weight: 300;
-			font-size: rem(24);
+			font-size: rem(26);
 			line-height: rem(28);
 
 			&::after {
@@ -282,7 +316,7 @@ Context: Magine Product
 		}
 
 		&__bg-overlay {
-			@extend %icon-background_case-magine-a;
+			@extend %icon-background_header-red;
 
 			background-size: cover;
 		}
@@ -302,9 +336,13 @@ Context: Magine Product
 			}
 		}
 
-		&__cta-wrapper {
-			bottom: -100px;
-			right: 160px;
+		&__cta {
+			bottom: -80px;
+			right: 205px;
+
+			&::after {
+				@extend %icon-arrow-white;
+			}
 		}
 	}
 }
@@ -337,7 +375,7 @@ Context: Magine Marketing
 		}
 
 		&__bg-overlay {
-			@extend %icon-background_case-magine-b;
+			@extend %icon-background_header-blue;
 
 			background-size: cover;
 			background-position: right center;
@@ -354,9 +392,13 @@ Context: Magine Marketing
 			}
 		}
 
-		&__cta-wrapper {
-			bottom: -30px;
-			right: 0;
+		&__cta {
+			bottom: -10px;
+			right: 10px;
+
+			&::after {
+				@extend %icon-arrow-white;
+			}
 		}
 	}
 
@@ -391,7 +433,7 @@ Context: Siemens
 		}
 
 		&__bg-overlay {
-			@extend %icon-background_case-siemens;
+			@extend %icon-background_header-turquoise;
 
 			background-size: cover;
 		}
@@ -404,16 +446,13 @@ Context: Siemens
 			max-width: 900px;
 		}
 
-		&__cta-wrapper {
+		&__cta {
 			top: 50%;
 			left: 0;
+			color: $case-siemens-contrast-2;
 
-			.scroll-item__cta {
-				color: $case-siemens-contrast-2;
-
-				&::after {
-					@extend %icon-arrow-siemens;
-				}
+			&::after {
+				@extend %icon-arrow-siemens;
 			}
 		}
 	}
@@ -455,7 +494,7 @@ Context: Aperto
 		}
 
 		&__bg-overlay {
-			@extend %icon-background_case-aperto;
+			@extend %icon-background_header-green;
 
 			background-size: cover;
 		}
@@ -468,20 +507,17 @@ Context: Aperto
 			max-width: 850px;
 		}
 
-		&__cta-wrapper {
-			bottom: 40px;
-			right: -5%;
+		&__cta {
+			bottom: -80px;
+			left: 0;
+			color: $grey;
 
 			@include media('>=tablet-l') {
 				right: 0;
 			}
 
-			.scroll-item__cta {
-				color: $grey;
-
-				&::after {
-					@extend %icon-arrow-aperto;
-				}
+			&::after {
+				@extend %icon-arrow-aperto;
 			}
 		}
 	}
@@ -505,10 +541,15 @@ Context: About
 		}
 
 		&__headline {
-			font-size: rem(70);
-			line-height: rem(84);
+			font-size: rem(50);
+			line-height: rem(64);
 			lost-column: 12/12;
 			margin-bottom: 60px;
+
+			@include media('>=tablet-l') {
+				font-size: rem(70);
+				line-height: rem(84);
+			}
 
 			span {
 				lost-offset: 3/12;
@@ -517,7 +558,7 @@ Context: About
 		}
 
 		&__text {
-			@include font-pagination();
+			@include font-about();
 
 			lost-column: 9/12;
 			color: $white;
@@ -557,33 +598,34 @@ Context: About
 			margin-right: 15px;
 			display: block;
 			pointer-events: none;
+			background-size: contain;
 
 			&.is-linkedin {
 				@extend %icon-linkedin;
 
-				height: 39px;
-				width: 40px;
+				height: 29px;
+				width: 30px;
 			}
 
 			&.is-xing {
 				@extend %icon-xing;
 
-				height: 47px;
-				width: 38px;
+				height: 37px;
+				width: 28px;
 			}
 
 			&.is-cv {
 				@extend %icon-cv;
 
-				height: 40px;
-				width: 32px;
+				height: 30px;
+				width: 22px;
 			}
 
 			&.is-dribble {
 				@extend %icon-dribbble;
 
-				height: 39px;
-				width: 40px;
+				height: 29px;
+				width: 30px;
 			}
 		}
 

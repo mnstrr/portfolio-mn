@@ -19,7 +19,7 @@ Global Styles
 		&__list-item {
 			position: relative;
 			margin-right: 60px;
-			padding-bottom: 14px;
+			padding-bottom: 5px;
 
 			&:last-of-type {
 				margin-right: 0;
@@ -31,7 +31,7 @@ Global Styles
 				bottom: 0;
 				left: 0;
 				width: 0;
-				height: 4px;
+				height: 3px;
 				background: $grey;
 				opacity: 0;
 				transition: opacity .4s $transition-timing-cubic, width .4s $transition-timing-cubic;

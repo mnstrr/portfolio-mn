@@ -49,6 +49,7 @@ Global Styles
 				position: relative;
 				margin-top: -300px;
 				margin-left: -100px;
+				width: auto;
 
 				@include media('>=1200px') {
 					margin-left: -150px;
@@ -86,6 +87,12 @@ Global Styles
 
 		&__marketing2 {
 			@extend %icon-background_grey_02;
+
+			background-position-y: 20px;
+
+			.case-magine-b__marketing-image4 {
+				margin-top: 60px;
+			}
 		}
 	}
 }

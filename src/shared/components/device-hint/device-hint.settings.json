@@ -1,0 +1,11 @@
+
+{
+    "paths": {
+        "scripts": "src/shared/components/device-hint/scripts/device-hint",
+        "styles": "src/shared/components/device-hint/styles/device-hint"
+    },
+    "type": "component",
+    "contextData": "device-hint",
+    "layout": "lyt-docs",
+    "publish": true
+}

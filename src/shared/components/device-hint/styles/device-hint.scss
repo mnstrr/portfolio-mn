@@ -1,0 +1,75 @@
+/* ===================================================
+component: device-hint
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-device-hint"] {
+	position: absolute;
+	z-index: 999999;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: $white;
+
+	&.is-active {
+		display: block;
+	}
+
+	.device-hint {
+		&__outer {
+			position: absolute;
+			width: calc(100% - 60px);
+			height: calc(100% - 60px);
+			margin: 30px;
+			background: radial-gradient(circle, #1E1E3C 0%, #000000 100%);
+		}
+
+		&__wrapper {
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+
+			&.is-active {
+				display: flex;
+			}
+		}
+
+		&__headline {
+			@include font-caseheadline();
+
+			font-size: rem(70);
+			line-height: rem(84);
+			color: $white;
+		}
+
+		&__paragraph {
+			@include font-pagination();
+
+			color: $white;
+			margin-top: 30px;
+		}
+
+		&__logo {
+			@extend %icon-logo-color;
+
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			width: 70px;
+			height: 40px;
+		}
+	}
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-device-hint--default {
+}

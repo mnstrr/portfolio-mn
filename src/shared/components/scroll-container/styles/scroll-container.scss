@@ -6,6 +6,11 @@ component: scroll-container
 Global Styles
 --------------------------------------------------- */
 [data-css="c-scroll-container"] {
+	display: none;
+
+	&.is-active {
+		display: block;
+	}
 }
 
 /* ---------------------------------------------------

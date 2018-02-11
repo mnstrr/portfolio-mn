@@ -1,0 +1,20 @@
+<div class="c-device-hint{{#if
+	settings.deviceHintContextClass}}--{{settings.deviceHintContextClass}}{{else}}--default{{/if}}{{#if
+	settings.deviceHintClasses}} {{settings.deviceHintClasses}}{{/if}}"
+	 data-css="c-device-hint"
+	 data-js-module="device-hint"{{#if settings.deviceHintJsOptions}}
+	 data-js-options='{{stringify settings.deviceHintJsOptions}}'{{/if}}>
+
+	 <div class="device-hint__outer">
+		 <div class="device-hint__logo"></div>
+
+		 <div class="device-hint__wrapper" data-js-item="device-size">
+			 <h2 class="device-hint__headline">{{content.size.headline}}</h2>
+			 <p class="device-hint__paragraph">{{content.size.paragraph}}</p>
+		 </div>
+		 <div class="device-hint__wrapper" data-js-item="device-browser">
+			 <h2 class="device-hint__headline">{{content.browser.headline}}</h2>
+			 <p class="device-hint__paragraph">{{content.browser.paragraph}}</p>
+		 </div>
+	 </div>
+</div>

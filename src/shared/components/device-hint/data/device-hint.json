@@ -1,0 +1,25 @@
+
+{
+	"variations": {
+		"default": {
+			"docs": {
+				"variationName": "Default"
+			},
+			"settings": {
+				"deviceHintContextClass": "default",
+				"deviceHintClasses": false,
+				"deviceHintJsOptions": {}
+			},
+			"content": {
+				"browser": {
+					"headline": "No support",
+					"paragraph": "This website doesn’t support this version of your browser. Please use the newest version or use another browser."
+				},
+				"size": {
+					"headline": "Please resize.",
+					"paragraph": "This website is optimized for desktop or tablet view. Please resize your browser or view it on another device."
+				}
+			}
+		}
+	}
+}

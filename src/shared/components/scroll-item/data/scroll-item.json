@@ -35,7 +35,8 @@
 							}
 						]
 					}
-				}
+				},
+				"explore": "scroll to explore"
 			}
 		},
 		"magine1": {
@@ -695,25 +696,25 @@
 						"lazyload": true
 					},
 					"content": {
-						"fallbackSrc": "media/images/png/stage-backgrounds/Magine_Header_01-480.png",
+						"fallbackSrc": "media/images/png/stage-backgrounds/Magine_header_02-480.png",
 						"alt": "Alternative text that describes the image",
 						"items": [
 							{
 								"srcset": [
 									{
-										"src": "media/images/png/stage-backgrounds/Magine_Header_02-480.png",
+										"src": "media/images/png/stage-backgrounds/Magine_header_02-480.png",
 										"imageWidth": "400w"
 									},
 									{
-										"src": "media/images/png/stage-backgrounds/Magine_Header_02-960.png",
+										"src": "media/images/png/stage-backgrounds/Magine_header_02-960.png",
 										"imageWidth": "960w"
 									},
 									{
-										"src": "media/images/png/stage-backgrounds/Magine_Header_02-1200.png",
+										"src": "media/images/png/stage-backgrounds/Magine_header_02-1200.png",
 										"imageWidth": "1200w"
 									},
 									{
-										"src": "media/images/png/stage-backgrounds/Magine_Header_02-1600.png",
+										"src": "media/images/png/stage-backgrounds/Magine_header_02-1600.png",
 										"imageWidth": "1600w"
 									}
 								]
@@ -966,7 +967,7 @@
 													"imageWidth": "960w"
 												},
 												{
-													"src": "media/images/png/case-magine-b/devicese-1200.png",
+													"src": "media/images/png/case-magine-b/devices-1200.png",
 													"imageWidth": "1200w"
 												},
 												{
@@ -2308,9 +2309,9 @@
 				"scrollItemID": "about"
 			},
 			"content": {
-				"headline": "Interface Designer",
+				"headline": "User Interface Designer",
 				"subline": "based in Berlin.",
-				"text": "Hi, I’m Marina Neff. I’m passionate about what I do, and I love to help people. Nothing is more fulfilling than being part of a team with similar interests, and an organization that values its employees. I have been working for 5 years as an Interface Designer. During this period I had clients in fields of NGO, Banking, Public and famous brands such as Siemens, Rossmann, and MAN. For the last two years, I worked for the TV streaming start-up Magine TV. Thereby I had the opportunity to work in a consumer-focused field.",
+				"text": "Hi, I’m Marina Neff. I’m passionate about what I do, and I love to help people. Nothing is more fulfilling than being part of a team with similar interests, and an organization that values its employees. I have been working for 5 years as an User Interface Designer. During this period I had clients in fields of NGO, Banking, Public and famous brands such as Siemens, Rossmann, and MAN. For the last two years, I worked for the TV streaming start-up Magine TV. Thereby I had the opportunity to work in a consumer-focused field.",
 				"meta": {
 					"mail": {
 						"subline": "Say hello!",
@@ -2324,19 +2325,19 @@
 						"items": [
 							{
 								"icon": "linkedin",
-								"link": "#"
+								"link": "https://www.linkedin.com/in/marina-neff-a57542101/"
 							},
 							{
 								"icon": "xing",
-								"link": "#"
+								"link": "https://www.xing.com/profile/Marina_Neff"
 							},
 							{
 								"icon": "cv",
-								"link": "#"
+								"link": "https://standardresume.co/marinaneff"
 							},
 							{
 								"icon": "dribble",
-								"link": "#"
+								"link": "https://dribbble.com/marinaneff"
 							}
 						]
 					}

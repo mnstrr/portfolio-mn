@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1380px" height="770px" viewBox="0 0 1380 770" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>background_green</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.0693858%" y1="19.7037338%" x2="50.0693858%" y2="91.2479708%" id="linearGradient-1">
+            <stop stop-color="#8DB31B" offset="0%"></stop>
+            <stop stop-color="#A2C928" offset="43.4495278%"></stop>
+            <stop stop-color="#6B8C07" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Portfolio-01-d" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-30.000000, -30.000000)">
+        <rect id="background_green" fill="url(#linearGradient-1)" x="30" y="30" width="1380" height="770"></rect>
+    </g>
+</svg>

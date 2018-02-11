@@ -95,13 +95,14 @@ Global Styles
 				right: 0;
 			}
 
-			.case-aperto__devices-wrapper{
+			.case-aperto__devices-wrapper {
 				z-index: 1;
 			}
 		}
 
 		&__desktop-image {
 			margin-left: calc(((100vw - (100% * 1.5)) / 2) * -1);
+			width: auto;
 		}
 
 		&__homepage {
@@ -126,6 +127,24 @@ Global Styles
 					transform: translate(-50%, -100%);
 					background-size: contain;
 					z-index: -1;
+				}
+
+				&::after {
+					@extend %pseudo;
+					@extend %icon-triangle_blur_front;
+
+					bottom: -80px;
+					right: -40px;
+					height: 160px;
+					width: 150px;
+					background-size: contain;
+
+					@include media('>=tablet-l') {
+						bottom: -100px;
+						right: -50px;
+						height: 260px;
+						width: 250px;
+					}
 				}
 			}
 		}
